@@ -1,0 +1,33 @@
+{
+ "url": "https://labmuffin.com/wp-content/uploads/2025/12/cuticle-wet-600x567.jpg",
+ "model": "gpt-4o-mini",
+ "seen_at": "2026-09-20T14:12:51+00:00",
+ "ok": true,
+ "vision": {
+  "shows": "diagram",
+  "readable_text": "water absorbs",
+  "products_named": [],
+  "is_instructional": "no",
+  "is_comparison": "no",
+  "shows_a_result": "unclear"
+ },
+ "error": null,
+ "usage": {
+  "prompt_tokens": 25949,
+  "completion_tokens": 35,
+  "total_tokens": 25984,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "audio_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "audio_tokens": 0,
+   "accepted_prediction_tokens": 0,
+   "rejected_prediction_tokens": 0
+  }
+ },
+ "bytes": 44551,
+ "seconds": 3.85,
+ "from_cache": false
+}

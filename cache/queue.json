@@ -1,0 +1,2423 @@
+{
+ "stats": {
+  "dms": 54,
+  "judgments": 1072,
+  "seconds": 6.22,
+  "triage_seconds": 2.5,
+  "basket_seconds": 3.72,
+  "answered": 25,
+  "asked_back": 14,
+  "held": 6,
+  "referred": 9,
+  "handled_pct": 72,
+  "held_pct": 11,
+  "referred_pct": 17,
+  "at_real_volume": {
+   "dms_per_month": 4800,
+   "handled": 3466,
+   "held_per_day": 17,
+   "referred": 800
+  },
+  "header_line": "you approved 25 replies in 4 minutes",
+  "answer_rate_pct": 46,
+  "gap_probe": {
+   "claim": "It only asks when the answer actually depends on it.",
+   "messages_probed": 9,
+   "variants_run": 78,
+   "answered_despite_gap": 0,
+   "answered_despite_gap_ids": [],
+   "gaps_tested": 18,
+   "gaps_that_did_not_matter": 2,
+   "still_asked": 9,
+   "question_chosen_by_probe": 6,
+   "note": "A gap is only called moot when every plausible value of it was run through the same two-stage basket and the winning basket never changed. Untested, uncapped or failed hypotheses always count as mattering, and the probe can only move asked_back -> answered - it can never reach `referred` or `held`."
+  },
+  "gates": {
+   "confidence_gate": 0.552,
+   "emotional_gate": 2.6,
+   "enough_gate": 0.317,
+   "max_items_cap": 3,
+   "defended": "spf",
+   "refusal_reason_gate": 0.9
+  },
+  "safety": {
+   "referred": 9,
+   "by_signal": {
+    "out_of_scope": 0,
+    "refusal_reason": 1,
+    "both": 8
+   },
+   "rule": "Out of scope if `out_of_scope` > 0.5 OR `refusal_reason` names a clinical reason at 0.9 or better. An OR: it can only add a referral, never remove one."
+  }
+ },
+ "cards": [
+  {
+   "id": "q-004",
+   "ref": "E-01.4",
+   "from": "@sarah",
+   "text": "is the cloud cream actually worth £38 or am i being influenced",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "is_it_worth_it",
+   "draft_reply": "Yes. £38. My winter skin saviour.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-022",
+   "ref": "E-05.10",
+   "from": "@fiona",
+   "text": "is the night serum worth 42 honestly",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "is_it_worth_it",
+   "draft_reply": "Yes. £42. Best for texture.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-023",
+   "ref": "E-05.11",
+   "from": "@harriet",
+   "text": "would you pay 62 for the glass drop",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "is_it_worth_it",
+   "draft_reply": "Good. Not £62 good. Her line on it is about £40–45.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-035",
+   "ref": "E-05.23",
+   "from": "@tilly",
+   "text": "obsessed with your account",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "not_a_question",
+   "draft_reply": "Thank you. Genuinely. Nothing to buy today.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "v-002",
+   "ref": "S-VN.2",
+   "from": "@bexm",
+   "text": "Is the glass drop actually worth 62 pounds or am I being silly?",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "is_it_worth_it",
+   "draft_reply": "Good. Not £62 good. Her line on it is about £40–45.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "voice",
+   "voice": {
+    "audio_url": "/api/voice/synthetic-v-002-shimmer.mp3",
+    "file": "synthetic-v-002-shimmer.mp3",
+    "seconds": 4.63,
+    "transcript": "Is the glass drop actually worth 62 pounds or am I being silly?",
+    "stt_model": "whisper-1",
+    "transcribe_ms": 2098,
+    "tts_model": "tts-1",
+    "tts_voice": "shimmer",
+    "tts_script": "is the glass drop actually worth sixty-two pounds or am I being silly",
+    "verbatim_match": false,
+    "synthetic": true,
+    "disclosure": "Synthetic demo audio. Spoken by OpenAI tts-1 from a script we wrote, transcribed by OpenAI whisper-1. It is not a recording of a real person and no real audience audio exists in this repo.",
+    "who_did_what": "OpenAI tts-1 spoke it, OpenAI whisper-1 transcribed it, Jev decides what to do about it. Jev never hears audio - it is handed the transcript in the same `state.message` field a typed DM uses."
+   },
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-024",
+   "ref": "E-05.12",
+   "from": "@izzy",
+   "text": "is the tint veil worth it or is there a cheaper dupe",
+   "lane": "answered",
+   "confidence": 0.99,
+   "job": "is_it_worth_it",
+   "draft_reply": "Yes. £34. Best on camera.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-036",
+   "ref": "E-05.24",
+   "from": "@una",
+   "text": "literally changed my routine because of you",
+   "lane": "answered",
+   "confidence": 0.99,
+   "job": "not_a_question",
+   "draft_reply": "Thank you. Genuinely. Nothing to buy today.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-037",
+   "ref": "E-05.25",
+   "from": "@verity",
+   "text": "ordering next week when i get paid",
+   "lane": "answered",
+   "confidence": 0.98,
+   "job": "later",
+   "draft_reply": "Good. Buy it when you are ready. It will still be there.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-007",
+   "ref": "E-01.7",
+   "from": "@olivia",
+   "text": "i trust you more than Sephora tbh",
+   "lane": "answered",
+   "confidence": 0.96,
+   "job": "not_a_question",
+   "draft_reply": "Thank you. Genuinely. Nothing to buy today.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-010",
+   "ref": "E-01.10",
+   "from": "@mia",
+   "text": "I saw the thing you recommended last week. buying it payday",
+   "lane": "answered",
+   "confidence": 0.96,
+   "job": "later",
+   "draft_reply": "Good. Buy it when you are ready. It will still be there.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-038",
+   "ref": "E-05.26",
+   "from": "@wren",
+   "text": "saving up for the cloud cream",
+   "lane": "answered",
+   "confidence": 0.94,
+   "job": "later",
+   "draft_reply": "It is worth the £38. It will still be there.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-039",
+   "ref": "E-05.27",
+   "from": "@xanthe",
+   "text": "gonna buy it in the sale",
+   "lane": "answered",
+   "confidence": 0.91,
+   "job": "later",
+   "draft_reply": "Good. Buy it when you are ready. It will still be there.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-003",
+   "ref": "E-01.3",
+   "from": "@ameliaxo",
+   "text": "okay but if u could only keep ONE of these which one",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "One thing. SPF 50. Twenty-six pounds. Non-negotiable.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-a1b3ab",
+   "basket_summary": "SPF 50 £26",
+   "basket": [
+    "SPF 50"
+   ],
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-005",
+   "ref": "E-01.5",
+   "from": "@jessica",
+   "text": "i already have the night serum. do i need the barrier cream too???",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "do_i_need_it",
+   "draft_reply": "No. Just the SPF. Twenty-six pounds.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-jessica",
+   "basket_summary": "SPF 50 £26",
+   "basket": [
+    "SPF 50"
+   ],
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-016",
+   "ref": "E-05.4",
+   "from": "@ellalou",
+   "text": "i have oily skin and £35, what should i get",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "One thing. SPF 50. Twenty-six pounds. Non-negotiable.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-1f0788",
+   "basket_summary": "SPF 50 £26",
+   "basket": [
+    "SPF 50"
+   ],
+   "skin": [
+    "oily"
+   ],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-020",
+   "ref": "E-05.8",
+   "from": "@dani",
+   "text": "if you had to pick one serum forever which",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "One thing. SPF 50. Twenty-six pounds. Non-negotiable.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-d6dfc7",
+   "basket_summary": "SPF 50 £26",
+   "basket": [
+    "SPF 50"
+   ],
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-021",
+   "ref": "E-05.9",
+   "from": "@cleo",
+   "text": "only ONE product for the rest of your life go",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "One thing. SPF 50. Twenty-six pounds. Non-negotiable.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-dd1fe1",
+   "basket_summary": "SPF 50 £26",
+   "basket": [
+    "SPF 50"
+   ],
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-042",
+   "ref": "E-05.30",
+   "from": "@anya",
+   "text": "what would you buy if you only had 25 quid",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "One thing. SPF 50. Twenty-six pounds. Non-negotiable.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-15e2ed",
+   "basket_summary": "SPF 50 £26",
+   "basket": [
+    "SPF 50"
+   ],
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-025",
+   "ref": "E-05.13",
+   "from": "@jaz",
+   "text": "i already use the daily gel, do i need a serum too",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "do_i_need_it",
+   "draft_reply": "No. The SPF and the wash. Forty-six pounds.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-295ce5",
+   "basket_summary": "SPF 50 £26 · Clear Wash £20 · £46",
+   "basket": [
+    "SPF 50",
+    "Clear Wash"
+   ],
+   "skin": [
+    "oily"
+   ],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-017",
+   "ref": "E-05.5",
+   "from": "@meghanp",
+   "text": "combo skin, breakouts on chin, £50 help",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "Two things. The gel and the SPF. Fifty pounds.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-d6396e",
+   "basket_summary": "Daily Gel £24 · SPF 50 £26 · £50",
+   "basket": [
+    "Daily Gel",
+    "SPF 50"
+   ],
+   "skin": [
+    "combination"
+   ],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-002",
+   "ref": "E-01.2",
+   "from": "@gracelee",
+   "text": "i have dry skin + redness and £60. tell me what to buy pls",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "Two things. The Red Reset and the SPF. Fifty-eight pounds.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-8561ad",
+   "basket_summary": "Red Reset £32 · SPF 50 £26 · £58",
+   "basket": [
+    "Red Reset",
+    "SPF 50"
+   ],
+   "skin": [
+    "dry",
+    "redness"
+   ],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "v-001",
+   "ref": "S-VN.1",
+   "from": "@noor",
+   "text": "Yeah, so my skin's been really dry and a bit red. Lately, I've got about 60 quid, what should I actually get?",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "Two things. The Red Reset and the SPF. Fifty-eight pounds.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-fe011b",
+   "basket_summary": "Red Reset £32 · SPF 50 £26 · £58",
+   "basket": [
+    "Red Reset",
+    "SPF 50"
+   ],
+   "skin": [
+    "dry",
+    "redness"
+   ],
+   "synthetic": true,
+   "source": "voice",
+   "voice": {
+    "audio_url": "/api/voice/synthetic-v-001-nova.mp3",
+    "file": "synthetic-v-001-nova.mp3",
+    "seconds": 6.93,
+    "transcript": "Yeah, so my skin's been really dry and a bit red. Lately, I've got about 60 quid, what should I actually get?",
+    "stt_model": "whisper-1",
+    "transcribe_ms": 3590,
+    "tts_model": "tts-1",
+    "tts_voice": "nova",
+    "tts_script": "hiya, so my skin's been really dry and a bit red lately, I've got about sixty quid, what should I actually get",
+    "verbatim_match": false,
+    "synthetic": true,
+    "disclosure": "Synthetic demo audio. Spoken by OpenAI tts-1 from a script we wrote, transcribed by OpenAI whisper-1. It is not a recording of a real person and no real audience audio exists in this repo.",
+    "who_did_what": "OpenAI tts-1 spoke it, OpenAI whisper-1 transcribed it, Jev decides what to do about it. Jev never hears audio - it is handed the transcript in the same `state.message` field a typed DM uses."
+   },
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-041",
+   "ref": "E-05.29",
+   "from": "@zara",
+   "text": "buying for my boyfriend, he uses nothing, where does he start",
+   "lane": "answered",
+   "confidence": 0.88,
+   "job": "buying_for_someone_else",
+   "draft_reply": "Two things. The SPF and the cleanser. Forty-eight pounds.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-31d39f",
+   "basket_summary": "SPF 50 £26 · Soft Clean £22 · £48",
+   "basket": [
+    "SPF 50",
+    "Soft Clean"
+   ],
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-018",
+   "ref": "E-05.6",
+   "from": "@rosiej",
+   "text": "dry flaky skin in winter, budget 70",
+   "lane": "answered",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "Two things. The good one and the SPF. Sixty-four pounds.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-ca8e46",
+   "basket_summary": "Cloud Cream £38 · SPF 50 £26 · £64",
+   "basket": [
+    "Cloud Cream",
+    "SPF 50"
+   ],
+   "skin": [
+    "dry"
+   ],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-040",
+   "ref": "E-05.28",
+   "from": "@yas",
+   "text": "my mum wants to know what you'd get her, she's 60 dry skin",
+   "lane": "answered",
+   "confidence": 0.99,
+   "job": "buying_for_someone_else",
+   "draft_reply": "Two things. The good one and the SPF. Sixty-four pounds.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": "c-3cbcf7",
+   "basket_summary": "Cloud Cream £38 · SPF 50 £26 · £64",
+   "basket": [
+    "Cloud Cream",
+    "SPF 50"
+   ],
+   "skin": [
+    "dry"
+   ],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-009",
+   "ref": "E-01.9",
+   "from": "@joanna",
+   "text": "can you make me a routine but only 2 products bc i will not do 8 steps",
+   "lane": "asked_back",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "Skin type?",
+   "question_back": "Skin type?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": {
+    "gaps": [
+     "skin",
+     "budget"
+    ],
+    "tested": {
+     "skin": {
+      "tested": true,
+      "distinct": 3,
+      "mattered": true,
+      "values": [
+       "dry",
+       "oily",
+       "combination",
+       "sensitive",
+       "redness"
+      ]
+     },
+     "budget": {
+      "tested": true,
+      "distinct": 2,
+      "mattered": true,
+      "values": [
+       30,
+       60,
+       100
+      ]
+     }
+    },
+    "variants": [
+     {
+      "gap": null,
+      "value": null,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "dry",
+      "basket": [
+       "Cloud Cream",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "oily",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "combination",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "sensitive",
+      "basket": [
+       "Red Reset",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "redness",
+      "basket": [
+       "Red Reset",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 30,
+      "basket": [
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 60,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 100,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     }
+    ],
+    "variants_run": 9,
+    "indifferent": false,
+    "gaps_that_did_not_matter": [],
+    "discriminating_gap": "skin",
+    "incomplete": false,
+    "rule": "Every plausible value of the gap was run through the same two-stage basket. She asks only when the winning basket actually changed."
+   }
+  },
+  {
+   "id": "q-013",
+   "ref": "E-05.1",
+   "from": "@bea",
+   "text": "what lipstick is that in the reel",
+   "lane": "asked_back",
+   "confidence": 1.0,
+   "job": "what_is_it",
+   "draft_reply": "What are you using now?",
+   "question_back": "What are you using now?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-006",
+   "ref": "E-01.6",
+   "from": "@niamh",
+   "text": "i dont even know what my skin type is lol",
+   "lane": "asked_back",
+   "confidence": 0.99,
+   "job": "diagnose_me",
+   "draft_reply": "What are you using now?",
+   "question_back": "What are you using now?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": {
+    "gaps": [
+     "skin",
+     "budget"
+    ],
+    "tested": {
+     "skin": {
+      "tested": true,
+      "distinct": 3,
+      "mattered": true,
+      "values": [
+       "dry",
+       "oily",
+       "combination",
+       "sensitive",
+       "redness"
+      ]
+     },
+     "budget": {
+      "tested": true,
+      "distinct": 2,
+      "mattered": true,
+      "values": [
+       30,
+       60,
+       100
+      ]
+     }
+    },
+    "variants": [
+     {
+      "gap": null,
+      "value": null,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "dry",
+      "basket": [
+       "Cloud Cream",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "oily",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "combination",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "sensitive",
+      "basket": [
+       "Red Reset",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "redness",
+      "basket": [
+       "Red Reset",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 30,
+      "basket": [
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 60,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 100,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     }
+    ],
+    "variants_run": 9,
+    "indifferent": false,
+    "gaps_that_did_not_matter": [],
+    "discriminating_gap": "skin",
+    "incomplete": false,
+    "rule": "Every plausible value of the gap was run through the same two-stage basket. She asks only when the winning basket actually changed."
+   }
+  },
+  {
+   "id": "q-008",
+   "ref": "E-01.8",
+   "from": "@kate",
+   "text": "Maya I have a first date Friday HELP",
+   "lane": "asked_back",
+   "confidence": 0.99,
+   "job": "occasion",
+   "draft_reply": "Skin type?",
+   "question_back": "Skin type?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": {
+    "gaps": [
+     "skin",
+     "budget"
+    ],
+    "tested": {
+     "skin": {
+      "tested": true,
+      "distinct": 4,
+      "mattered": true,
+      "values": [
+       "dry",
+       "oily",
+       "combination",
+       "sensitive",
+       "redness"
+      ]
+     },
+     "budget": {
+      "tested": true,
+      "distinct": 2,
+      "mattered": true,
+      "values": [
+       30,
+       60,
+       100
+      ]
+     }
+    },
+    "variants": [
+     {
+      "gap": null,
+      "value": null,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "dry",
+      "basket": [
+       "Cloud Cream",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "oily",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "combination",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "sensitive",
+      "basket": [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "redness",
+      "basket": [
+       "Red Reset",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 30,
+      "basket": [
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 60,
+      "basket": [
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 100,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     }
+    ],
+    "variants_run": 9,
+    "indifferent": false,
+    "gaps_that_did_not_matter": [],
+    "discriminating_gap": "skin",
+    "incomplete": false,
+    "rule": "Every plausible value of the gap was run through the same two-stage basket. She asks only when the winning basket actually changed."
+   }
+  },
+  {
+   "id": "q-012",
+   "ref": "E-01.12",
+   "from": "@roisin",
+   "text": "can you send me the one you would buy if you were me",
+   "lane": "asked_back",
+   "confidence": 0.99,
+   "job": "pick_for_me",
+   "draft_reply": "Skin type?",
+   "question_back": "Skin type?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": {
+    "gaps": [
+     "skin",
+     "budget"
+    ],
+    "tested": {
+     "skin": {
+      "tested": true,
+      "distinct": 4,
+      "mattered": true,
+      "values": [
+       "dry",
+       "oily",
+       "combination",
+       "sensitive",
+       "redness"
+      ]
+     },
+     "budget": {
+      "tested": true,
+      "distinct": 2,
+      "mattered": true,
+      "values": [
+       30,
+       60,
+       100
+      ]
+     }
+    },
+    "variants": [
+     {
+      "gap": null,
+      "value": null,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "dry",
+      "basket": [
+       "Cloud Cream",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "oily",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "combination",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "sensitive",
+      "basket": [
+       "Red Reset",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "redness",
+      "basket": [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 30,
+      "basket": [
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 60,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 100,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     }
+    ],
+    "variants_run": 9,
+    "indifferent": false,
+    "gaps_that_did_not_matter": [],
+    "discriminating_gap": "skin",
+    "incomplete": false,
+    "rule": "Every plausible value of the gap was run through the same two-stage basket. She asks only when the winning basket actually changed."
+   }
+  },
+  {
+   "id": "q-030",
+   "ref": "E-05.18",
+   "from": "@orla",
+   "text": "my skin is weird lately idk what changed",
+   "lane": "asked_back",
+   "confidence": 0.99,
+   "job": "diagnose_me",
+   "draft_reply": "What are you using now?",
+   "question_back": "What are you using now?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": {
+    "gaps": [
+     "skin",
+     "budget"
+    ],
+    "tested": {
+     "skin": {
+      "tested": true,
+      "distinct": 4,
+      "mattered": true,
+      "values": [
+       "dry",
+       "oily",
+       "combination",
+       "sensitive",
+       "redness"
+      ]
+     },
+     "budget": {
+      "tested": true,
+      "distinct": 2,
+      "mattered": true,
+      "values": [
+       30,
+       60,
+       100
+      ]
+     }
+    },
+    "variants": [
+     {
+      "gap": null,
+      "value": null,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "dry",
+      "basket": [
+       "Cloud Cream",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "oily",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "combination",
+      "basket": [
+       "Daily Gel",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "sensitive",
+      "basket": [
+       "Red Reset",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "redness",
+      "basket": [
+       "Red Reset",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 30,
+      "basket": [
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 60,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 100,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     }
+    ],
+    "variants_run": 9,
+    "indifferent": false,
+    "gaps_that_did_not_matter": [],
+    "discriminating_gap": "skin",
+    "incomplete": false,
+    "rule": "Every plausible value of the gap was run through the same two-stage basket. She asks only when the winning basket actually changed."
+   }
+  },
+  {
+   "id": "q-032",
+   "ref": "E-05.20",
+   "from": "@quinn",
+   "text": "interview tomorrow morning help",
+   "lane": "asked_back",
+   "confidence": 0.99,
+   "job": "occasion",
+   "draft_reply": "Skin type?",
+   "question_back": "Skin type?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": {
+    "gaps": [
+     "skin",
+     "budget"
+    ],
+    "tested": {
+     "skin": {
+      "tested": true,
+      "distinct": 4,
+      "mattered": true,
+      "values": [
+       "dry",
+       "oily",
+       "combination",
+       "sensitive",
+       "redness"
+      ]
+     },
+     "budget": {
+      "tested": true,
+      "distinct": 2,
+      "mattered": true,
+      "values": [
+       30,
+       60,
+       100
+      ]
+     }
+    },
+    "variants": [
+     {
+      "gap": null,
+      "value": null,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "dry",
+      "basket": [
+       "Cloud Cream",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "oily",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "combination",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "sensitive",
+      "basket": [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "redness",
+      "basket": [
+       "Red Reset",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 30,
+      "basket": [
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 60,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 100,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     }
+    ],
+    "variants_run": 9,
+    "indifferent": false,
+    "gaps_that_did_not_matter": [],
+    "discriminating_gap": "skin",
+    "incomplete": false,
+    "rule": "Every plausible value of the gap was run through the same two-stage basket. She asks only when the winning basket actually changed."
+   }
+  },
+  {
+   "id": "q-001",
+   "ref": "E-01.1",
+   "from": "@ellie.mp",
+   "text": "what shade are u wearing in todays video???",
+   "lane": "asked_back",
+   "confidence": 0.98,
+   "job": "what_is_it",
+   "draft_reply": "Tint Veil. Thirty-four pounds. Best on camera. What are you using now?",
+   "question_back": "What are you using now?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-028",
+   "ref": "E-05.16",
+   "from": "@mollyb",
+   "text": "i own like 6 products should i stop buying",
+   "lane": "asked_back",
+   "confidence": 0.98,
+   "job": "do_i_need_it",
+   "draft_reply": "What are you using now?",
+   "question_back": "What are you using now?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-029",
+   "ref": "E-05.17",
+   "from": "@nell",
+   "text": "i genuinely cannot tell if im oily or combo",
+   "lane": "asked_back",
+   "confidence": 0.98,
+   "job": "diagnose_me",
+   "draft_reply": "What are you using now?",
+   "question_back": "What are you using now?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": {
+    "gaps": [
+     "skin",
+     "budget"
+    ],
+    "tested": {
+     "skin": {
+      "tested": true,
+      "distinct": 1,
+      "mattered": false,
+      "values": [
+       "oily",
+       "combination"
+      ]
+     },
+     "budget": {
+      "tested": true,
+      "distinct": 3,
+      "mattered": true,
+      "values": [
+       30,
+       60,
+       100
+      ]
+     }
+    },
+    "variants": [
+     {
+      "gap": null,
+      "value": null,
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "oily",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "combination",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 30,
+      "basket": [
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 60,
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 100,
+      "basket": [
+       "Daily Gel",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     }
+    ],
+    "variants_run": 6,
+    "indifferent": false,
+    "gaps_that_did_not_matter": [
+     "skin"
+    ],
+    "discriminating_gap": "budget",
+    "incomplete": false,
+    "rule": "Every plausible value of the gap was run through the same two-stage basket. She asks only when the winning basket actually changed."
+   }
+  },
+  {
+   "id": "q-031",
+   "ref": "E-05.19",
+   "from": "@pippa",
+   "text": "wedding next month what do i start now",
+   "lane": "asked_back",
+   "confidence": 0.92,
+   "job": "occasion",
+   "draft_reply": "Skin type?",
+   "question_back": "Skin type?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": {
+    "gaps": [
+     "skin",
+     "budget"
+    ],
+    "tested": {
+     "skin": {
+      "tested": true,
+      "distinct": 4,
+      "mattered": true,
+      "values": [
+       "dry",
+       "oily",
+       "combination",
+       "sensitive",
+       "redness"
+      ]
+     },
+     "budget": {
+      "tested": true,
+      "distinct": 2,
+      "mattered": true,
+      "values": [
+       30,
+       60,
+       100
+      ]
+     }
+    },
+    "variants": [
+     {
+      "gap": null,
+      "value": null,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "dry",
+      "basket": [
+       "Cloud Cream",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "oily",
+      "basket": [
+       "Daily Gel",
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "combination",
+      "basket": [
+       "Daily Gel",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "sensitive",
+      "basket": [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "redness",
+      "basket": [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 30,
+      "basket": [
+       "SPF 50"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 60,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 100,
+      "basket": [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     }
+    ],
+    "variants_run": 9,
+    "indifferent": false,
+    "gaps_that_did_not_matter": [],
+    "discriminating_gap": "skin",
+    "incomplete": false,
+    "rule": "Every plausible value of the gap was run through the same two-stage basket. She asks only when the winning basket actually changed."
+   }
+  },
+  {
+   "id": "q-015",
+   "ref": "E-05.3",
+   "from": "@nadia.h",
+   "text": "where is the jumper from lol",
+   "lane": "asked_back",
+   "confidence": 0.85,
+   "job": "what_is_it",
+   "draft_reply": "What are you using now?",
+   "question_back": "What are you using now?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-014",
+   "ref": "E-05.2",
+   "from": "@tashk",
+   "text": "which foundation do u use for filming",
+   "lane": "asked_back",
+   "confidence": 0.8,
+   "job": "what_is_it",
+   "draft_reply": "Tint Veil. Thirty-four pounds. Best on camera. What are you using now?",
+   "question_back": "What are you using now?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-026",
+   "ref": "E-05.14",
+   "from": "@kiran",
+   "text": "i have the spf already what else",
+   "lane": "asked_back",
+   "confidence": 0.68,
+   "job": "do_i_need_it",
+   "draft_reply": "Skin type?",
+   "question_back": "Skin type?",
+   "hold_reason": null,
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": {
+    "gaps": [
+     "skin",
+     "budget"
+    ],
+    "tested": {
+     "skin": {
+      "tested": true,
+      "distinct": 4,
+      "mattered": true,
+      "values": [
+       "dry",
+       "oily",
+       "combination",
+       "sensitive",
+       "redness"
+      ]
+     },
+     "budget": {
+      "tested": true,
+      "distinct": 1,
+      "mattered": false,
+      "values": [
+       30,
+       60,
+       100
+      ]
+     }
+    },
+    "variants": [
+     {
+      "gap": null,
+      "value": null,
+      "basket": [
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "dry",
+      "basket": [
+       "Cloud Cream"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "oily",
+      "basket": [
+       "Daily Gel"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "combination",
+      "basket": [
+       "Daily Gel",
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "sensitive",
+      "basket": [
+       "Red Reset"
+      ]
+     },
+     {
+      "gap": "skin",
+      "value": "redness",
+      "basket": [
+       "Red Reset"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 30,
+      "basket": [
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 60,
+      "basket": [
+       "Soft Clean"
+      ]
+     },
+     {
+      "gap": "budget",
+      "value": 100,
+      "basket": [
+       "Soft Clean"
+      ]
+     }
+    ],
+    "variants_run": 9,
+    "indifferent": false,
+    "gaps_that_did_not_matter": [
+     "budget"
+    ],
+    "discriminating_gap": "skin",
+    "incomplete": false,
+    "rule": "Every plausible value of the gap was run through the same two-stage basket. She asks only when the winning basket actually changed."
+   }
+  },
+  {
+   "id": "v-004",
+   "ref": "S-VN.4",
+   "from": "@sana.k",
+   "text": "Honestly, you're the only person I trust on this stuff. Just wanted to say thanks.",
+   "lane": "held",
+   "confidence": 1.0,
+   "job": "not_a_question",
+   "draft_reply": "Thank you. Genuinely. Nothing to buy today.",
+   "question_back": null,
+   "hold_reason": "This person wants Maya specifically, not a good answer. Maya decides.",
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "voice",
+   "voice": {
+    "audio_url": "/api/voice/synthetic-v-004-fable.mp3",
+    "file": "synthetic-v-004-fable.mp3",
+    "seconds": 5.18,
+    "transcript": "Honestly, you're the only person I trust on this stuff. Just wanted to say thanks.",
+    "stt_model": "whisper-1",
+    "transcribe_ms": 3011,
+    "tts_model": "tts-1",
+    "tts_voice": "fable",
+    "tts_script": "honestly you're the only person I trust on this stuff, just wanted to say thanks",
+    "verbatim_match": true,
+    "synthetic": true,
+    "disclosure": "Synthetic demo audio. Spoken by OpenAI tts-1 from a script we wrote, transcribed by OpenAI whisper-1. It is not a recording of a real person and no real audience audio exists in this repo.",
+    "who_did_what": "OpenAI tts-1 spoke it, OpenAI whisper-1 transcribed it, Jev decides what to do about it. Jev never hears audio - it is handed the transcript in the same `state.message` field a typed DM uses."
+   },
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-034",
+   "ref": "E-05.22",
+   "from": "@sadie",
+   "text": "you're the only person i trust on this stuff",
+   "lane": "held",
+   "confidence": 0.77,
+   "job": "not_a_question",
+   "draft_reply": "Thank you. Genuinely. Nothing to buy today.",
+   "question_back": null,
+   "hold_reason": "This person wants Maya specifically, not a good answer. Maya decides.",
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-043",
+   "ref": "E-05.31",
+   "from": "@bridie",
+   "text": "if it was your money what would you do",
+   "lane": "held",
+   "confidence": 0.55,
+   "job": "pick_for_me",
+   "draft_reply": "What are you using now?",
+   "question_back": null,
+   "hold_reason": "She has not said enough here for her standard to be sure. Maya decides.",
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-033",
+   "ref": "E-05.21",
+   "from": "@romy",
+   "text": "holiday in 2 weeks what do i pack",
+   "lane": "held",
+   "confidence": 0.54,
+   "job": "occasion",
+   "draft_reply": "Skin type?",
+   "question_back": null,
+   "hold_reason": "She has not said enough here for her standard to be sure. Maya decides.",
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-027",
+   "ref": "E-05.15",
+   "from": "@leila",
+   "text": "got the soft clean last month, what next",
+   "lane": "held",
+   "confidence": 0.48,
+   "job": "pick_for_me",
+   "draft_reply": "Skin type?",
+   "question_back": null,
+   "hold_reason": "She has not said enough here for her standard to be sure. Maya decides.",
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-011",
+   "ref": "E-01.11",
+   "from": "@lucy",
+   "text": "not a beauty question but what would you do if it was your money?",
+   "lane": "held",
+   "confidence": 0.34,
+   "job": "pick_for_me",
+   "draft_reply": "Budget?",
+   "question_back": null,
+   "hold_reason": "She has not said enough here for her standard to be sure. Maya decides.",
+   "refusal": null,
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": false,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-045",
+   "ref": "E-05.33",
+   "from": "@delphi",
+   "text": "im pregnant, is any of this safe",
+   "lane": "referred",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "I am not the right person for this one. Please ask a pharmacist or your GP. I would rather send you there than guess with your skin.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": {
+    "why": "They are pregnant or nursing and asking what is safe. Maya is not the person to answer that.",
+    "refer_to": "a pharmacist or your GP",
+    "refer_to_code": "a pharmacist or their GP",
+    "reason_code": "pregnancy_or_nursing",
+    "signal": "both",
+    "signal_strength": 1.0
+   },
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-047",
+   "ref": "E-05.35",
+   "from": "@freya",
+   "text": "i have perioral dermatitis, which of these is ok",
+   "lane": "referred",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "I am not the right person for this one. Please ask a dermatologist. I would rather send you there than guess with your skin.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": {
+    "why": "They describe a skin condition that needs someone who can actually look at it.",
+    "refer_to": "a dermatologist",
+    "refer_to_code": "a dermatologist",
+    "reason_code": "active_skin_condition",
+    "signal": "both",
+    "signal_strength": 1.0
+   },
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [
+    "sensitive",
+    "redness"
+   ],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-048",
+   "ref": "E-05.36",
+   "from": "@greta",
+   "text": "im on accutane currently",
+   "lane": "referred",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "I am not the right person for this one. Please ask the doctor who prescribed it. I would rather send you there than guess with your skin.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": {
+    "why": "They are on a prescription and asking what to layer on top of it. That is their doctor's call.",
+    "refer_to": "the doctor who prescribed it",
+    "refer_to_code": "their prescribing doctor",
+    "reason_code": "prescription_interaction",
+    "signal": "both",
+    "signal_strength": 1.0
+   },
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-049",
+   "ref": "E-05.37",
+   "from": "@hollie",
+   "text": "my 12 year old wants a routine",
+   "lane": "referred",
+   "confidence": 1.0,
+   "job": "buying_for_someone_else",
+   "draft_reply": "I am not the right person for this one. Please ask their parent and a GP. I would rather send you there than guess with your skin.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": {
+    "why": "The advice is for a child. Maya does not write routines for children.",
+    "refer_to": "their parent and a GP",
+    "refer_to_code": "a parent and their GP",
+    "reason_code": "a_child",
+    "signal": "both",
+    "signal_strength": 1.0
+   },
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "v-003",
+   "ref": "S-VN.3",
+   "from": "@harrietj",
+   "text": "So I'm about six weeks pregnant and I just wanted to check if any of this is safe to keep using.",
+   "lane": "referred",
+   "confidence": 1.0,
+   "job": "pick_for_me",
+   "draft_reply": "I am not the right person for this one. Please ask a pharmacist or your GP. I would rather send you there than guess with your skin.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": {
+    "why": "They are pregnant or nursing and asking what is safe. Maya is not the person to answer that.",
+    "refer_to": "a pharmacist or your GP",
+    "refer_to_code": "a pharmacist or their GP",
+    "reason_code": "pregnancy_or_nursing",
+    "signal": "both",
+    "signal_strength": 1.0
+   },
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "voice",
+   "voice": {
+    "audio_url": "/api/voice/synthetic-v-003-alloy.mp3",
+    "file": "synthetic-v-003-alloy.mp3",
+    "seconds": 6.19,
+    "transcript": "So I'm about six weeks pregnant and I just wanted to check if any of this is safe to keep using.",
+    "stt_model": "whisper-1",
+    "transcribe_ms": 2576,
+    "tts_model": "tts-1",
+    "tts_voice": "alloy",
+    "tts_script": "um so I'm about six weeks pregnant and I just wanted to check if any of this is safe to keep using",
+    "verbatim_match": false,
+    "synthetic": true,
+    "disclosure": "Synthetic demo audio. Spoken by OpenAI tts-1 from a script we wrote, transcribed by OpenAI whisper-1. It is not a recording of a real person and no real audience audio exists in this repo.",
+    "who_did_what": "OpenAI tts-1 spoke it, OpenAI whisper-1 transcribed it, Jev decides what to do about it. Jev never hears audio - it is handed the transcript in the same `state.message` field a typed DM uses."
+   },
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-019",
+   "ref": "E-05.7",
+   "from": "@aimee",
+   "text": "sensitive + rosacea, £45, what's safe",
+   "lane": "referred",
+   "confidence": 0.99,
+   "job": "pick_for_me",
+   "draft_reply": "I am not the right person for this one. Please ask a dermatologist. I would rather send you there than guess with your skin.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": {
+    "why": "They describe a skin condition that needs someone who can actually look at it.",
+    "refer_to": "a dermatologist",
+    "refer_to_code": "a dermatologist",
+    "reason_code": "active_skin_condition",
+    "signal": "both",
+    "signal_strength": 0.99
+   },
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [
+    "sensitive",
+    "redness"
+   ],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-044",
+   "ref": "E-05.32",
+   "from": "@cerys",
+   "text": "i've been using tretinoin from my derm, can i add anything",
+   "lane": "referred",
+   "confidence": 0.99,
+   "job": "do_i_need_it",
+   "draft_reply": "I am not the right person for this one. Please ask the doctor who prescribed it. I would rather send you there than guess with your skin.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": {
+    "why": "They are on a prescription and asking what to layer on top of it. That is their doctor's call.",
+    "refer_to": "the doctor who prescribed it",
+    "refer_to_code": "their prescribing doctor",
+    "reason_code": "prescription_interaction",
+    "signal": "both",
+    "signal_strength": 0.99
+   },
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-046",
+   "ref": "E-05.34",
+   "from": "@esme",
+   "text": "i had a bad reaction to something, red and peeling, what do i do",
+   "lane": "referred",
+   "confidence": 0.97,
+   "job": "diagnose_me",
+   "draft_reply": "I am not the right person for this one. Please ask a dermatologist. I would rather send you there than guess with your skin.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": {
+    "why": "Their skin is reacting right now. That needs a clinician, not a shopping list.",
+    "refer_to": "a dermatologist",
+    "refer_to_code": "a dermatologist",
+    "reason_code": "adverse_reaction",
+    "signal": "refusal_reason",
+    "signal_strength": 0.97
+   },
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [
+    "redness"
+   ],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  },
+  {
+   "id": "q-050",
+   "ref": "E-05.38",
+   "from": "@indy",
+   "text": "is this safe with my eczema medication",
+   "lane": "referred",
+   "confidence": 0.95,
+   "job": "pick_for_me",
+   "draft_reply": "I am not the right person for this one. Please ask the doctor who prescribed it. I would rather send you there than guess with your skin.",
+   "question_back": null,
+   "hold_reason": null,
+   "refusal": {
+    "why": "They are on a prescription and asking what to layer on top of it. That is their doctor's call.",
+    "refer_to": "the doctor who prescribed it",
+    "refer_to_code": "their prescribing doctor",
+    "reason_code": "prescription_interaction",
+    "signal": "both",
+    "signal_strength": 0.95
+   },
+   "card_id": null,
+   "basket_summary": null,
+   "basket": null,
+   "skin": [],
+   "synthetic": true,
+   "source": "text",
+   "voice": null,
+   "answered_despite_gap": false,
+   "gap_closed": null,
+   "gap_probe": null
+  }
+ ],
+ "built_at": "2026-09-20T14:32:28Z"
+}

@@ -1,0 +1,106 @@
+{
+ "card_id": "c-sister",
+ "parent_card_id": "c-jessica",
+ "re_decided_at": "2026-09-20T15:15:09Z",
+ "asker": {
+  "name": "her sister",
+  "said": "sent by a friend. oily skin, breakouts, student budget",
+  "skin": [
+   "oily"
+  ],
+  "budget": 40,
+  "owns": [],
+  "how_many": 3
+ },
+ "verdict": {
+  "headline": "One thing. SPF 50.",
+  "in_her_voice": "One thing. SPF 50. Twenty-six pounds. Non-negotiable.",
+  "is_refusal": true
+ },
+ "basket": [
+  {
+   "product": "SPF 50",
+   "price": "£26",
+   "type": "SPF",
+   "ref": "E-04.5",
+   "maya_note": "Non-negotiable.",
+   "affiliate": true,
+   "touched": true,
+   "why": "Her defended category."
+  }
+ ],
+ "total": "£26",
+ "unspent": {
+  "amount": "£14",
+  "line": "She left £14 of your £40 on the table."
+ },
+ "left_out": [
+  {
+   "product": "Daily Gel",
+   "price": "£24",
+   "ref": "E-04.2",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the SPF runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": true
+  },
+  {
+   "product": "Clear Wash",
+   "price": "£20",
+   "ref": "E-04.9",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the SPF runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": true
+  },
+  {
+   "product": "Soft Clean",
+   "price": "£22",
+   "ref": "E-04.7",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the SPF runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": true
+  }
+ ],
+ "ceiling": {
+  "band": "about £60–65",
+  "provenance": "Estimated from Maya's own posts. She sets the line",
+  "evidence_ref": "E-04.5",
+  "product": "SPF 50",
+  "over_sticker": true
+ },
+ "money_line": {
+  "affiliate_count": 1,
+  "basket_value": "£26",
+  "note": "1 of 1 product is affiliate-linked.",
+  "rule": "Everything on her own shelf is affiliate-linked except the two she publicly refuses - Glass Drop (E-04.6) and Oil Balm (E-04.8)."
+ },
+ "indifference_band": "Between £30 and £40 her answer does not change.",
+ "og_image": "/api/card/c-sister/og.png",
+ "share_url": "/c/c-sister",
+ "baskets_considered": 36,
+ "basket_confidence": 1.0,
+ "defended_category": "spf",
+ "routing_fired": [
+  {
+   "condition": "OILY",
+   "product": "Daily Gel"
+  }
+ ],
+ "routing_enforced": [],
+ "seconds": 0.91,
+ "live": true,
+ "spec": {
+  "name": "her sister",
+  "said": "sent by a friend. oily skin, breakouts, student budget",
+  "skin": [
+   "oily"
+  ],
+  "budget": 40,
+  "owns": [],
+  "how_many": 3,
+  "parent_card_id": "c-jessica",
+  "named_product": null
+ }
+}

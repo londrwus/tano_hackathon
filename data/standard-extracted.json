@@ -1,0 +1,326 @@
+{
+ "maya": {
+  "routine_size": {
+   "level": "The fewest possible products",
+   "value": 0.23,
+   "label": "Sends the fewest possible products.",
+   "source_caption": "my 5 minute morning routine. two products. that is it. you do not need eight steps you need consistency.",
+   "evidence_ref": "E-03.5",
+   "agrees": false,
+   "toggleable": true
+  },
+  "budget_behaviour": {
+   "answer": false,
+   "p": 0.23,
+   "label": "Happy to leave money unspent.",
+   "source_caption": "the 62 pound serum everyone is posting. it is good. it is not 62 pounds good. save your money.",
+   "evidence_ref": "E-04.6",
+   "agrees": true,
+   "toggleable": true
+  },
+  "price_refusal": {
+   "level": "Price is central to their judgement",
+   "value": 2.75,
+   "label": "On price: price is central to their judgement.",
+   "source_caption": "the 62 pound serum everyone is posting. it is good. it is not 62 pounds good. save your money.",
+   "evidence_ref": "E-04.6",
+   "agrees": false,
+   "toggleable": true
+  },
+  "subtraction": {
+   "answer": true,
+   "p": 0.73,
+   "label": "Tells people to remove products, not only add them.",
+   "source_caption": "if your face freaks out every time you try something new, stop adding things. take things away.",
+   "evidence_ref": "E-03.3",
+   "agrees": true,
+   "toggleable": true
+  },
+  "hype": {
+   "level": "Actively sceptical of hype",
+   "value": 0.02,
+   "label": "On hype: actively sceptical of hype.",
+   "source_caption": "the 62 pound serum everyone is posting. it is good. it is not 62 pounds good. save your money.",
+   "evidence_ref": "E-04.6",
+   "agrees": true,
+   "toggleable": true
+  },
+  "defended_category": {
+   "choice": "spf",
+   "confidence": 1.0,
+   "label": "Never leaves out: spf.",
+   "source_caption": "3 things I would repurchase with 50 quid. SPF, obviously. non negotiable, I will die on this hill.",
+   "evidence_ref": "E-03.1",
+   "agrees": true,
+   "toggleable": true
+  },
+  "interchangeable_category": {
+   "choice": "cleanser",
+   "confidence": 0.99,
+   "label": "Treats as interchangeable: cleanser.",
+   "source_caption": "luxury vs drugstore. the cleanser genuinely does not matter. spend it on sunscreen.",
+   "evidence_ref": "E-03.4",
+   "agrees": true,
+   "toggleable": true
+  },
+  "skippable_category": {
+   "choice": "makeup",
+   "confidence": 0.38,
+   "label": "First to drop when money is tight: makeup.",
+   "source_caption": "my 5 minute morning routine. two products. that is it. you do not need eight steps you need consistency.",
+   "evidence_ref": "E-03.5",
+   "agrees": false,
+   "toggleable": true
+  },
+  "starting_from_zero": {
+   "level": "Three - a short but complete routine",
+   "value": 1.72,
+   "label": "From a standing start: three - a short but complete routine.",
+   "source_caption": "3 things I would repurchase with 50 quid. SPF, obviously. non negotiable, I will die on this hill.",
+   "evidence_ref": "E-03.1",
+   "agrees": true,
+   "toggleable": true
+  },
+  "subtraction_scope": {
+   "choice": "crowded_routine_only",
+   "confidence": 1.0,
+   "label": "Says 'buy less' only to someone already using a lot of products.",
+   "source_caption": "if your face freaks out every time you try something new, stop adding things. take things away.",
+   "evidence_ref": "E-03.3",
+   "agrees": true,
+   "toggleable": true
+  },
+  "route_reacting": {
+   "choice": "Red Reset",
+   "confidence": 0.34,
+   "label": "Skin reacting to everything -> Red Reset.",
+   "source_caption": "if your face freaks out every time you try something new, stop adding things. take things away.",
+   "evidence_ref": "E-03.3",
+   "agrees": false,
+   "toggleable": true
+  },
+  "route_redness": {
+   "choice": "Red Reset",
+   "confidence": 1.0,
+   "label": "Red and angry -> Red Reset.",
+   "source_caption": "if your face freaks out every time you try something new, stop adding things. take things away.",
+   "evidence_ref": "E-03.3",
+   "agrees": true,
+   "toggleable": true
+  },
+  "route_dry": {
+   "choice": "Cloud Cream",
+   "confidence": 1.0,
+   "label": "Dry and tight -> Cloud Cream.",
+   "source_caption": "the product I would NOT rebuy. beautiful packaging, too rich for my skin, I gave it away.",
+   "evidence_ref": "E-03.6",
+   "agrees": true,
+   "toggleable": true
+  },
+  "route_oily": {
+   "choice": "Daily Gel",
+   "confidence": 0.83,
+   "label": "Oily and shiny -> Daily Gel.",
+   "source_caption": "the product I would NOT rebuy. beautiful packaging, too rich for my skin, I gave it away.",
+   "evidence_ref": "E-03.6",
+   "agrees": true,
+   "toggleable": true
+  }
+ },
+ "derm": {
+  "routine_size": {
+   "level": "A small routine",
+   "value": 1.33,
+   "label": "Sends a small routine.",
+   "derm_source": "A complete daily routine is cleanser, moisturiser and broad-spectrum SPF.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": false,
+   "toggleable": true
+  },
+  "budget_behaviour": {
+   "answer": false,
+   "p": 0.42,
+   "label": "Happy to leave money unspent.",
+   "derm_source": "Cost is a real adherence barrier, but under-treating is a false economy.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  },
+  "price_refusal": {
+   "level": "Mentions price occasionally",
+   "value": 1.05,
+   "label": "On price: mentions price occasionally.",
+   "derm_source": "Cost is a real adherence barrier, but under-treating is a false economy.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": false,
+   "toggleable": true
+  },
+  "subtraction": {
+   "answer": true,
+   "p": 0.6,
+   "label": "Tells people to remove products, not only add them.",
+   "derm_source": "A patient reacting to new products likely has a compromised barrier: pare the regimen back to a bland cleanser, a ceramide moisturiser and sunscreen, then reintroduce slowly.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  },
+  "hype": {
+   "level": "Actively sceptical of hype",
+   "value": 0.07,
+   "label": "On hype: actively sceptical of hype.",
+   "derm_source": "Evidence of efficacy should drive selection over marketing claims.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  },
+  "defended_category": {
+   "choice": "spf",
+   "confidence": 0.6,
+   "label": "Never leaves out: spf.",
+   "derm_source": "Barrier support and photoprotection are the foundations of every regimen.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  },
+  "interchangeable_category": {
+   "choice": "cleanser",
+   "confidence": 0.26,
+   "label": "Treats as interchangeable: cleanser.",
+   "derm_source": "Cleansing is a necessary step in every regimen and should not be omitted.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  },
+  "skippable_category": {
+   "choice": "serum",
+   "confidence": 0.85,
+   "label": "First to drop when money is tight: serum.",
+   "derm_source": "A complete daily routine is cleanser, moisturiser and broad-spectrum SPF.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": false,
+   "toggleable": true
+  },
+  "starting_from_zero": {
+   "level": "Three - a short but complete routine",
+   "value": 2.02,
+   "label": "From a standing start: three - a short but complete routine.",
+   "derm_source": "A complete daily routine is cleanser, moisturiser and broad-spectrum SPF.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  },
+  "subtraction_scope": {
+   "choice": "crowded_routine_only",
+   "confidence": 0.98,
+   "label": "Says 'buy less' only to someone already using a lot of products.",
+   "derm_source": "A patient reacting to new products likely has a compromised barrier: pare the regimen back to a bland cleanser, a ceramide moisturiser and sunscreen, then reintroduce slowly.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  },
+  "route_reacting": {
+   "choice": "Soft Clean",
+   "confidence": 0.8,
+   "label": "Skin reacting to everything -> Soft Clean.",
+   "derm_source": "A patient reacting to new products likely has a compromised barrier: pare the regimen back to a bland cleanser, a ceramide moisturiser and sunscreen, then reintroduce slowly.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": false,
+   "toggleable": true
+  },
+  "route_redness": {
+   "choice": "Red Reset",
+   "confidence": 0.98,
+   "label": "Red and angry -> Red Reset.",
+   "derm_source": "Persistent facial erythema should be managed with an anti-inflammatory, fragrance-free soothing preparation alongside strict photoprotection.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  },
+  "route_dry": {
+   "choice": "Cloud Cream",
+   "confidence": 0.95,
+   "label": "Dry and tight -> Cloud Cream.",
+   "derm_source": "Dry, tight or flaking skin needs an occlusive, lipid-rich emollient applied to damp skin.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  },
+  "route_oily": {
+   "choice": "Daily Gel",
+   "confidence": 0.57,
+   "label": "Oily and shiny -> Daily Gel.",
+   "derm_source": "Oily and acne-prone skin does better with a light, non-comedogenic gel moisturiser; moisturiser should not be skipped.",
+   "evidence_ref": "clinical-guidance",
+   "agrees": true,
+   "toggleable": true
+  }
+ },
+ "meta": {
+  "extraction_seconds": 0.65,
+  "slot_count": 14,
+  "agree_count": 10,
+  "disagree_count": 4,
+  "model": "jev-1.13.0",
+  "generated_by": "scripts/engine_decontaminated_v2.py",
+  "objective_shelf": true,
+  "slot_stability": {
+   "routine_size": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "budget_behaviour": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "price_refusal": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "subtraction": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "hype": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "defended_category": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "interchangeable_category": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "skippable_category": {
+    "maya": 0.6,
+    "derm": 1.0
+   },
+   "starting_from_zero": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "subtraction_scope": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "route_reacting": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "route_redness": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "route_dry": {
+    "maya": 1.0,
+    "derm": 1.0
+   },
+   "route_oily": {
+    "maya": 1.0,
+    "derm": 1.0
+   }
+  },
+  "note": "Every value was produced by a typed extraction slot. The same 14 slots, word for word, were asked of Maya's public captions and of clinical guidance. No judgement rule in this file was written by hand."
+ }
+}

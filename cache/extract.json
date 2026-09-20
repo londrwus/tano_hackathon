@@ -1,0 +1,947 @@
+{
+ "handle": "@mayarao",
+ "corpus": [
+  {
+   "id": "bio",
+   "text": "skincare, mostly honest. london.",
+   "evidence_ref": null,
+   "kind": "bio",
+   "verbatim": false
+  },
+  {
+   "id": "post-E-03.1",
+   "text": "3 things I would repurchase with £50",
+   "evidence_ref": "E-03.1",
+   "kind": "post",
+   "verbatim": true,
+   "views": 48000,
+   "saves": 1900
+  },
+  {
+   "id": "post-E-03.2",
+   "text": "Things I bought because TikTok told me to",
+   "evidence_ref": "E-03.2",
+   "kind": "post",
+   "verbatim": true,
+   "views": 29000,
+   "saves": 1400
+  },
+  {
+   "id": "post-E-03.3",
+   "text": "My skin has been a nightmare lately",
+   "evidence_ref": "E-03.3",
+   "kind": "post",
+   "verbatim": true,
+   "views": 74000,
+   "saves": 3200
+  },
+  {
+   "id": "post-E-03.4",
+   "text": "Luxury vs drugstore: where should your money go?",
+   "evidence_ref": "E-03.4",
+   "kind": "post",
+   "verbatim": true,
+   "views": 51000,
+   "saves": 2700
+  },
+  {
+   "id": "post-E-03.5",
+   "text": "My 5-minute morning routine",
+   "evidence_ref": "E-03.5",
+   "kind": "post",
+   "verbatim": true,
+   "views": 18000,
+   "saves": 4600
+  },
+  {
+   "id": "post-E-03.6",
+   "text": "The product I would NOT rebuy",
+   "evidence_ref": "E-03.6",
+   "kind": "post",
+   "verbatim": true,
+   "views": 26000,
+   "saves": 3100
+  },
+  {
+   "id": "c1",
+   "text": "3 things I would repurchase with 50 quid. SPF, obviously. non negotiable, I will die on this hill.",
+   "evidence_ref": "E-03.1",
+   "kind": "caption",
+   "verbatim": false
+  },
+  {
+   "id": "c2",
+   "text": "the 62 pound serum everyone is posting. it is good. it is not 62 pounds good. save your money.",
+   "evidence_ref": "E-04.6",
+   "kind": "caption",
+   "verbatim": false
+  },
+  {
+   "id": "c3",
+   "text": "things I bought because tiktok told me to. 4 of them were a waste. here is the 1 that was not.",
+   "evidence_ref": "E-03.2",
+   "kind": "caption",
+   "verbatim": false
+  },
+  {
+   "id": "c4",
+   "text": "my 5 minute morning routine. two products. that is it. you do not need eight steps you need consistency.",
+   "evidence_ref": "E-03.5",
+   "kind": "caption",
+   "verbatim": false
+  },
+  {
+   "id": "c5",
+   "text": "the product I would NOT rebuy. beautiful packaging, too rich for my skin, I gave it away.",
+   "evidence_ref": "E-03.6",
+   "kind": "caption",
+   "verbatim": false
+  },
+  {
+   "id": "c6",
+   "text": "luxury vs drugstore. the cleanser genuinely does not matter. spend it on sunscreen.",
+   "evidence_ref": "E-03.4",
+   "kind": "caption",
+   "verbatim": false
+  },
+  {
+   "id": "c7",
+   "text": "if your face freaks out every time you try something new, stop adding things. take things away.",
+   "evidence_ref": "E-03.3",
+   "kind": "caption",
+   "verbatim": false
+  },
+  {
+   "id": "c8",
+   "text": "people do not need more products. they need to feel confident about the two they already own.",
+   "evidence_ref": "E-06.1",
+   "kind": "caption",
+   "verbatim": false
+  }
+ ],
+ "corpus_note": "The six post titles are verbatim from the case pack (E-03.1-E-03.6). The caption bodies and the bio line are a reconstruction written in the voice of those titles - her account is login-walled, so say 'reconstructed from her posts', not 'scraped'. Disclosed in docs/11-honest-headline.md section 5.1.",
+ "derm_corpus": [
+  {
+   "id": "d1",
+   "text": "A complete daily routine is cleanser, moisturiser and broad-spectrum SPF.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d2",
+   "text": "Barrier support and photoprotection are the foundations of every regimen.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d3",
+   "text": "Well-formulated actives at adequate concentrations are worth investing in.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d4",
+   "text": "Patients should be advised on the full regimen appropriate to their skin type.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d5",
+   "text": "Cosmetic elegance matters for adherence; patients continue what feels good.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d6",
+   "text": "Evidence of efficacy should drive selection over marketing claims.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d7",
+   "text": "A patient reacting to new products likely has a compromised barrier: pare the regimen back to a bland cleanser, a ceramide moisturiser and sunscreen, then reintroduce slowly.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d8",
+   "text": "Persistent facial erythema should be managed with an anti-inflammatory, fragrance-free soothing preparation alongside strict photoprotection.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d9",
+   "text": "Dry, tight or flaking skin needs an occlusive, lipid-rich emollient applied to damp skin.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d10",
+   "text": "Oily and acne-prone skin does better with a light, non-comedogenic gel moisturiser; moisturiser should not be skipped.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d11",
+   "text": "Cost is a real adherence barrier, but under-treating is a false economy.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  },
+  {
+   "id": "d12",
+   "text": "Cleansing is a necessary step in every regimen and should not be omitted.",
+   "evidence_ref": null,
+   "kind": "guidance",
+   "verbatim": false,
+   "written_by_us": true
+  }
+ ],
+ "derm_corpus_note": "The dermatologist's corpus is 100% written by us. It is the control, not evidence. docs/11-honest-headline.md section 5.2.",
+ "questions": [
+  {
+   "id": "q-maya-routine_size",
+   "slot_key": "routine_size",
+   "judge": "maya",
+   "type": "score",
+   "text": "Does this person favour the fewest possible products, or a complete multi-step routine?"
+  },
+  {
+   "id": "q-maya-budget_behaviour",
+   "slot_key": "budget_behaviour",
+   "judge": "maya",
+   "type": "noul",
+   "text": "Given a budget, would this person spend all of it, or deliberately leave money unspent?"
+  },
+  {
+   "id": "q-maya-price_refusal",
+   "slot_key": "price_refusal",
+   "judge": "maya",
+   "type": "score",
+   "text": "How willing is this person to say something is good but not worth its price?"
+  },
+  {
+   "id": "q-maya-subtraction",
+   "slot_key": "subtraction",
+   "judge": "maya",
+   "type": "noul",
+   "text": "Does this person tell people to REMOVE products as often as add them?"
+  },
+  {
+   "id": "q-maya-hype",
+   "slot_key": "hype",
+   "judge": "maya",
+   "type": "score",
+   "text": "How does this person treat trending or heavily marketed products?"
+  },
+  {
+   "id": "q-maya-defended_category",
+   "slot_key": "defended_category",
+   "judge": "maya",
+   "type": "choice",
+   "text": "Which single category does this person treat as non-negotiable, to be bought before anything else?"
+  },
+  {
+   "id": "q-maya-interchangeable_category",
+   "slot_key": "interchangeable_category",
+   "judge": "maya",
+   "type": "choice",
+   "text": "Someone asks this person which brand of each category to buy. For which ONE category would they say the specific product barely matters and any decent one will do?"
+  },
+  {
+   "id": "q-maya-skippable_category",
+   "slot_key": "skippable_category",
+   "judge": "maya",
+   "type": "choice",
+   "text": "Someone has less money than a full routine costs and has to leave something out. Which ONE category would this person drop first?"
+  },
+  {
+   "id": "q-maya-starting_from_zero",
+   "slot_key": "starting_from_zero",
+   "judge": "maya",
+   "type": "score",
+   "text": "Someone owns no skincare at all, has money to spend, and asks this person what to buy. How many products comes back?"
+  },
+  {
+   "id": "q-maya-subtraction_scope",
+   "slot_key": "subtraction_scope",
+   "judge": "maya",
+   "type": "choice",
+   "text": "This person sometimes tells people to stop buying and remove products. In WHICH situation do they actually say it?"
+  },
+  {
+   "id": "q-maya-route_reacting",
+   "slot_key": "route_reacting",
+   "judge": "maya",
+   "type": "choice",
+   "text": "Someone writes: 'every time I try something new my face freaks out.' They own no skincare yet and are starting from nothing, with money to spend. Which ONE item from `shelf` does this person reach for first for her?",
+   "situation": "Someone writes 'every time I try something new my face freaks out'. They own no skincare yet and are starting from nothing, with money to spend."
+  },
+  {
+   "id": "q-maya-route_redness",
+   "slot_key": "route_redness",
+   "judge": "maya",
+   "type": "choice",
+   "text": "Someone writes: 'my cheeks are red and angry today and nothing calms it down.' Which ONE item from `shelf` does this person reach for first for her?",
+   "situation": "Someone writes 'my cheeks are red and angry today and nothing calms it down'."
+  },
+  {
+   "id": "q-maya-route_dry",
+   "slot_key": "route_dry",
+   "judge": "maya",
+   "type": "choice",
+   "text": "Someone writes: 'my skin is dry and tight all winter and it flakes under makeup.' Which ONE item from `shelf` does this person reach for first for her?",
+   "situation": "Someone writes 'my skin is dry and tight all winter and it flakes under makeup'."
+  },
+  {
+   "id": "q-maya-route_oily",
+   "slot_key": "route_oily",
+   "judge": "maya",
+   "type": "choice",
+   "text": "Someone writes: 'I am shiny by 11am and my t-zone never stops.' Which ONE item from `shelf` does this person reach for first for her?",
+   "situation": "Someone writes 'I am shiny by 11am and my t-zone never stops'."
+  },
+  {
+   "id": "q-derm-routine_size",
+   "slot_key": "routine_size",
+   "judge": "derm",
+   "type": "score",
+   "text": "Does this person favour the fewest possible products, or a complete multi-step routine?"
+  },
+  {
+   "id": "q-derm-budget_behaviour",
+   "slot_key": "budget_behaviour",
+   "judge": "derm",
+   "type": "noul",
+   "text": "Given a budget, would this person spend all of it, or deliberately leave money unspent?"
+  },
+  {
+   "id": "q-derm-price_refusal",
+   "slot_key": "price_refusal",
+   "judge": "derm",
+   "type": "score",
+   "text": "How willing is this person to say something is good but not worth its price?"
+  },
+  {
+   "id": "q-derm-subtraction",
+   "slot_key": "subtraction",
+   "judge": "derm",
+   "type": "noul",
+   "text": "Does this person tell people to REMOVE products as often as add them?"
+  },
+  {
+   "id": "q-derm-hype",
+   "slot_key": "hype",
+   "judge": "derm",
+   "type": "score",
+   "text": "How does this person treat trending or heavily marketed products?"
+  },
+  {
+   "id": "q-derm-defended_category",
+   "slot_key": "defended_category",
+   "judge": "derm",
+   "type": "choice",
+   "text": "Which single category does this person treat as non-negotiable, to be bought before anything else?"
+  },
+  {
+   "id": "q-derm-interchangeable_category",
+   "slot_key": "interchangeable_category",
+   "judge": "derm",
+   "type": "choice",
+   "text": "Someone asks this person which brand of each category to buy. For which ONE category would they say the specific product barely matters and any decent one will do?"
+  },
+  {
+   "id": "q-derm-skippable_category",
+   "slot_key": "skippable_category",
+   "judge": "derm",
+   "type": "choice",
+   "text": "Someone has less money than a full routine costs and has to leave something out. Which ONE category would this person drop first?"
+  },
+  {
+   "id": "q-derm-starting_from_zero",
+   "slot_key": "starting_from_zero",
+   "judge": "derm",
+   "type": "score",
+   "text": "Someone owns no skincare at all, has money to spend, and asks this person what to buy. How many products comes back?"
+  },
+  {
+   "id": "q-derm-subtraction_scope",
+   "slot_key": "subtraction_scope",
+   "judge": "derm",
+   "type": "choice",
+   "text": "This person sometimes tells people to stop buying and remove products. In WHICH situation do they actually say it?"
+  },
+  {
+   "id": "q-derm-route_reacting",
+   "slot_key": "route_reacting",
+   "judge": "derm",
+   "type": "choice",
+   "text": "Someone writes: 'every time I try something new my face freaks out.' They own no skincare yet and are starting from nothing, with money to spend. Which ONE item from `shelf` does this person reach for first for her?",
+   "situation": "Someone writes 'every time I try something new my face freaks out'. They own no skincare yet and are starting from nothing, with money to spend."
+  },
+  {
+   "id": "q-derm-route_redness",
+   "slot_key": "route_redness",
+   "judge": "derm",
+   "type": "choice",
+   "text": "Someone writes: 'my cheeks are red and angry today and nothing calms it down.' Which ONE item from `shelf` does this person reach for first for her?",
+   "situation": "Someone writes 'my cheeks are red and angry today and nothing calms it down'."
+  },
+  {
+   "id": "q-derm-route_dry",
+   "slot_key": "route_dry",
+   "judge": "derm",
+   "type": "choice",
+   "text": "Someone writes: 'my skin is dry and tight all winter and it flakes under makeup.' Which ONE item from `shelf` does this person reach for first for her?",
+   "situation": "Someone writes 'my skin is dry and tight all winter and it flakes under makeup'."
+  },
+  {
+   "id": "q-derm-route_oily",
+   "slot_key": "route_oily",
+   "judge": "derm",
+   "type": "choice",
+   "text": "Someone writes: 'I am shiny by 11am and my t-zone never stops.' Which ONE item from `shelf` does this person reach for first for her?",
+   "situation": "Someone writes 'I am shiny by 11am and my t-zone never stops'."
+  }
+ ],
+ "requests": [
+  {
+   "id": "r-maya",
+   "judge": "maya",
+   "question_count": 14,
+   "question_ids": [
+    "q-maya-routine_size",
+    "q-maya-budget_behaviour",
+    "q-maya-price_refusal",
+    "q-maya-subtraction",
+    "q-maya-hype",
+    "q-maya-defended_category",
+    "q-maya-interchangeable_category",
+    "q-maya-skippable_category",
+    "q-maya-starting_from_zero",
+    "q-maya-subtraction_scope",
+    "q-maya-route_reacting",
+    "q-maya-route_redness",
+    "q-maya-route_dry",
+    "q-maya-route_oily"
+   ],
+   "slot_keys": [
+    "routine_size",
+    "budget_behaviour",
+    "price_refusal",
+    "subtraction",
+    "hype",
+    "defended_category",
+    "interchangeable_category",
+    "skippable_category",
+    "starting_from_zero",
+    "subtraction_scope",
+    "route_reacting",
+    "route_redness",
+    "route_dry",
+    "route_oily"
+   ],
+   "at_ms": 112,
+   "ms": 307,
+   "input_tokens": 4134,
+   "measured": true
+  },
+  {
+   "id": "r-derm",
+   "judge": "derm",
+   "question_count": 14,
+   "question_ids": [
+    "q-derm-routine_size",
+    "q-derm-budget_behaviour",
+    "q-derm-price_refusal",
+    "q-derm-subtraction",
+    "q-derm-hype",
+    "q-derm-defended_category",
+    "q-derm-interchangeable_category",
+    "q-derm-skippable_category",
+    "q-derm-starting_from_zero",
+    "q-derm-subtraction_scope",
+    "q-derm-route_reacting",
+    "q-derm-route_redness",
+    "q-derm-route_dry",
+    "q-derm-route_oily"
+   ],
+   "slot_keys": [
+    "routine_size",
+    "budget_behaviour",
+    "price_refusal",
+    "subtraction",
+    "hype",
+    "defended_category",
+    "interchangeable_category",
+    "skippable_category",
+    "starting_from_zero",
+    "subtraction_scope",
+    "route_reacting",
+    "route_redness",
+    "route_dry",
+    "route_oily"
+   ],
+   "at_ms": 113,
+   "ms": 400,
+   "input_tokens": 3527,
+   "measured": true
+  }
+ ],
+ "slots": [
+  {
+   "key": "routine_size",
+   "label": "How many products",
+   "maya": {
+    "level": "The fewest possible products",
+    "value": 0.23,
+    "confidence": 0.77,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "A moderate routine",
+    "value": 1.53,
+    "confidence": 0.26,
+    "confidence_known": true
+   },
+   "agrees": false,
+   "source_caption": "my 5 minute morning routine. two products. that is it. you do not need eight steps you need consistency.",
+   "evidence_ref": "E-03.5",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-routine_size",
+    "q-derm-routine_size"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "score",
+   "statement": "Sends the fewest possible products."
+  },
+  {
+   "key": "budget_behaviour",
+   "label": "Spending the whole budget",
+   "maya": {
+    "level": "NO",
+    "value": 0.23,
+    "confidence": 0.77,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "NO",
+    "value": 0.44,
+    "confidence": 0.56,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "the 62 pound serum everyone is posting. it is good. it is not 62 pounds good. save your money.",
+   "evidence_ref": "E-04.6",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-budget_behaviour",
+    "q-derm-budget_behaviour"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "noul",
+   "statement": "Happy to leave money unspent."
+  },
+  {
+   "key": "price_refusal",
+   "label": "Price",
+   "maya": {
+    "level": "Price is central to their judgement",
+    "value": 2.72,
+    "confidence": 0.72,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "Mentions price occasionally",
+    "value": 1.06,
+    "confidence": 0.94,
+    "confidence_known": true
+   },
+   "agrees": false,
+   "source_caption": "the 62 pound serum everyone is posting. it is good. it is not 62 pounds good. save your money.",
+   "evidence_ref": "E-04.6",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-price_refusal",
+    "q-derm-price_refusal"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "score",
+   "statement": "On price: price is central to their judgement."
+  },
+  {
+   "key": "subtraction",
+   "label": "Adding vs taking away",
+   "maya": {
+    "level": "YES",
+    "value": 0.69,
+    "confidence": 0.69,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "YES",
+    "value": 0.56,
+    "confidence": 0.56,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "if your face freaks out every time you try something new, stop adding things. take things away.",
+   "evidence_ref": "E-03.3",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-subtraction",
+    "q-derm-subtraction"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "noul",
+   "statement": "Tells people to remove products, not only add them."
+  },
+  {
+   "key": "hype",
+   "label": "Hype",
+   "maya": {
+    "level": "Actively sceptical of hype",
+    "value": 0.02,
+    "confidence": 0.98,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "Actively sceptical of hype",
+    "value": 0.07,
+    "confidence": 0.93,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "the 62 pound serum everyone is posting. it is good. it is not 62 pounds good. save your money.",
+   "evidence_ref": "E-04.6",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-hype",
+    "q-derm-hype"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "score",
+   "statement": "On hype: actively sceptical of hype."
+  },
+  {
+   "key": "defended_category",
+   "label": "The one she defends",
+   "maya": {
+    "level": "spf",
+    "value": 1.0,
+    "confidence": 1.0,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "spf",
+    "value": 0.68,
+    "confidence": 0.68,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "3 things I would repurchase with 50 quid. SPF, obviously. non negotiable, I will die on this hill.",
+   "evidence_ref": "E-03.1",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-defended_category",
+    "q-derm-defended_category"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "choice",
+   "statement": "Never leaves out: spf."
+  },
+  {
+   "key": "interchangeable_category",
+   "label": "Interchangeable category",
+   "maya": {
+    "level": "cleanser",
+    "value": 1.0,
+    "confidence": 1.0,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "cleanser",
+    "value": 0.35,
+    "confidence": 0.35,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "luxury vs drugstore. the cleanser genuinely does not matter. spend it on sunscreen.",
+   "evidence_ref": "E-03.4",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-interchangeable_category",
+    "q-derm-interchangeable_category"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "choice",
+   "statement": "Treats as interchangeable: cleanser."
+  },
+  {
+   "key": "skippable_category",
+   "label": "Skippable category",
+   "maya": {
+    "level": "serum",
+    "value": 0.37,
+    "confidence": 0.37,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "serum",
+    "value": 0.82,
+    "confidence": 0.82,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "my 5 minute morning routine. two products. that is it. you do not need eight steps you need consistency.",
+   "evidence_ref": "E-03.5",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-skippable_category",
+    "q-derm-skippable_category"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "choice",
+   "statement": "First to drop when money is tight: makeup."
+  },
+  {
+   "key": "starting_from_zero",
+   "label": "Starting from zero",
+   "maya": {
+    "level": "Three - a short but complete routine",
+    "value": 1.7,
+    "confidence": 0.51,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "Three - a short but complete routine",
+    "value": 2.02,
+    "confidence": 0.97,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "3 things I would repurchase with 50 quid. SPF, obviously. non negotiable, I will die on this hill.",
+   "evidence_ref": "E-03.1",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-starting_from_zero",
+    "q-derm-starting_from_zero"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "score",
+   "statement": "From a standing start: three - a short but complete routine."
+  },
+  {
+   "key": "subtraction_scope",
+   "label": "Subtraction scope",
+   "maya": {
+    "level": "crowded_routine_only",
+    "value": 1.0,
+    "confidence": 1.0,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "crowded_routine_only",
+    "value": 0.97,
+    "confidence": 0.97,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "if your face freaks out every time you try something new, stop adding things. take things away.",
+   "evidence_ref": "E-03.3",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-subtraction_scope",
+    "q-derm-subtraction_scope"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "choice",
+   "statement": "Says 'buy less' only to someone already using a lot of products."
+  },
+  {
+   "key": "route_reacting",
+   "label": "Route reacting",
+   "maya": {
+    "level": "Red Reset",
+    "value": 0.34,
+    "confidence": 0.34,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "Soft Clean",
+    "value": 0.79,
+    "confidence": 0.79,
+    "confidence_known": true
+   },
+   "agrees": false,
+   "source_caption": "if your face freaks out every time you try something new, stop adding things. take things away.",
+   "evidence_ref": "E-03.3",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-route_reacting",
+    "q-derm-route_reacting"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "choice",
+   "statement": "Skin reacting to everything -> Red Reset."
+  },
+  {
+   "key": "route_redness",
+   "label": "Route redness",
+   "maya": {
+    "level": "Red Reset",
+    "value": 1.0,
+    "confidence": 1.0,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "Red Reset",
+    "value": 0.98,
+    "confidence": 0.98,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "if your face freaks out every time you try something new, stop adding things. take things away.",
+   "evidence_ref": "E-03.3",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-route_redness",
+    "q-derm-route_redness"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "choice",
+   "statement": "Red and angry -> Red Reset."
+  },
+  {
+   "key": "route_dry",
+   "label": "Route dry",
+   "maya": {
+    "level": "Cloud Cream",
+    "value": 1.0,
+    "confidence": 1.0,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "Cloud Cream",
+    "value": 0.92,
+    "confidence": 0.92,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "the product I would NOT rebuy. beautiful packaging, too rich for my skin, I gave it away.",
+   "evidence_ref": "E-03.6",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-route_dry",
+    "q-derm-route_dry"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "choice",
+   "statement": "Dry and tight -> Cloud Cream."
+  },
+  {
+   "key": "route_oily",
+   "label": "Route oily",
+   "maya": {
+    "level": "Daily Gel",
+    "value": 0.87,
+    "confidence": 0.87,
+    "confidence_known": true
+   },
+   "derm": {
+    "level": "Daily Gel",
+    "value": 0.63,
+    "confidence": 0.63,
+    "confidence_known": true
+   },
+   "agrees": true,
+   "source_caption": "the product I would NOT rebuy. beautiful packaging, too rich for my skin, I gave it away.",
+   "evidence_ref": "E-03.6",
+   "toggleable": true,
+   "question_ids": [
+    "q-maya-route_oily",
+    "q-derm-route_oily"
+   ],
+   "request_ids": [
+    "r-maya",
+    "r-derm"
+   ],
+   "type": "choice",
+   "statement": "Oily and shiny -> Daily Gel."
+  }
+ ],
+ "totals": {
+  "questions": 28,
+  "requests": 2,
+  "seconds": 0.52,
+  "input_tokens": 7661,
+  "agree": 11,
+  "disagree": 3,
+  "slot_count": 14
+ },
+ "model": "jev-latest",
+ "replay_note": "Jev answers all fourteen questions of a judge in ONE response, so there is no per-slot arrival time and this payload does not contain one. The timings here are per REQUEST and were measured on the wire. Any per-slot reveal in the UI is a replay and must say so.",
+ "measured": true,
+ "generated_by": "scripts/engine_decontaminated_v2.py"
+}

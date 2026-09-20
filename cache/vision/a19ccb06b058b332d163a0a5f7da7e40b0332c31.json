@@ -1,0 +1,33 @@
+{
+ "url": "https://labmuffin.com/wp-content/uploads/2020/07/foundation-0-2h-600x401.jpg",
+ "model": "gpt-4o-mini",
+ "seen_at": "2026-09-20T14:12:38+00:00",
+ "ok": true,
+ "vision": {
+  "shows": "demo",
+  "readable_text": "0 HOURS\n2 HOURS",
+  "products_named": [],
+  "is_instructional": "no",
+  "is_comparison": "yes",
+  "shows_a_result": "yes"
+ },
+ "error": null,
+ "usage": {
+  "prompt_tokens": 14615,
+  "completion_tokens": 37,
+  "total_tokens": 14652,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "audio_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "audio_tokens": 0,
+   "accepted_prediction_tokens": 0,
+   "rejected_prediction_tokens": 0
+  }
+ },
+ "bytes": 63020,
+ "seconds": 2.77,
+ "from_cache": false
+}

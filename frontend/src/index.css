@@ -1,0 +1,147 @@
+/* App shell only. Tokens and utilities live in styles/tokens.css (frozen). */
+
+.shell {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+main { flex: 1 1 auto; }
+
+/* ---------------------------------------------------------------- topbar */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--hairline-soft);
+}
+
+/* It borrows `.page` for the max-width and the side gutters only. `.page`
+   now carries --page-top / --s8 vertically, which would inflate the bar to
+   ~170px and push every headline down with it — so zero it out here. */
+.topbar-inner.page {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  min-height: 52px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.brand { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); }
+.brand-sub { font-size: 14px; color: var(--ink-tertiary); }
+
+.topnav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s1);
+}
+
+.topnav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: var(--r-pill);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink-secondary);
+  text-decoration: none;
+  transition: background-color .2s var(--ease), color .2s var(--ease);
+}
+.topnav a:hover { background: var(--bg-sunken); color: var(--ink); }
+.topnav a.on { background: var(--ink); color: #fff; }
+
+/* ------------------------------------------------------- entrance order
+   tokens.css owns the vocabulary (.enter / .enter-fade / .enter-pop /
+   .stagger / .delay-N) and is frozen. What a page still needs is ORDER:
+   the headline lands first, then the main row, then the closing cards.
+
+   `.stagger`'s own delays start at 40ms, which would put the first card on
+   screen at the same moment as the sub-headline. `.after-head` shifts a
+   staggered row so it begins once the two lines of copy are already
+   rising, keeping the same 65ms rhythm between siblings. Specificity is
+   (0,3,0) so it beats the (0,2,0) rules in tokens.css whatever order the
+   bundler emits the two files in.
+
+   Budget: last child starts at .305s + .55s of animation = .855s. */
+.stagger.after-head > *:nth-child(1)  { animation-delay: .11s }
+.stagger.after-head > *:nth-child(2)  { animation-delay: .175s }
+.stagger.after-head > *:nth-child(3)  { animation-delay: .24s }
+.stagger.after-head > *:nth-child(4)  { animation-delay: .305s }
+.stagger.after-head > *:nth-child(5)  { animation-delay: .305s }
+.stagger.after-head > *:nth-child(n+6) { animation-delay: .305s }
+
+/* Nothing may be left stranded at opacity 0 if a navigation interrupts an
+   animation mid-flight: `both` holds the END state once it has run, and
+   these are the only from-state holders on the page. */
+@media (prefers-reduced-motion: reduce) {
+  .stagger.after-head > * { animation-delay: 0ms !important; opacity: 1 !important; transform: none !important; }
+}
+
+/* ---------------------------------------------------------------- shared */
+/* Her voice. Never set in a system-chrome style: it reads as a person. */
+.voice {
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.loading-note {
+  padding: var(--s9) 0;
+  color: var(--ink-tertiary);
+  font-size: 19px;
+}
+
+@media (max-width: 760px) {
+  .brand-sub { display: none; }
+  .topbar-inner.page { min-height: 48px; gap: var(--s2); }
+  .topnav a { padding: 0 10px; font-size: 14px; }
+}
+
+/* Five labels and a wordmark do not fit on one phone-width line: the row
+   was wrapping mid-label, so "Maya Rao" broke over two lines and "How it
+   works" over three, and every link came out 34px tall — under the 44px
+   touch target. Give the nav its own row, keep each label on one line, and
+   let the ROW scroll sideways if it has to. That scroller is contained; it
+   never becomes a horizontal scroll on the page. */
+@media (max-width: 620px) {
+  .topbar-inner.page {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--s1);
+    min-height: 0;
+    padding-top: var(--s2);
+    padding-bottom: var(--s2);
+  }
+  .brand { white-space: nowrap; }
+  .topnav {
+    margin-left: 0;
+    gap: var(--s1);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .topnav::-webkit-scrollbar { display: none; }
+  .topnav a {
+    flex: 0 0 auto;
+    min-height: 44px;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,36 @@
+{
+ "url": "https://labmuffin.com/wp-content/uploads/2025/04/Hair-protectant-receipts-thumbnail.jpg",
+ "model": "gpt-4o-mini",
+ "seen_at": "2026-09-20T14:13:11+00:00",
+ "ok": true,
+ "vision": {
+  "shows": "demo",
+  "readable_text": "OUAI\nSun Bum\nWinCo Foods",
+  "products_named": [
+   "OUAI",
+   "Sun Bum"
+  ],
+  "is_instructional": "yes",
+  "is_comparison": "no",
+  "shows_a_result": "unclear"
+ },
+ "error": null,
+ "usage": {
+  "prompt_tokens": 37283,
+  "completion_tokens": 48,
+  "total_tokens": 37331,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "audio_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "audio_tokens": 0,
+   "accepted_prediction_tokens": 0,
+   "rejected_prediction_tokens": 0
+  }
+ },
+ "bytes": 86941,
+ "seconds": 4.76,
+ "from_cache": false
+}

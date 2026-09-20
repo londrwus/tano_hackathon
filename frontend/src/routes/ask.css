@@ -1,0 +1,156 @@
+/* /ask — the public link. Big calm question, generous pastel chips,
+   one button. Phone-first: every target is at least 44px. Light only. */
+
+/* Vertical padding is `.page`'s (--page-top above), so the gap under the
+   sticky topbar matches every other route. Only the width is ours. */
+.ask.page {
+  max-width: 880px;
+  padding-bottom: var(--s6);
+}
+
+/* ------------------------------------------------------------ the question */
+.ask-head { margin-bottom: var(--s6); }
+
+.ask-h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(32px, 4.6vw, 60px);
+  line-height: 1.03;
+  font-weight: 700;
+  letter-spacing: -0.024em;
+}
+
+.ask-sub {
+  margin: var(--s4) 0 0;
+  font-size: clamp(17px, 1.7vw, 23px);
+  line-height: 1.45;
+  color: var(--ink-secondary);
+  max-width: 54ch;
+}
+
+/* ---------------------------------------------------------------- the card */
+/* .ask-card.card, not .ask-card: .card declares `padding: var(--s5)` and
+   lands later in the bundle, so a single class here never applied. */
+.ask-card.card {
+  padding: var(--s6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s6);
+}
+
+.ask-group { display: flex; flex-direction: column; gap: var(--s4); }
+
+.ask-label {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--s3);
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+}
+.ask-hint { font-size: 15px; font-weight: 400; color: var(--ink-tertiary); }
+
+.ask-chips { display: flex; flex-wrap: wrap; gap: var(--s3); }
+
+/* Generous. A tint plus a check glyph when it is on — never colour alone. */
+.ask-chip {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 22px;
+  min-height: 56px;
+  background: var(--bg-sunken);
+  color: var(--ink);
+  gap: 0;
+}
+.ask-chip:hover { background: var(--bg-hover); }
+
+.ask-chip-tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  overflow: hidden;
+  transition: width .18s var(--ease), margin-right .18s var(--ease);
+}
+.ask-chip[aria-pressed='true'] .ask-chip-tick { width: 16px; margin-right: 8px; }
+
+.ask-chips .ask-chip[aria-pressed='true'] { font-weight: 600; }
+.ask-chips .ask-chip-lilac[aria-pressed='true'] { background: var(--lilac); color: var(--lilac-ink); }
+.ask-chips .ask-chip-mint[aria-pressed='true']  { background: var(--mint);  color: var(--mint-ink); }
+.ask-chips .ask-chip-sky[aria-pressed='true']   { background: var(--sky);   color: var(--sky-ink); }
+
+.ask-multi {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--lilac-ink);
+}
+/* No selection, no line. It used to reserve 22px plus the group gap on a
+   page where nothing had been picked yet — a hole under the chips that
+   read as a missing element. */
+.ask-multi:empty { display: none; }
+
+.ask-submit { display: flex; flex-direction: column; gap: var(--s3); }
+
+.ask-go {
+  width: 100%;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 18px;
+  min-height: 60px;
+}
+
+.ask-foot {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  color: var(--ink-tertiary);
+}
+
+/* ------------------------------------------------------ typed-out fallback */
+.ask-fallback { margin-top: var(--s6); }
+
+.ask-fallback summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 16px;
+  color: var(--accent);
+}
+.ask-fallback summary::-webkit-details-marker { display: none; }
+.ask-fallback summary::before { content: '＋'; margin-right: 8px; font-size: 15px; }
+.ask-fallback[open] summary::before { content: '－'; }
+.ask-fallback summary:hover { text-decoration: underline; }
+
+.ask-fallback textarea {
+  width: 100%;
+  margin-top: var(--s2);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--ink);
+  background: var(--bg-card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-md);
+  padding: var(--s3) var(--s4);
+  resize: vertical;
+}
+
+.ask-fallback-note {
+  margin: var(--s2) 0 0;
+  font-size: 14px;
+  color: var(--ink-tertiary);
+}
+
+/* ------------------------------------------------------------- responsive */
+@media (max-width: 760px) {
+  .ask-card.card { padding: var(--s5) var(--s4); gap: var(--s5); }
+  .ask-chip { font-size: 17px; padding: 13px 18px; min-height: 52px; }
+
+}

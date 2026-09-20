@@ -1,0 +1,33 @@
+{
+ "url": "https://labmuffin.com/wp-content/uploads/2026/01/float-test-1.jpg",
+ "model": "gpt-4o-mini",
+ "seen_at": "2026-09-20T14:12:47+00:00",
+ "ok": true,
+ "vision": {
+  "shows": "demo",
+  "readable_text": "\"Low porosity\" floats\n\"High porosity\" sinks\nBUSTED!",
+  "products_named": [],
+  "is_instructional": "yes",
+  "is_comparison": "no",
+  "shows_a_result": "yes"
+ },
+ "error": null,
+ "usage": {
+  "prompt_tokens": 25949,
+  "completion_tokens": 50,
+  "total_tokens": 25999,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "audio_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "audio_tokens": 0,
+   "accepted_prediction_tokens": 0,
+   "rejected_prediction_tokens": 0
+  }
+ },
+ "bytes": 84428,
+ "seconds": 3.72,
+ "from_cache": false
+}

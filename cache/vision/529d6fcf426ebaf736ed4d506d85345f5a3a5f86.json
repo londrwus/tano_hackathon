@@ -1,0 +1,38 @@
+{
+ "url": "https://labmuffin.com/wp-content/uploads/2020/07/reapply-spf-over-makeup-thumbnail.jpg",
+ "model": "gpt-4o-mini",
+ "seen_at": "2026-09-20T14:12:35+00:00",
+ "ok": true,
+ "vision": {
+  "shows": "person",
+  "readable_text": "REAPPLY SPF OVER MAKEUP?",
+  "products_named": [
+   "Neutrogena Ultra-Sheer Face Mist",
+   "Science",
+   "Laura Mercier",
+   "Vichy"
+  ],
+  "is_instructional": "unclear",
+  "is_comparison": "no",
+  "shows_a_result": "no"
+ },
+ "error": null,
+ "usage": {
+  "prompt_tokens": 14615,
+  "completion_tokens": 60,
+  "total_tokens": 14675,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "audio_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "audio_tokens": 0,
+   "accepted_prediction_tokens": 0,
+   "rejected_prediction_tokens": 0
+  }
+ },
+ "bytes": 53765,
+ "seconds": 3.47,
+ "from_cache": false
+}

@@ -1,0 +1,334 @@
+{
+ "maya": {
+  "name": "Maya Rao",
+  "extracted_standard": {
+   "routine_size": {
+    "level": "The fewest possible products",
+    "value": 0.23
+   },
+   "budget_behaviour": {
+    "answer": false,
+    "p": 0.23
+   },
+   "price_refusal": {
+    "level": "Price is central to their judgement",
+    "value": 2.75
+   },
+   "subtraction": {
+    "answer": true,
+    "p": 0.73
+   },
+   "hype": {
+    "level": "Actively sceptical of hype",
+    "value": 0.02
+   },
+   "defended_category": {
+    "choice": "spf",
+    "confidence": 1.0
+   },
+   "interchangeable_category": {
+    "choice": "cleanser",
+    "confidence": 0.99
+   },
+   "skippable_category": {
+    "choice": "makeup",
+    "confidence": 0.38
+   },
+   "starting_from_zero": {
+    "level": "Three - a short but complete routine",
+    "value": 1.72
+   },
+   "subtraction_scope": {
+    "choice": "crowded_routine_only",
+    "confidence": 1.0
+   },
+   "route_reacting": {
+    "choice": "Red Reset",
+    "confidence": 0.34
+   },
+   "route_redness": {
+    "choice": "Red Reset",
+    "confidence": 1.0
+   },
+   "route_dry": {
+    "choice": "Cloud Cream",
+    "confidence": 1.0
+   },
+   "route_oily": {
+    "choice": "Daily Gel",
+    "confidence": 0.83
+   }
+  },
+  "her_written_routing_rules": {
+   "by_situation": [
+    {
+     "when": "Someone writes 'every time I try something new my face freaks out'. They own no skincare yet and are starting from nothing, with money to spend.",
+     "reach_for": "Red Reset",
+     "confidence": 0.34
+    },
+    {
+     "when": "Someone writes 'my cheeks are red and angry today and nothing calms it down'.",
+     "reach_for": "Red Reset",
+     "confidence": 1.0
+    },
+    {
+     "when": "Someone writes 'my skin is dry and tight all winter and it flakes under makeup'.",
+     "reach_for": "Cloud Cream",
+     "confidence": 1.0
+    },
+    {
+     "when": "Someone writes 'I am shiny by 11am and my t-zone never stops'.",
+     "reach_for": "Daily Gel",
+     "confidence": 0.83
+    }
+   ],
+   "by_category": {
+    "never_leave_out": "spf",
+    "any_decent_one_will_do": "cleanser",
+    "first_to_drop_when_money_is_tight": "makeup"
+   },
+   "when_they_say_buy_less": "crowded_routine_only",
+   "how_many_from_a_standing_start": "Three - a short but complete routine",
+   "_provenance": "Every value in this object was produced by a typed extraction slot run against this judge's own source corpus. No value here was written by hand."
+  },
+  "shelf": [
+   {
+    "product": "Cloud Cream",
+    "gbp": 38,
+    "type": "Moisturiser",
+    "skin": "Dry",
+    "finish": "Rich"
+   },
+   {
+    "product": "Daily Gel",
+    "gbp": 24,
+    "type": "Moisturiser",
+    "skin": "Oily / Combo",
+    "finish": "Light"
+   },
+   {
+    "product": "Red Reset",
+    "gbp": 32,
+    "type": "Serum",
+    "skin": "Sensitive",
+    "finish": "Calm"
+   },
+   {
+    "product": "Night Serum",
+    "gbp": 42,
+    "type": "Serum",
+    "skin": "All",
+    "finish": "Glow"
+   },
+   {
+    "product": "SPF 50",
+    "gbp": 26,
+    "type": "SPF",
+    "skin": "All",
+    "finish": "Invisible"
+   },
+   {
+    "product": "Glass Drop",
+    "gbp": 62,
+    "type": "Serum",
+    "skin": "All",
+    "finish": "Dewy"
+   },
+   {
+    "product": "Soft Clean",
+    "gbp": 22,
+    "type": "Cleanser",
+    "skin": "All",
+    "finish": "Cream"
+   },
+   {
+    "product": "Oil Balm",
+    "gbp": 29,
+    "type": "Balm",
+    "skin": "Dry",
+    "finish": "Glow"
+   },
+   {
+    "product": "Clear Wash",
+    "gbp": 20,
+    "type": "Cleanser",
+    "skin": "Oily",
+    "finish": "Foam"
+   },
+   {
+    "product": "Tint Veil",
+    "gbp": 34,
+    "type": "Base",
+    "skin": "All",
+    "finish": "Skin-like"
+   }
+  ],
+  "instruction": "Apply `extracted_standard` and `her_written_routing_rules` exactly. Both were extracted from this person's own source material and are their measured decision profile. Where a rule in `her_written_routing_rules.by_situation` matches this shopper's conditions, it is what this person actually does."
+ },
+ "derm": {
+  "name": "A dermatologist",
+  "extracted_standard": {
+   "routine_size": {
+    "level": "A small routine",
+    "value": 1.33
+   },
+   "budget_behaviour": {
+    "answer": false,
+    "p": 0.42
+   },
+   "price_refusal": {
+    "level": "Mentions price occasionally",
+    "value": 1.05
+   },
+   "subtraction": {
+    "answer": true,
+    "p": 0.6
+   },
+   "hype": {
+    "level": "Actively sceptical of hype",
+    "value": 0.07
+   },
+   "defended_category": {
+    "choice": "spf",
+    "confidence": 0.6
+   },
+   "interchangeable_category": {
+    "choice": "cleanser",
+    "confidence": 0.26
+   },
+   "skippable_category": {
+    "choice": "serum",
+    "confidence": 0.85
+   },
+   "starting_from_zero": {
+    "level": "Three - a short but complete routine",
+    "value": 2.02
+   },
+   "subtraction_scope": {
+    "choice": "crowded_routine_only",
+    "confidence": 0.98
+   },
+   "route_reacting": {
+    "choice": "Soft Clean",
+    "confidence": 0.8
+   },
+   "route_redness": {
+    "choice": "Red Reset",
+    "confidence": 0.98
+   },
+   "route_dry": {
+    "choice": "Cloud Cream",
+    "confidence": 0.95
+   },
+   "route_oily": {
+    "choice": "Daily Gel",
+    "confidence": 0.57
+   }
+  },
+  "her_written_routing_rules": {
+   "by_situation": [
+    {
+     "when": "Someone writes 'every time I try something new my face freaks out'. They own no skincare yet and are starting from nothing, with money to spend.",
+     "reach_for": "Soft Clean",
+     "confidence": 0.8
+    },
+    {
+     "when": "Someone writes 'my cheeks are red and angry today and nothing calms it down'.",
+     "reach_for": "Red Reset",
+     "confidence": 0.98
+    },
+    {
+     "when": "Someone writes 'my skin is dry and tight all winter and it flakes under makeup'.",
+     "reach_for": "Cloud Cream",
+     "confidence": 0.95
+    },
+    {
+     "when": "Someone writes 'I am shiny by 11am and my t-zone never stops'.",
+     "reach_for": "Daily Gel",
+     "confidence": 0.57
+    }
+   ],
+   "by_category": {
+    "never_leave_out": "spf",
+    "any_decent_one_will_do": "cleanser",
+    "first_to_drop_when_money_is_tight": "serum"
+   },
+   "when_they_say_buy_less": "crowded_routine_only",
+   "how_many_from_a_standing_start": "Three - a short but complete routine",
+   "_provenance": "Every value in this object was produced by a typed extraction slot run against this judge's own source corpus. No value here was written by hand."
+  },
+  "shelf": [
+   {
+    "product": "Cloud Cream",
+    "gbp": 38,
+    "type": "Moisturiser",
+    "skin": "Dry",
+    "finish": "Rich"
+   },
+   {
+    "product": "Daily Gel",
+    "gbp": 24,
+    "type": "Moisturiser",
+    "skin": "Oily / Combo",
+    "finish": "Light"
+   },
+   {
+    "product": "Red Reset",
+    "gbp": 32,
+    "type": "Serum",
+    "skin": "Sensitive",
+    "finish": "Calm"
+   },
+   {
+    "product": "Night Serum",
+    "gbp": 42,
+    "type": "Serum",
+    "skin": "All",
+    "finish": "Glow"
+   },
+   {
+    "product": "SPF 50",
+    "gbp": 26,
+    "type": "SPF",
+    "skin": "All",
+    "finish": "Invisible"
+   },
+   {
+    "product": "Glass Drop",
+    "gbp": 62,
+    "type": "Serum",
+    "skin": "All",
+    "finish": "Dewy"
+   },
+   {
+    "product": "Soft Clean",
+    "gbp": 22,
+    "type": "Cleanser",
+    "skin": "All",
+    "finish": "Cream"
+   },
+   {
+    "product": "Oil Balm",
+    "gbp": 29,
+    "type": "Balm",
+    "skin": "Dry",
+    "finish": "Glow"
+   },
+   {
+    "product": "Clear Wash",
+    "gbp": 20,
+    "type": "Cleanser",
+    "skin": "Oily",
+    "finish": "Foam"
+   },
+   {
+    "product": "Tint Veil",
+    "gbp": 34,
+    "type": "Base",
+    "skin": "All",
+    "finish": "Skin-like"
+   }
+  ],
+  "instruction": "Apply `extracted_standard` and `her_written_routing_rules` exactly. Both were extracted from this person's own source material and are their measured decision profile. Where a rule in `her_written_routing_rules.by_situation` matches this shopper's conditions, it is what this person actually does."
+ }
+}

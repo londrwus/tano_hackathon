@@ -1,0 +1,33 @@
+{
+ "url": "https://labmuffin.com/wp-content/uploads/2023/03/sunscreen-spf-stick-experiment.jpg",
+ "model": "gpt-4o-mini",
+ "seen_at": "2026-09-20T14:12:41+00:00",
+ "ok": true,
+ "vision": {
+  "shows": "person",
+  "readable_text": "HOW MUCH? SPF?",
+  "products_named": [],
+  "is_instructional": "yes",
+  "is_comparison": "no",
+  "shows_a_result": "no"
+ },
+ "error": null,
+ "usage": {
+  "prompt_tokens": 14615,
+  "completion_tokens": 37,
+  "total_tokens": 14652,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "audio_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "audio_tokens": 0,
+   "accepted_prediction_tokens": 0,
+   "rejected_prediction_tokens": 0
+  }
+ },
+ "bytes": 50345,
+ "seconds": 3.45,
+ "from_cache": false
+}

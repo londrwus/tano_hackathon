@@ -1,0 +1,653 @@
+/* ============================================================
+   /how-it-works — the pipeline animation.
+   Design system: docs/12-DESIGN-LIGHT.md. Tokens come from
+   styles/tokens.css and are never redefined here.
+
+   Every transition in this file animates `transform` and `opacity` and
+   nothing else. There are ~200 animated nodes on the stage; anything that
+   touches layout or paint would judder on the projector.
+   ============================================================ */
+
+.hiw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s5);
+  padding: var(--s6) var(--s5) var(--s7);
+  min-height: calc(100vh - 56px);
+}
+
+/* the fixed 1280x660 design surface, scaled to the room */
+.hiw-scaler {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+.hiw-stage {
+  position: relative;
+  transform-origin: top center;
+  flex: 0 0 auto;
+}
+
+.hiw-static .hiw-scaler { margin-bottom: var(--s5); }
+
+/* ---------------------------------------------------------------- acts */
+
+.hiw-act {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s var(--ease);
+}
+.hiw-act.is-on { opacity: 1; }
+
+/* ---------------------------------------------------------------- enters */
+
+.hiw-enter {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .38s var(--ease), transform .38s var(--ease);
+  will-change: opacity, transform;
+}
+.hiw-enter.is-on { opacity: 1; transform: translateY(0); }
+
+.hiw-pop {
+  opacity: 0;
+  transform: scale(.9);
+  transition: opacity .34s var(--ease), transform .34s var(--ease);
+}
+.hiw-pop.is-on { opacity: 1; transform: scale(1); }
+
+.hiw-slide {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity .34s var(--ease), transform .34s var(--ease);
+}
+.hiw-slide.is-on { opacity: 1; transform: translateX(0); }
+
+.hiw-slide-r {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity .38s var(--ease), transform .38s var(--ease);
+}
+.hiw-slide-r.is-on { opacity: 1; transform: translateX(0); }
+
+/* ---------------------------------------------------------------- header */
+
+.hiw-eyebrow {
+  position: absolute;
+  left: 48px;
+  top: 28px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--ink-tertiary);
+  white-space: nowrap;
+}
+
+.hiw-title {
+  position: absolute;
+  left: 48px;
+  top: 50px;
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.022em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* ================================================================ ACT 1
+   A real creator: Michelle Wong. Her titles, her photographs, and what was
+   read off them. The composition is design/v10b — posts left, questions
+   through the middle, answers right, the measured time bottom-right. */
+
+/* who she is and where it came from */
+.hiw-who {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink-secondary);
+  white-space: nowrap;
+}
+.hiw-src {
+  position: absolute;
+  font-size: 12px;
+  color: var(--ink-tertiary);
+  white-space: nowrap;
+}
+.hiw-src a { color: var(--accent); text-decoration: none; }
+.hiw-src a:hover { text-decoration: underline; }
+
+.hiw-fanlabel {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--lilac-ink);
+  white-space: nowrap;
+}
+
+/* the count going up as Jev's answers land. It is a replay of one response
+   — the label above says they arrive at the same moment, and the honesty
+   line under the stage says the whole thing is slowed down. */
+.hiw-tally {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-secondary);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.hiw-tally b {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--lilac-ink);
+}
+
+/* her posts, by their real titles */
+.hiw-posts {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.hiw-post {
+  display: block;
+  overflow: hidden;
+  padding: 2px 9px;
+  border-radius: 8px;
+  /* the composition's lilac, light enough to carry her words on it */
+  background: color-mix(in srgb, var(--lilac-ink) 9%, var(--lilac));
+  color: var(--ink);
+  font-size: 11.5px;
+  line-height: 1.22;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+.hiw-postcap {
+  position: absolute;
+  font-size: 13px;
+  color: var(--ink-secondary);
+  white-space: nowrap;
+}
+
+/* her photographs. Hotlinked from her own server — never re-hosted, and
+   big enough to read from the back of a room. */
+.hiw-piclabel {
+  position: absolute;
+  font-size: 13px;
+  color: var(--ink-secondary);
+  white-space: nowrap;
+}
+
+.hiw-read {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  border-radius: var(--r-md);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+}
+.hiw-read-i {
+  flex: 0 0 auto;
+  display: block;
+  border-radius: 8px;
+  background: var(--bg-sunken);
+  /* her photograph, whole. A crop could hide the very words we say were
+     read off it, so these are never cropped. */
+  object-fit: contain;
+}
+.hiw-read-t { flex: 1 1 auto; min-width: 0; }
+.hiw-read-k {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-tertiary);
+}
+.hiw-read-l {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.24;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+.hiw-read-l-sm {
+  font-size: 11px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--ink-secondary);
+}
+.hiw-read-m {
+  margin-top: 6px;
+  font-size: 10px;
+  color: var(--ink-tertiary);
+}
+
+/* the receipts, along the bottom */
+.hiw-count {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.hiw-note {
+  position: absolute;
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: var(--ink-tertiary);
+}
+/* who did what. On screen for the whole of part 1, never longer than a line. */
+.hiw-split {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-secondary);
+}
+
+/* Maya's answer to the same question — the one place she appears in act 1 */
+.hiw-contrast {
+  position: absolute;
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: var(--ink-secondary);
+}
+
+.hiw-curves {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .6s var(--ease);
+}
+.hiw-curves.is-on { opacity: .45; }
+.hiw-curves path {
+  fill: none;
+  stroke: var(--lilac-ink);
+  stroke-width: 1;
+  opacity: .5;
+}
+
+/* the 28. Every one of them leaves on the same frame — no stagger, no
+   per-dot delay. That simultaneity is the whole claim. */
+.hiw-qdot {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--lilac-ink);
+  opacity: 0;
+  transition: transform 1s var(--ease), opacity .3s var(--ease);
+  will-change: transform, opacity;
+}
+.hiw-qdot.is-on { opacity: .8; }
+
+.hiw-traits {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.hiw-trait {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  min-height: 44px;
+  padding: 11px 18px;
+  border-radius: var(--r-pill);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+/* how sure it was. docs/10 §14 is explicit that a low-confidence answer must
+   not be dressed up as a finding, so the number rides on the chip. */
+.hiw-trait-c {
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  opacity: .62;
+}
+.hiw-t-lilac { background: var(--lilac);  color: var(--lilac-ink); }
+.hiw-t-mint  { background: var(--mint);   color: var(--mint-ink); }
+.hiw-t-peach { background: var(--peach);  color: var(--peach-ink); }
+.hiw-t-sky   { background: var(--sky);    color: var(--sky-ink); }
+.hiw-t-blush { background: var(--blush);  color: var(--blush-ink); }
+
+/* the measured elapsed pill */
+.hiw-pill {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  height: 52px;
+  padding: 0 28px;
+  border-radius: var(--r-pill);
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink-on-accent);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.hiw-pill-lilac  { background: var(--lilac-ink); }
+.hiw-pill-accent { background: var(--accent); }
+
+/* ================================================================ ACT 2 */
+
+/* the bridge: act 1 was a real chemist, acts 2 and 3 are Maya */
+.hiw-bridge {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink-secondary);
+  white-space: nowrap;
+}
+
+.hiw-bubble {
+  position: absolute;
+  background: var(--sky);
+  color: var(--ink);
+  border-radius: var(--r-lg);
+  padding: 18px 22px;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.hiw-dmdots { position: absolute; }
+.hiw-dmdot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0;
+  transform: scale(.4);
+  transition: opacity .3s var(--ease), transform .3s var(--ease);
+}
+.hiw-dmdot.is-on { opacity: 1; transform: scale(1); }
+
+.hiw-dmlabel {
+  position: absolute;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.hiw-dmchips {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.hiw-dmchip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: var(--r-pill);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.hiw-safety {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: var(--r-pill);
+  background: var(--mint);
+  color: var(--mint-ink);
+  font-size: 17px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.hiw-safety svg { width: 18px; height: 18px; fill: currentColor; }
+
+/* the options grid. Two discs per option, cross-faded — never a
+   background-color transition. */
+.hiw-opts { position: absolute; }
+.hiw-opt {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  opacity: 0;
+  transform: scale(.6);
+  transition: opacity .35s var(--ease), transform .45s var(--ease);
+  will-change: opacity, transform;
+}
+.hiw-opt.is-on { opacity: 1; transform: scale(1); }
+.hiw-opt.is-dim { opacity: .15; }
+.hiw-opt.is-chosen { transform: scale(1.24); }
+
+.hiw-opt-a,
+.hiw-opt-b {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  transition: opacity .4s var(--ease);
+}
+.hiw-opt-a { background: var(--peach); opacity: 1; }
+.hiw-opt-a { background: color-mix(in srgb, var(--peach-ink) 18%, var(--peach)); }
+.hiw-opt-b { background: var(--ok); opacity: 0; }
+.hiw-opt.is-chosen .hiw-opt-a { opacity: 0; }
+.hiw-opt.is-chosen .hiw-opt-b { opacity: 1; }
+
+.hiw-optlabel {
+  position: absolute;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.hiw-reply {
+  position: absolute;
+  background: var(--bg-card);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 20px 26px 24px;
+}
+.hiw-reply-k { font-size: 14px; font-weight: 600; color: var(--ink-secondary); }
+.hiw-reply-v {
+  margin: 6px 0 0;
+  font-size: 27px;
+  line-height: 1.24;
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  color: var(--ink);
+}
+
+/* ================================================================ ACT 3 */
+
+/* 50 nodes, two discs each, one transform each. They all leave the cloud
+   on the same frame. */
+.hiw-n {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: transform .7s var(--ease), opacity .3s var(--ease);
+  will-change: transform, opacity;
+}
+.hiw-n.is-on { opacity: 1; }
+.hiw-n-a,
+.hiw-n-b {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  transform: scale(.4);
+  transition: opacity .5s var(--ease), transform .3s var(--ease);
+}
+.hiw-n.is-on .hiw-n-a,
+.hiw-n.is-on .hiw-n-b { transform: scale(1); }
+.hiw-n-a { background: var(--series-muted); opacity: 1; }
+.hiw-n-b { opacity: 0; }
+.hiw-n.is-split .hiw-n-a { opacity: 0; }
+.hiw-n.is-split .hiw-n-b { opacity: 1; }
+
+.hiw-lane { position: absolute; width: 260px; }
+.hiw-lane-n {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.hiw-lane-l { margin-top: 10px; font-size: 17px; color: var(--ink-secondary); }
+
+.hiw-final {
+  position: absolute;
+  background: var(--bg-card);
+  border-radius: var(--r-xl);
+  box-shadow: var(--shadow-sm);
+  padding: 28px 34px 30px;
+}
+.hiw-final-h {
+  margin: 0;
+  font-size: 31px;
+  line-height: 1.16;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.hiw-final-s { margin: 8px 0 0; font-size: 17px; color: var(--ink-secondary); }
+
+/* ---------------------------------------------------------------- hold card */
+
+.hiw-hold {
+  margin: auto;
+  text-align: center;
+  padding: var(--s9) 0;
+}
+.hiw-hold-k {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--ink-tertiary);
+  margin-bottom: var(--s2);
+}
+.hiw-hold-t {
+  font-size: 56px;
+  line-height: 1.06;
+  font-weight: 700;
+  letter-spacing: -0.024em;
+  color: var(--ink);
+}
+.hiw-hold-s { margin-top: var(--s3); font-size: 19px; color: var(--ink-secondary); }
+.hiw-hold-n { margin-top: var(--s6); font-size: 12px; color: var(--ink-tertiary); }
+
+/* ---------------------------------------------------------------- controls */
+
+.hiw-controls {
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+}
+.hiw-controls .btn { flex: 0 0 auto; }
+.hiw-keys {
+  border-radius: var(--r-pill);
+  background: var(--bg-sunken);
+  padding: 4px 10px;
+  color: var(--ink-secondary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hiw-scrub { display: flex; align-items: center; gap: 2px; }
+.hiw-scrub-b {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  border-radius: var(--r-pill);
+  cursor: pointer;
+}
+.hiw-scrub-b span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--hairline);
+  transition: transform .2s var(--ease), opacity .2s var(--ease);
+}
+.hiw-scrub-b:hover span { transform: scale(1.2); }
+.hiw-scrub-b.is-on span { background: var(--ink); transform: scale(1.2); }
+
+.hiw-honesty {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--ink-tertiary);
+  text-align: right;
+}
+.hiw-cache {
+  border-radius: var(--r-pill);
+  background: var(--bg-sunken);
+  padding: 4px 10px;
+  color: var(--ink-secondary);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- phone */
+
+@media (max-width: 760px) {
+  .hiw { padding: var(--s5) var(--s4) var(--s6); gap: var(--s4); }
+  .hiw-controls { flex-wrap: wrap; gap: var(--s2); }
+  .hiw-honesty { margin-left: 0; width: 100%; justify-content: flex-start; text-align: left; }
+}
+
+/* ---------------------------------------------------------------- reduced motion
+
+   No sequence at all. The three acts are stacked in their final state and
+   the controls stay. docs/13 §1.8. */
+
+@media (prefers-reduced-motion: reduce) {
+  .hiw-act,
+  .hiw-enter,
+  .hiw-pop,
+  .hiw-slide,
+  .hiw-slide-r,
+  .hiw-qdot,
+  .hiw-dmdot,
+  .hiw-opt,
+  .hiw-opt-a,
+  .hiw-opt-b,
+  .hiw-n,
+  .hiw-n-a,
+  .hiw-n-b,
+  .hiw-curves {
+    transition: none !important;
+  }
+}

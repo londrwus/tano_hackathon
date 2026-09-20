@@ -1,0 +1,33 @@
+{
+ "url": "https://labmuffin.com/wp-content/uploads/2026/01/anti-plastic-clean-beauty-meme.jpg",
+ "model": "gpt-4o-mini",
+ "seen_at": "2026-09-20T14:13:01+00:00",
+ "ok": true,
+ "vision": {
+  "shows": "person",
+  "readable_text": "Corporate needs you to find the differences between this picture and this picture.\nThey're the same picture.",
+  "products_named": [],
+  "is_instructional": "no",
+  "is_comparison": "yes",
+  "shows_a_result": "no"
+ },
+ "error": null,
+ "usage": {
+  "prompt_tokens": 37283,
+  "completion_tokens": 51,
+  "total_tokens": 37334,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "audio_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "audio_tokens": 0,
+   "accepted_prediction_tokens": 0,
+   "rejected_prediction_tokens": 0
+  }
+ },
+ "bytes": 110897,
+ "seconds": 3.33,
+ "from_cache": false
+}

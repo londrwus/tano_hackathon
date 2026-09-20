@@ -1,0 +1,120 @@
+PART 1 · 0.0 – 5.0s
+First, it reads what she has already posted.
+Michelle Wong — Cosmetic chemist, PhD. Writes Lab Muffin Beauty Science.
+her own posts, word for word, from labmuffin.com/feed · fetched 20 September 2026
+Jev answers 28 questions at the same moment.
+28 of 28 answered
+Why are skin cancer rates rising with more sunscreen?
+How to Reapply Sunscreen Over Makeup
+How Much of a Sunscreen Stick Should You Apply?
+Hair porosity tests are a lie
+Does water damage hair? The myth of “hygral fatigue”
+Hair, hydration and water: the real science
+“Plastic-free” is the new clean beauty: a treatise
+What is hyaluronic acid and how does it work in skincare and makeup?
+Ulike red light mask overview and experience
+Investigating the viral heat protectant test
+10 posts, straight off her site
+2 of her 15 pictures, and what was read off them
+READ OFF THIS PICTURE
+"Low porosity" floats
+"High porosity" sinks
+BUSTED!
+by gpt-4o-mini
+AND OFF THIS ONE
+1975-2021, r=0.985, r²=0.971, p<0.01 · tylervigen.com/spurious/custom_correlation/508
+by gpt-4o-mini
+sceptical of hype
+0.92
+SPF always
+0.71
+never talks about price
+0.55
+never says to throw things out
+0.76
+leaves money unspent
+0.63
+Maya, asked the same question about price: “Price is central to their judgement.”
+0.9 seconds
+10 posts · 15 pictures · 28 questions · 2 requests · 13,212 tokens in · 0.9 seconds
+gpt-4o-mini read the pictures; Jev answered the questions; Jev never sees a pixel.
+Her posts and her pictures were fetched beforehand; the fourteen questions were run and timed for real, and this replays that run. The pictures did not change her answers — this is what was read off them, not what it moved.
+PART 2 · 5.0 – 11.0s
+Then, at 3am, someone messages her.
+That was Michelle Wong. The rest is Maya — her shelf, her inbox, her night.
+“i have dry skin + redness and £60. tell me what to buy pls”
+20 questions, all in one go.
+dry + redness
+£60
+wants a pick
+not medical · in her scope
+8 options priced up. One chosen.
+It writes it her way
+
+“Two things. The Red Reset and the SPF. Fifty-eight pounds.”
+
+0.81 seconds
+PART 3 · 11.0 – 15.0s
+It did that for everyone who messaged, all night.
+24
+wrote her reply
+14
+asked a question
+4
+saved for Maya
+8
+refused
+
+Every one of them is a draft. Maya presses send.
+
+It never messages anybody by itself.
+
+Back
+Next
+Play this part again
+← → or space
+slowed down so you can see it
+from cache
+
+---- console ----
+debug: [vite] connecting...
+debug: [vite] connected.
+info: %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+error: Failed to load resource: net::ERR_FAILED
+warning: [how-it-works] her run fell back to the frozen cache TypeError: Failed to fetch
+    at getJson (http://localhost:5173/src/api/extract.ts?t=1789916738466:36:21)
+    at runLoad (http://localhost:5173/src/api/extract.ts?t=1789916738466:533:21)
+    at warmPipeline (http://localhost:5173/src/api/extract.ts?t=1789916738466:506:28)
+    at loadPipeline (http://localhost:5173/src/api/extract.ts?t=1789916738466:510:9)
+    at http://localhost:5173/src/routes/HowItWorks.tsx?t=1789916921184:1071:3
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:13819:24)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14760:7)
+    at commitPassiveMountEffects_complete (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14734:7)
+    at commitPassiveMountEffects_begin (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14725:12)
+    at commitPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14716:4)
+error: Failed to load resource: net::ERR_FAILED
+warning: [how-it-works] Maya price line fell back to the frozen cache TypeError: Failed to fetch
+    at getJson (http://localhost:5173/src/api/extract.ts?t=1789916738466:36:21)
+    at runLoad (http://localhost:5173/src/api/extract.ts?t=1789916738466:578:18)
+    at warmPipeline (http://localhost:5173/src/api/extract.ts?t=1789916738466:506:28)
+    at loadPipeline (http://localhost:5173/src/api/extract.ts?t=1789916738466:510:9)
+    at http://localhost:5173/src/routes/HowItWorks.tsx?t=1789916921184:1071:3
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:13819:24)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14760:7)
+    at commitPassiveMountEffects_complete (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14734:7)
+    at commitPassiveMountEffects_begin (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14725:12)
+    at commitPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14716:4)
+error: Failed to load resource: net::ERR_FAILED
+warning: [how-it-works] /api/queue fell back to the frozen cache TypeError: Failed to fetch
+    at getJson (http://localhost:5173/src/api/extract.ts?t=1789916738466:36:21)
+    at runLoad (http://localhost:5173/src/api/extract.ts?t=1789916738466:587:19)
+    at warmPipeline (http://localhost:5173/src/api/extract.ts?t=1789916738466:506:28)
+    at loadPipeline (http://localhost:5173/src/api/extract.ts?t=1789916738466:510:9)
+    at http://localhost:5173/src/routes/HowItWorks.tsx?t=1789916921184:1071:3
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:13819:24)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14760:7)
+    at commitPassiveMountEffects_complete (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14734:7)
+    at commitPassiveMountEffects_begin (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14725:12)
+    at commitPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom-Ci198gni.js?v=c50a7429:14716:4)
+info: [how-it-works] act 2 runs off the committed measured card (no live decision)
+info: [how-it-works] data legs {extract: cache, maya: cache, queue: cache}

@@ -1,0 +1,460 @@
+/* /maya — last night's inbox. Light, pastel, readable at three metres on a
+   projector by somebody who has never heard of this product. The list
+   itself is dense and familiar: hairlines, not cards.
+   Tokens come from styles/tokens.css (frozen). Nothing here is dark. */
+
+/* Vertical padding comes from `.page` (--page-top above, --s8 below) so the
+   gap under the sticky topbar is the same on every route. Nothing here may
+   set padding-top again or it double-counts. */
+.maya.page {
+  padding-bottom: var(--s6);
+}
+
+.maya .loading-note { padding: var(--s8) 0; }
+
+/* ------------------------------------------------------------- header */
+.maya-head { margin-bottom: var(--s4); }
+
+/* Read off a projector from the back of a room, so the ceiling on the
+   headline is the full vw clamp rather than a cap that only ever bit on the
+   widest screens — exactly where legibility matters most.
+
+   The `.maya` prefix is load-bearing: the element also carries .t-title1,
+   which pins 48px from tokens.css. At equal specificity tokens wins the
+   cascade, so every clamp on this page was being thrown away. */
+.maya .maya-h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(28px, 3.6vw, 54px);
+  line-height: 1.04;
+  font-weight: 700;
+  letter-spacing: -0.024em;
+}
+
+.maya-sub {
+  margin: var(--s3) 0 0;
+  font-size: clamp(16px, 1.45vw, 21px);
+  line-height: 1.4;
+  color: var(--ink-secondary);
+}
+
+.maya-note {
+  margin: var(--s2) 0 0;
+  font-size: 15px;
+  color: var(--peach-ink);
+}
+
+/* ------------------------------------------- what it came to, at the foot
+   Nothing sits above the list except the toolbar and the claim line, so
+   this one lives under it. */
+.closer-main.card { padding: var(--s5); display: flex; flex-direction: column; justify-content: center; }
+.maya .closer-h { margin: 0; color: var(--ink); font-size: clamp(20px, 2vw, 28px); }
+.closer-sub { margin: var(--s2) 0 0; font-size: 16px; color: var(--ink-secondary); }
+
+
+/* ============================================================== the inbox */
+.inbox { margin-top: var(--s5); }
+
+/* ----- toolbar: select all, one action, the tabs ----- */
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  padding-bottom: var(--s2);
+}
+.toolbar-count { font-size: 14px; color: var(--ink-secondary); margin-left: auto; }
+.toolbar-go { font-size: 15px; padding: 11px 18px; margin-right: var(--s3); }
+
+/* the checkbox, with a 44px area around it so a thumb can hit it */
+.row-checkwrap {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.row-check {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+/* ----- filter tabs: the four counts live here ----- */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s1);
+}
+.tab {
+  appearance: none;
+  border: 0;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-secondary);
+  background: transparent;
+  border-radius: var(--r-pill);
+  padding: 11px 14px;
+  min-height: 44px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color .2s var(--ease), color .2s var(--ease);
+}
+.tab:hover { background: var(--bg-hover); }
+.tab-n { font-variant-numeric: tabular-nums; color: var(--ink-tertiary); }
+.tab-on { background: var(--ink); color: var(--bg-card); }
+.tab-on .tab-n { color: var(--bg-card); }
+
+/* the strongest claim on the page, one quiet line, above the list */
+.claim {
+  margin: 0 0 var(--s2);
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ink-secondary);
+}
+.claim b { color: var(--lilac-ink); font-weight: 700; }
+
+/* what the two words mean, said once. The sureness key sits over the
+   column it explains, not buried in a line of micro-copy doing three jobs. */
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s2) var(--s4);
+  padding-bottom: var(--s2);
+}
+.key-line {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-tertiary);
+}
+.key-line b { font-weight: 700; color: var(--ink-secondary); }
+/* plain text, not a flex row: as flex items the words wrapped one on top
+   of the other on a narrow screen. */
+.key-sure { margin-left: auto; }
+.key-sure .segs { margin: 0 3px 0 10px; vertical-align: -2px; }
+.key-line-counts { margin: var(--s4) 0 var(--s3); }
+
+/* ----- the list -----
+   One flat white surface, edge to edge of the container. No cards, no
+   per-row borders, no shadows: rows are separated by their own height and
+   by what hover does, the way an inbox is. */
+.list {
+  background: var(--bg-card);
+  margin: 0 calc(var(--s6) * -1);
+  padding: var(--s2) 0;
+}
+.list-empty { margin: 0; padding: var(--s5); color: var(--ink-secondary); }
+
+.row-line { display: flex; align-items: center; min-width: 0; padding-right: var(--s6); }
+.row-line:hover { background: var(--bg-hover); }
+
+/* the one that needs her: the faintest pastel wash and an accent down the
+   left edge. The word `clarify` is on the row too, so colour is never the
+   only thing carrying it. */
+.row-clarify { background: var(--butter); box-shadow: inset 3px 0 0 0 var(--butter-ink); }
+.row-picked > .row-line { background: var(--accent-wash); }
+
+/* the clickable part of the row. Every control that is not "open this
+   row" lives outside it — a button inside a button is not a thing. */
+.row-main {
+  appearance: none;
+  border: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  text-align: left;
+  cursor: pointer;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 40px;
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: var(--s4);
+}
+
+.row-from {
+  font-size: 14px;
+  color: var(--ink-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* bold the ones she has not dealt with, the way an inbox bolds unread */
+.row-clarify .row-from { font-weight: 700; color: var(--ink); }
+
+/* One line. What they said in ink, what it drafted in grey after it, the
+   whole thing running out under an ellipsis. The two tones are what makes
+   the list scannable. */
+.row-msg {
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.35;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* spoken, not typed: a mic and how long it ran */
+.row-mic {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  vertical-align: -3px;
+  margin-right: 7px;
+  padding: 1px 7px 1px 5px;
+  border-radius: var(--r-pill);
+  background: var(--lilac);
+  color: var(--lilac-ink);
+  font-size: 11px;
+  font-weight: 700;
+}
+.row-text { color: var(--ink); font-weight: 500; }
+.row-clarify .row-text { font-weight: 700; }
+.row-preview { color: var(--ink-tertiary); }
+
+/* the advice chip, in front of the message the way a label chip is. Only
+   `clarify` gets one: the bold sender already carries the other half, and
+   fifty grey chips down a list is noise. */
+.advice {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  padding: 2px 7px;
+  margin-right: 7px;
+  border-radius: var(--r-pill);
+  white-space: nowrap;
+  vertical-align: 1px;
+}
+.advice-clarify { background: var(--butter-ink); color: var(--butter); }
+
+/* she has dealt with this one. The row goes quiet, the way a read mail does. */
+.advice-done.advice-sent      { background: var(--mint);   color: var(--mint-ink); }
+.advice-done.advice-marked    { background: var(--sky);    color: var(--sky-ink); }
+.advice-done.advice-held      { background: var(--butter); color: var(--butter-ink); }
+.advice-done.advice-corrected { background: var(--lilac);  color: var(--lilac-ink); }
+.row-done .row-text { font-weight: 400; color: var(--ink-secondary); }
+
+/* how sure it was: three little bars and the words. Never a number.
+   The bars are what you read going down the column; the words are there
+   so colour and shape are never carrying it alone. */
+.segs {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 12px;
+}
+.segs .seg {
+  width: 4px;
+  border-radius: 1px;
+  background: var(--hairline);
+}
+.segs .seg:nth-child(1) { height: 6px; }
+.segs .seg:nth-child(2) { height: 9px; }
+.segs .seg:nth-child(3) { height: 12px; }
+.segs .seg-on { background: currentColor; }
+
+.row-sure {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  white-space: nowrap;
+  justify-self: end;
+}
+.row-sure-word { color: var(--ink-tertiary); }
+.row-clarify .row-sure-word { color: var(--butter-ink); font-weight: 700; }
+
+/* a refusal gets no sureness reading at all. "Very sure" beside a question
+   about eczema medication reads as very sure about the medication. */
+.row-passed { font-weight: 600; }
+
+/* where a mail client puts the date. There is no honest date on a card,
+   so it carries the evidence ref the payload already ships. */
+.row-ref {
+  font-size: 12px;
+  color: var(--ink-tertiary);
+  text-align: right;
+  min-width: 52px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+
+/* the same thing again inside the opened row, with the bar */
+.sure-row { display: flex; align-items: center; gap: var(--s3); }
+.sure-row .sure-word { font-size: 14px; font-weight: 600; white-space: nowrap; }
+.sure-row .meter { display: block; flex: 1 1 auto; max-width: 260px; }
+.sure-row .meter-fill { display: block; }
+
+/* ----- the row, opened in place ----- */
+.row-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  padding: var(--s2) var(--s6) var(--s4) 44px;
+  animation: enter-fade .25s var(--ease) both;
+}
+
+.msg-block {
+  border-radius: var(--r-md);
+  background: var(--bg-sunken);
+  padding: var(--s3);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.msg-block p { margin: 0; font-size: 16px; line-height: 1.45; color: var(--ink); }
+
+.msg-said { background: var(--bg-sunken); }
+.row-clarify .msg-said { background: var(--bg-card); }
+.msg-quote { font-size: 17px !important; }
+
+.msg-draft-mint   { background: var(--mint); }
+.msg-draft-sky    { background: var(--sky); }
+.msg-draft-butter { background: var(--butter); }
+.msg-draft-blush  { background: var(--blush); }
+
+.msg-refuse { background: var(--blush); }
+.msg-hold   { background: var(--butter); }
+.row-clarify .msg-hold { background: var(--bg-card); }
+
+.msg-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-secondary);
+}
+
+.msg-reply { font-weight: 500; }
+.msg-instead { font-weight: 600; color: var(--blush-ink) !important; }
+.msg-basket { font-size: 14px !important; color: var(--ink-secondary) !important; }
+
+.msg-edit textarea {
+  width: 100%;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--ink);
+  background: var(--bg-card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-sm);
+  padding: var(--s2);
+  resize: vertical;
+}
+
+.msg-actions { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.msg-actions .btn { font-size: 16px; padding: 12px 20px; }
+
+.acted {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px var(--s3);
+  border-radius: var(--r-pill);
+  align-self: flex-start;
+}
+.acted-sent      { background: var(--mint);  color: var(--mint-ink); }
+.acted-marked    { background: var(--sky);   color: var(--sky-ink); }
+.acted-held      { background: var(--butter); color: var(--butter-ink); }
+.acted-corrected { background: var(--lilac); color: var(--lilac-ink); }
+
+.msg-link { font-size: 14px; color: var(--accent); text-decoration: none; }
+.msg-link:hover { text-decoration: underline; }
+
+/* ------------------------------------------- a message that was spoken
+   Same row, same buttons, same everything. The only difference is that the
+   words were said out loud, so the row carries a small mark and the opened
+   row lets you hear it. */
+.player {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+}
+.voice-play {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--lilac);
+  color: var(--lilac-ink);
+  cursor: pointer;
+  transition: background-color .2s var(--ease), transform .2s var(--ease);
+}
+.voice-play:hover { background: var(--bg-hover); }
+.voice-play:active { transform: scale(0.94); }
+.voice-playing { background: var(--lilac-ink); color: var(--bg-card); }
+.player-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--lilac-ink);
+}
+
+/* ------------------------------------------------------------ responsive */
+/* The list bleeds to the edges of the page container, so its negative
+   margin has to track `.page`'s padding at every breakpoint or it spills
+   sideways. --s6 / --s5 / --s4, same as tokens.css sets. */
+@media (max-width: 1180px) {
+  .row-main { grid-template-columns: 148px minmax(0, 1fr) auto auto; gap: var(--s3); }
+}
+
+@media (max-width: 1100px) {
+  .list { margin: 0 calc(var(--s5) * -1); }
+  .row-line { padding-right: var(--s5); }
+  .row-detail { padding-right: var(--s5); }
+}
+
+@media (max-width: 860px) {
+  /* two lines: who and when, then the message. Sureness rides with it. */
+  .row-main {
+    grid-template-columns: minmax(0, 1fr) auto;
+    row-gap: 2px;
+    padding: var(--s2) 0;
+    min-height: 56px;
+  }
+  .row-from { grid-column: 1; grid-row: 1; }
+  .row-ref  { grid-column: 2; grid-row: 1; }
+  .row-sure { grid-column: 2; grid-row: 2; align-self: start; }
+  /* two lines on a phone, so the drafted reply is not cut off entirely */
+  .row-msg {
+    grid-column: 1;
+    grid-row: 2;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .key-sure { margin-left: 0; }
+}
+
+@media (max-width: 760px) {
+  .list { margin: 0 calc(var(--s4) * -1); }
+  .row-line { padding-right: var(--s4); }
+  .row-detail { padding-right: var(--s4); padding-left: var(--s4); }
+}
+
+@media (max-width: 620px) {
+  .closer-main.card { padding: var(--s4); }
+  .toolbar-go { margin-right: 0; flex: 1 1 auto; }
+  .tabs { flex: 1 1 100%; }
+  .msg-actions .btn { flex: 1 1 100%; }
+}

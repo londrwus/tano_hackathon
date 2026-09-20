@@ -1,0 +1,439 @@
+{
+ "handle": "@labmuffinbeautyscience",
+ "source": "rss",
+ "fetched_at": "2026-09-20T13:42:37+00:00",
+ "verbatim": true,
+ "item_count": 10,
+ "items": [
+  {
+   "title": "Why are skin cancer rates rising with more sunscreen?",
+   "url": "https://labmuffin.com/sunscreen-isnt-preventing-cancer/",
+   "date": "Tue, 07 Jul 2026 11:44:04 +0000",
+   "kind": "post",
+   "text": "Why are skin cancer rates rising with more sunscreen?. Sunscreen use is increasing, but skin cancer rates are also rising. Does that mean sunscreen doesn’t work, or – even worse – sunscreen might [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2894,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2025/05/melanoma-mariam-correlation.jpg",
+     "width_hint": 1200,
+     "height_hint": 757,
+     "alt": "melanoma mariam correlation",
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/sunscreen-isnt-preventing-cancer/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:27+00:00",
+     "vision": {
+      "shows": "chart",
+      "readable_text": "New cases of melanoma in the US\ncorrelates with\nPopularity of the first name Mariam\nRate per 100,000 persons\nNew cases of melanoma in the US, age-adjusted · Source: SEER 8\nBabies of all sexes born in the US named Mariam · Source: US Social Security Administration\n1975-2021, r=0.985, r²=0.971, p<0.01 · tylervigen.com/spurious/custom_correlation/508",
+      "products_named": [],
+      "is_instructional": "no",
+      "is_comparison": "yes",
+      "shows_a_result": "yes"
+     }
+    },
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2025/05/sunscreen-causing-cancer-364x600.jpg",
+     "width_hint": 364,
+     "height_hint": 600,
+     "alt": "sunscreen causing cancer",
+     "found_in": "article",
+     "source_page": "https://labmuffin.com/sunscreen-isnt-preventing-cancer/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:32+00:00",
+     "vision": {
+      "shows": "person",
+      "readable_text": "IMMUNE SYSTEM ON\nSKIN\nDates of introduction of suntan lotions and sunscreens and age-adjusted melanoma incidence rates per 100,000\nSource: Connecticut Tumor Registry\nHigher Erythemal Blocks (1975, SPF 20-35)",
+      "products_named": [],
+      "is_instructional": "no",
+      "is_comparison": "yes",
+      "shows_a_result": "yes"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  },
+  {
+   "title": "How to Reapply Sunscreen Over Makeup",
+   "url": "https://labmuffin.com/how-to-reapply-sunscreen-over-makeup-with-video/",
+   "date": "Tue, 30 Jun 2026 01:45:21 +0000",
+   "kind": "post",
+   "text": "How to Reapply Sunscreen Over Makeup. Affiliate Links PR Sample Today’s video is on one of the more commonly asked questions I get about sunscreen. You put your sunscreen on in the morning, apply [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2994,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2020/07/reapply-spf-over-makeup-thumbnail.jpg",
+     "width_hint": 900,
+     "height_hint": 506,
+     "alt": "How to Reapply Sunscreen Over Makeup",
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/how-to-reapply-sunscreen-over-makeup-with-video/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:35+00:00",
+     "vision": {
+      "shows": "person",
+      "readable_text": "REAPPLY SPF OVER MAKEUP?",
+      "products_named": [
+       "Neutrogena Ultra-Sheer Face Mist",
+       "Science",
+       "Laura Mercier",
+       "Vichy"
+      ],
+      "is_instructional": "unclear",
+      "is_comparison": "no",
+      "shows_a_result": "no"
+     }
+    },
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2020/07/foundation-0-2h-600x401.jpg",
+     "width_hint": 600,
+     "height_hint": 401,
+     "alt": "Foundation clumping",
+     "found_in": "article",
+     "source_page": "https://labmuffin.com/how-to-reapply-sunscreen-over-makeup-with-video/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:38+00:00",
+     "vision": {
+      "shows": "demo",
+      "readable_text": "0 HOURS\n2 HOURS",
+      "products_named": [],
+      "is_instructional": "no",
+      "is_comparison": "yes",
+      "shows_a_result": "yes"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  },
+  {
+   "title": "How Much of a Sunscreen Stick Should You Apply?",
+   "url": "https://labmuffin.com/how-to-apply-sunscreen-stick/",
+   "date": "Wed, 24 Jun 2026 21:30:14 +0000",
+   "kind": "post",
+   "text": "How Much of a Sunscreen Stick Should You Apply?. Affiliate Links PR Sample Sunscreen sticks are really convenient, but it’s difficult to measure out how much you need to apply, or whether you’ve [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2893,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2023/03/sunscreen-spf-stick-experiment.jpg",
+     "width_hint": 900,
+     "height_hint": 506,
+     "alt": "sunscreen spf stick experiment",
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/how-to-apply-sunscreen-stick/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:41+00:00",
+     "vision": {
+      "shows": "person",
+      "readable_text": "HOW MUCH? SPF?",
+      "products_named": [],
+      "is_instructional": "yes",
+      "is_comparison": "no",
+      "shows_a_result": "no"
+     }
+    },
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2023/02/Tocobo-sunscreen-stick-test-600x441.jpg",
+     "width_hint": 600,
+     "height_hint": 441,
+     "alt": "How much of a sunscreen stick do you need to apply? Tocobo",
+     "found_in": "article",
+     "source_page": "https://labmuffin.com/how-to-apply-sunscreen-stick/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:44+00:00",
+     "vision": {
+      "shows": "person",
+      "readable_text": "",
+      "products_named": [],
+      "is_instructional": "yes",
+      "is_comparison": "no",
+      "shows_a_result": "no"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  },
+  {
+   "title": "Hair porosity tests are a lie",
+   "url": "https://labmuffin.com/hair-porosity-tests-are-a-lie/",
+   "date": "Wed, 28 Jan 2026 06:04:15 +0000",
+   "kind": "post",
+   "text": "Hair porosity tests are a lie. There’s a lot of haircare advice based around the idea of “hair porosity”. This is a pretty complex term that can mean a lot of different things in different contexts [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2866,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2026/01/float-test-1.jpg",
+     "width_hint": 858,
+     "height_hint": 1119,
+     "alt": "float test",
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/hair-porosity-tests-are-a-lie/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:47+00:00",
+     "vision": {
+      "shows": "demo",
+      "readable_text": "\"Low porosity\" floats\n\"High porosity\" sinks\nBUSTED!",
+      "products_named": [],
+      "is_instructional": "yes",
+      "is_comparison": "no",
+      "shows_a_result": "yes"
+     }
+    },
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2025/12/cuticle-wet-600x567.jpg",
+     "width_hint": 600,
+     "height_hint": 567,
+     "alt": "cuticle wet",
+     "found_in": "article",
+     "source_page": "https://labmuffin.com/hair-porosity-tests-are-a-lie/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:51+00:00",
+     "vision": {
+      "shows": "diagram",
+      "readable_text": "water absorbs",
+      "products_named": [],
+      "is_instructional": "no",
+      "is_comparison": "no",
+      "shows_a_result": "unclear"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  },
+  {
+   "title": "Does water damage hair? The myth of “hygral fatigue”",
+   "url": "https://labmuffin.com/does-water-damage-hair-the-myth-of-hygral-fatigue/",
+   "date": "Wed, 28 Jan 2026 04:36:06 +0000",
+   "kind": "post",
+   "text": "Does water damage hair? The myth of “hygral fatigue”. How water interacts with hair is one of the biggest sources of myths about hair. One of the biggest myths is the idea that wetting and drying [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2897,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2026/01/the-myth-of-hygral-fatigue.jpeg",
+     "width_hint": 1200,
+     "height_hint": 1177,
+     "alt": "the myth of hygral fatigue",
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/does-water-damage-hair-the-myth-of-hygral-fatigue/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:55+00:00",
+     "vision": {
+      "shows": "demo",
+      "readable_text": "",
+      "products_named": [],
+      "is_instructional": "yes",
+      "is_comparison": "no",
+      "shows_a_result": "no"
+     }
+    },
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2025/12/cuticle-wet-600x567.jpg",
+     "width_hint": 600,
+     "height_hint": 567,
+     "alt": "wet hair cuticle scales",
+     "found_in": "article",
+     "source_page": "https://labmuffin.com/does-water-damage-hair-the-myth-of-hygral-fatigue/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:51+00:00",
+     "vision": {
+      "shows": "diagram",
+      "readable_text": "water absorbs",
+      "products_named": [],
+      "is_instructional": "no",
+      "is_comparison": "no",
+      "shows_a_result": "unclear"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  },
+  {
+   "title": "Hair, hydration and water: the real science",
+   "url": "https://labmuffin.com/hair-hydration-and-water-the-real-science/",
+   "date": "Wed, 28 Jan 2026 01:42:40 +0000",
+   "kind": "post",
+   "text": "Hair, hydration and water: the real science. Should you hydrate your hair? From all of the hydrating hair products out there, you’d think the answer is obviously, yes. But quite a lot of hair experts [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2845,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2025/12/hair-bonds-break-with-water.jpg",
+     "width_hint": 1200,
+     "height_hint": 525,
+     "alt": "hair bonds break with water",
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/hair-hydration-and-water-the-real-science/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:12:58+00:00",
+     "vision": {
+      "shows": "diagram",
+      "readable_text": "Add water\nRemove water",
+      "products_named": [],
+      "is_instructional": "no",
+      "is_comparison": "no",
+      "shows_a_result": "no"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  },
+  {
+   "title": "“Plastic-free” is the new clean beauty: a treatise",
+   "url": "https://labmuffin.com/plastic-free-is-the-new-clean-beauty-a-treatise/",
+   "date": "Wed, 21 Jan 2026 04:58:47 +0000",
+   "kind": "post",
+   "text": "“Plastic-free” is the new clean beauty: a treatise. I recently came across a Threads post from @idea.soup that said: “I don’t have any evidence for it but I have a weird feeling the anti-polyester [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2894,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2026/01/anti-plastic-clean-beauty-meme.jpg",
+     "width_hint": 1200,
+     "height_hint": 651,
+     "alt": "anti plastic clean beauty meme",
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/plastic-free-is-the-new-clean-beauty-a-treatise/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:13:01+00:00",
+     "vision": {
+      "shows": "person",
+      "readable_text": "Corporate needs you to find the differences between this picture and this picture.\nThey're the same picture.",
+      "products_named": [],
+      "is_instructional": "no",
+      "is_comparison": "yes",
+      "shows_a_result": "no"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  },
+  {
+   "title": "What is hyaluronic acid and how does it work in skincare and makeup?",
+   "url": "https://labmuffin.com/what-is-hyaluronic-acid-and-how-does-it-work/",
+   "date": "Tue, 25 Nov 2025 04:28:19 +0000",
+   "kind": "post",
+   "text": "What is hyaluronic acid and how does it work in skincare and makeup?. 1 What Is Hyaluronic Acid? 2 What Does Hyaluronic Acid Do in Skincare? 3 Other Uses of Hyaluronic Acid 4 Hyaluronic Acid Product [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2934,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2016/08/hyaluronic-acid.png",
+     "width_hint": 800,
+     "height_hint": 356,
+     "alt": "What is hyaluronic acid and how does it work?",
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/what-is-hyaluronic-acid-and-how-does-it-work/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:13:04+00:00",
+     "vision": {
+      "shows": "diagram",
+      "readable_text": "",
+      "products_named": [],
+      "is_instructional": "no",
+      "is_comparison": "no",
+      "shows_a_result": "no"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  },
+  {
+   "title": "Ulike red light mask overview and experience",
+   "url": "https://labmuffin.com/ulike-red-light-mask-overview-and-experience/",
+   "date": "Tue, 04 Nov 2025 00:45:27 +0000",
+   "kind": "post",
+   "text": "Ulike red light mask overview and experience. Sponsored Affiliate Links PR Sample This post is sponsored by Ulike. I did a deep dive into the science behind red light a little while back. Since then, [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2962,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2025/10/ulike-reglow-mask-rejuvenate-mode.jpg",
+     "width_hint": 817,
+     "height_hint": 1200,
+     "alt": null,
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/ulike-red-light-mask-overview-and-experience/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:13:08+00:00",
+     "vision": {
+      "shows": "person",
+      "readable_text": "Glow\nFirm\nRejuvenate\nClear\nUlike",
+      "products_named": [
+       "Ulike"
+      ],
+      "is_instructional": "no",
+      "is_comparison": "no",
+      "shows_a_result": "no"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  },
+  {
+   "title": "Investigating the viral heat protectant test",
+   "url": "https://labmuffin.com/investigating-the-viral-heat-protectant-test/",
+   "date": "Tue, 09 Sep 2025 09:16:11 +0000",
+   "kind": "post",
+   "text": "Investigating the viral heat protectant test. There’s been a lot of people testing heat protectants on receipts lately. You spray a heat protectant on a thermal paper receipt, then use a flat iron [...]",
+   "text_is_excerpt": true,
+   "text_full_chars": 2958,
+   "images": [
+    {
+     "url": "https://labmuffin.com/wp-content/uploads/2025/04/Hair-protectant-receipts-thumbnail.jpg",
+     "width_hint": 1200,
+     "height_hint": 675,
+     "alt": "Hair protectant receipts thumbnail",
+     "found_in": "og:image",
+     "source_page": "https://labmuffin.com/investigating-the-viral-heat-protectant-test/",
+     "vision_model": "gpt-4o-mini",
+     "seen_at": "2026-09-20T14:13:11+00:00",
+     "vision": {
+      "shows": "demo",
+      "readable_text": "OUAI\nSun Bum\nWinCo Foods",
+      "products_named": [
+       "OUAI",
+       "Sun Bum"
+      ],
+      "is_instructional": "yes",
+      "is_comparison": "no",
+      "shows_a_result": "unclear"
+     }
+    }
+   ],
+   "verbatim": true,
+   "excerpted": true
+  }
+ ],
+ "display_name": "Michelle Wong",
+ "what_she_is": "Cosmetic chemist, PhD. Writes Lab Muffin Beauty Science.",
+ "source_url": "https://labmuffin.com/feed/",
+ "why_this_creator": "Chosen as a real-world match for Maya: sceptical of hype, heavy on sunscreen, writes to talk people OUT of things. Science-led rather than price-led, so she should diverge from Maya on price - which is the interesting part.",
+ "cleaning_note": "Repeated site boilerplate (affiliate disclosure, citation block, nav, footer) stripped before extraction. Her actual prose is untouched. Each post is then capped at its first 3000 characters, cut at a sentence end: 57,015 chars -> 29,137. The cap was measured, not guessed: re-extracted live at 3,000 all fourteen slots come back at the same LEVEL as the full 57,015-character corpus, and the extraction costs 16,473 input tokens instead of 22,832. At 1,500 `price_refusal` crossed 0.5 and changed level, so 1,500 was rejected. Four-run table in MAX_CHARS_PER_ITEM, scripts/fetch_corpus.py.",
+ "image_count": 15,
+ "image_candidate_count": 15,
+ "vision_model": "gpt-4o-mini",
+ "vision_enriched_at": "2026-09-20T14:13:30+00:00",
+ "vision_note": "The images are read by gpt-4o-mini under a strict json_schema, not by Jev. Jev judges the extracted attributes. The pictures are Michelle Wong's own, published on the site they were fetched from; we reference the original URL and do not re-host them. An image we could not read carries vision: null and an error, never a guess.",
+ "vision_script": "scripts/enrich_images.py",
+ "char_cap_per_item": 3000,
+ "char_count_before_cap": 57015,
+ "excerpted": true,
+ "text_policy": "PUBLICATION EXCERPT. Michelle Wong wrote these posts. They are hers, not ours. This repository is public, so each body is cut to roughly its first 200 characters. Titles, URLs, dates, image URLs and the typed vision attributes are unchanged. The extraction frozen in cache/extract-labmuffin.json was computed against the full 57015-character corpus described by cleaning_note below. To reproduce it you must re-fetch her text yourself: `python scripts/fetch_corpus.py rss https://labmuffin.com/feed/ --full`, then `python scripts/enrich_images.py labmuffin`.",
+ "excerpt_chars_per_item": 200,
+ "char_count_in_this_file": 2024,
+ "refetch": "python scripts/fetch_corpus.py rss https://labmuffin.com/feed/ --full",
+ "rights": "Text copyright Michelle Wong, labmuffin.com. Excerpted here for reference and not relicensed. Her photographs are referenced at their original URLs. No image bytes are stored in this repository.",
+ "excerpt_note": "Her words, verbatim, but truncated to ~200 characters per post. Excerpting does not make it paraphrase - every character here is hers. The full bodies are her copyright and not ours to redistribute; re-fetch with scripts/fetch_corpus.py rss https://labmuffin.com/feed/ --full"
+}

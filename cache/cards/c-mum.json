@@ -1,0 +1,128 @@
+{
+ "card_id": "c-mum",
+ "parent_card_id": "c-jessica",
+ "re_decided_at": "2026-09-20T15:15:19Z",
+ "asker": {
+  "name": "her mum",
+  "said": "sent by my daughter. dry, mature skin",
+  "skin": [
+   "dry"
+  ],
+  "budget": 100,
+  "owns": [],
+  "how_many": 3
+ },
+ "verdict": {
+  "headline": "Three things. The good one, the SPF and the cleanser.",
+  "in_her_voice": "Three things. The good one, the SPF and the cleanser. Eighty-six pounds.",
+  "is_refusal": false
+ },
+ "basket": [
+  {
+   "product": "Cloud Cream",
+   "price": "£38",
+   "type": "Moisturiser",
+   "ref": "E-04.1",
+   "maya_note": "My winter skin saviour.",
+   "affiliate": true,
+   "touched": true,
+   "why": "Her rule for DRY, extracted from her own captions."
+  },
+  {
+   "product": "SPF 50",
+   "price": "£26",
+   "type": "SPF",
+   "ref": "E-04.5",
+   "maya_note": "Non-negotiable.",
+   "affiliate": true,
+   "touched": true,
+   "why": "Her defended category."
+  },
+  {
+   "product": "Soft Clean",
+   "price": "£22",
+   "type": "Cleanser",
+   "ref": "E-04.7",
+   "maya_note": "Boring in the best way.",
+   "affiliate": true,
+   "touched": true,
+   "why": "It fits the budget and it does a job nothing else in the basket does."
+  }
+ ],
+ "total": "£86",
+ "unspent": {
+  "amount": "£14",
+  "line": "She left £14 of your £100 on the table."
+ },
+ "left_out": [
+  {
+   "product": "Glass Drop",
+   "price": "£62",
+   "ref": "E-04.6",
+   "why": "Good. Not £62 good.",
+   "instead": "Red Reset at £32 does the same job.",
+   "reason_code": "over_her_price_line",
+   "affiliate": false
+  },
+  {
+   "product": "Oil Balm",
+   "price": "£29",
+   "ref": "E-04.8",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the good one runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": false
+  },
+  {
+   "product": "Tint Veil",
+   "price": "£34",
+   "ref": "E-04.10",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the good one runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": true
+  }
+ ],
+ "ceiling": {
+  "band": "about £45–50",
+  "provenance": "Estimated from Maya's own posts. She sets the line",
+  "evidence_ref": "E-04.1",
+  "product": "Cloud Cream",
+  "over_sticker": true
+ },
+ "money_line": {
+  "affiliate_count": 3,
+  "basket_value": "£86",
+  "note": "3 of 3 products are affiliate-linked.",
+  "rule": "Everything on her own shelf is affiliate-linked except the two she publicly refuses - Glass Drop (E-04.6) and Oil Balm (E-04.8)."
+ },
+ "indifference_band": "Her answer changes as soon as the budget moves off £100.",
+ "og_image": "/api/card/c-mum/og.png",
+ "share_url": "/c/c-mum",
+ "baskets_considered": 7,
+ "basket_confidence": 0.35,
+ "defended_category": "spf",
+ "routing_fired": [
+  {
+   "condition": "DRY",
+   "product": "Cloud Cream"
+  }
+ ],
+ "routing_enforced": [
+  "Cloud Cream"
+ ],
+ "seconds": 0.84,
+ "live": true,
+ "spec": {
+  "name": "her mum",
+  "said": "sent by my daughter. dry, mature skin",
+  "skin": [
+   "dry"
+  ],
+  "budget": 100,
+  "owns": [],
+  "how_many": 3,
+  "parent_card_id": "c-jessica",
+  "named_product": null
+ }
+}

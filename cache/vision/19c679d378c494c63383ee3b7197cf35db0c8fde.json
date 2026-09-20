@@ -1,0 +1,33 @@
+{
+ "url": "https://labmuffin.com/wp-content/uploads/2023/02/Tocobo-sunscreen-stick-test-600x441.jpg",
+ "model": "gpt-4o-mini",
+ "seen_at": "2026-09-20T14:12:44+00:00",
+ "ok": true,
+ "vision": {
+  "shows": "person",
+  "readable_text": "",
+  "products_named": [],
+  "is_instructional": "yes",
+  "is_comparison": "no",
+  "shows_a_result": "no"
+ },
+ "error": null,
+ "usage": {
+  "prompt_tokens": 14615,
+  "completion_tokens": 31,
+  "total_tokens": 14646,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "audio_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "audio_tokens": 0,
+   "accepted_prediction_tokens": 0,
+   "rejected_prediction_tokens": 0
+  }
+ },
+ "bytes": 27058,
+ "seconds": 2.86,
+ "from_cache": false
+}

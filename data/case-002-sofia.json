@@ -1,0 +1,171 @@
+{
+  "_comment": "Case pack for CASE 002 / OPERATION LOOKBOOK. Same schema as case-001-maya.json so the engine can swap creators by changing one filename. Transcribed from docs/evidence/case-002-operation-lookbook.txt.",
+  "case": {
+    "id": "002",
+    "ref": "LBK-002",
+    "operation": "OPERATION LOOKBOOK",
+    "logline": "A 50K creator. A highly trusted audience. A business increasingly bottlenecked by her own judgement.",
+    "mission": "Turn Sofia's taste into something her audience can actually use — without turning her into a catalogue.",
+    "ask": "Build one working product that uses Sofia's judgement to help ONE real audience member make ONE better decision.",
+    "judged_on": ["Value to a real audience member", "Focus to her judgement", "Use of the evidence", "Does it work"],
+    "final_line_template": "Sofia no longer needs to ____ because ____.",
+    "ground_rules": [
+      "Start hacking immediately.",
+      "You do not need AI or expensive model calls.",
+      "Use the evidence. Ignore the theatre.",
+      "A simple product that works beats a complicated demo."
+    ],
+    "objective": "ONE PRODUCT. ONE AUDIENCE MEMBER. ONE DECISION MADE BETTER. If you cannot name the person and the decision, you do not have a product yet."
+  },
+
+  "creator": {
+    "name": "Sofia Bennett",
+    "age": 27,
+    "city": "London",
+    "niche": "Fashion / styling",
+    "followers": { "instagram": 34000, "tiktok": 16000, "total": 50000 },
+    "team": "Sofia + 1 part-time VA",
+    "business": "Affiliate + brand + UGC; also paid styling and creator-led edits",
+    "superpower": "Taste + trust",
+    "reputation": "Sofia has an audience that treats her like their best-dressed friend. They believe she can save them from bad purchases and bad styling decisions.",
+    "assessment": "Her taste is the asset. The value of her judgement is still trapped inside the creator.",
+    "load": { "dms_per_month": 3100, "monthly_reach": 2400000 },
+    "what_she_wants": "More audience intimacy, not less. Less repetitive admin, more time spent making content and finding great products.",
+    "what_people_want": "Not another list of links. They want Sofia to decide: what would I buy, what would I wear, what is worth it, and what fits my life?"
+  },
+
+  "voice": {
+    "_source": "E-06.1 voice note (01:42) + E-05 notebook",
+    "voice_note": "I actually like answering people. It is why the community feels like a community. I just don't want my business model to require me to be awake every time someone wants my opinion. If something could capture how I think about clothes — not just what I own — that would be useful.",
+    "listen_for": ["how I think", "not just what I own", "community feels like a community", "without me being awake"],
+    "her_rule": "I would rather link 3 things I truly love than 30 things I was paid to post.",
+    "creed": "People want my eye, not my inventory.",
+    "style_rules": [
+      "If I wouldn't text this to my sister, I don't link it.",
+      "Buy once, wear forever — she rates longevity over novelty.",
+      "She will name the cheaper version as 'enough' when it is (the £35 white tee).",
+      "She will flag a great item as wrong for you (the vintage leather is 'great, but warm').",
+      "STOP MAKING 100 LINKS. CURATE 5."
+    ]
+  },
+
+  "decision_rules": {
+    "_source": "E-05.1 BUY / MAYBE / NO + E-05.2",
+    "verdicts": [
+      { "item": "Black blazer", "verdict": "BUY", "why": "best one" },
+      { "item": "Vintage leather", "verdict": "MAYBE", "why": "looks insane, too warm" },
+      { "item": "Loafers", "verdict": "BUY", "why": "buy once, keep forever" },
+      { "item": "White tee", "verdict": "BUY", "why": "£35 version is enough" }
+    ],
+    "questions_she_keeps_answering": ["where is it?", "what size?", "cheaper?", "what goes with it?"],
+    "unfinished_ideas": ["let people tell me what they already own", "maybe the answer is not a shop"]
+  },
+
+  "shelf": [
+    { "ref": "E-04.1", "product": "Black blazer", "gbp": 145, "type": "Jacket", "size": "UK 8", "style": "Tailored", "status": "In stock", "maya_note": "buy once, wear forever" },
+    { "ref": "E-04.2", "product": "Vintage leather", "gbp": 180, "type": "Jacket", "size": "UK 8", "style": "Vintage", "status": "One-off", "maya_note": "great, but warm", "is_contradiction": true },
+    { "ref": "E-04.3", "product": "Silk skirt", "gbp": 95, "type": "Skirt", "size": "UK 8", "style": "Minimal", "status": "In stock", "maya_note": "best with trainers" },
+    { "ref": "E-04.4", "product": "White tee", "gbp": 35, "type": "Top", "size": "UK 8", "style": "Basic", "status": "In stock", "maya_note": "£35 is enough" },
+    { "ref": "E-04.5", "product": "Loafers", "gbp": 120, "type": "Shoes", "size": "UK 5", "style": "Classic", "status": "In stock", "maya_note": "expensive-ish, worth it" },
+    { "ref": "E-04.6", "product": "Red slingback", "gbp": 89, "type": "Shoes", "size": "UK 5", "style": "Statement", "status": "In stock", "maya_note": "date-night shoe" },
+    { "ref": "E-04.7", "product": "Grey knit", "gbp": 78, "type": "Top", "size": "UK S", "style": "Minimal", "status": "Low stock", "maya_note": "soft but pills", "is_contradiction": true },
+    { "ref": "E-04.8", "product": "Wide-leg denim", "gbp": 110, "type": "Trousers", "size": "UK 8", "style": "Relaxed", "status": "In stock", "maya_note": "my actual uniform" }
+  ],
+  "shelf_assessment": "The dataset intentionally mixes objective facts with Sofia's subjective judgement. The subjective layer is not noise. It is the product. Extract shown: 8 of 36 items.",
+
+  "personas": [
+    { "id": "decider", "name": "The Decider", "tag": "HIGH INTENT", "says": "Tell me which one.", "needs": "Sofia to narrow the choice." },
+    { "id": "recreator", "name": "The Recreator", "tag": "SAVES / SHARES", "says": "How do I get this vibe?", "needs": "The look, not necessarily the exact item." },
+    { "id": "value_hunter", "name": "The Value Hunter", "tag": "COMPARES", "says": "Anything like this under £100?", "needs": "The same taste at a lower price." },
+    { "id": "stylist", "name": "The Stylist", "tag": "HIGH REPEAT", "says": "What would you wear with this?", "needs": "Styling around what they already own." },
+    { "id": "friend", "name": "The Friend", "tag": "INVISIBLE", "says": "Sending this to you.", "needs": "Shares with someone else who might buy. Often invisible to last-click.", "is_the_quiet_one": true }
+  ],
+  "personas_note": "The audience does not behave like one audience.",
+
+  "tracked_individuals": [
+    { "ref": "E-07.1", "name": "Clara", "age": 23, "profile": "Wants a look for less. Views 6 times, saves, then searches herself.", "tag": "LOW CLICK / HIGH PURCHASE" },
+    { "ref": "E-07.2", "name": "Jamie", "age": 29, "profile": "Owns basics. Wants styling help. Returns to old posts and asks follow-ups.", "tag": "HIGH REPEAT" },
+    { "ref": "E-07.3", "name": "Priya", "age": 31, "profile": "Wants Sofia's 'buy once' judgement. Saves 'worth it' posts.", "tag": "HIGH AOV" },
+    { "ref": "E-07.4", "name": "Ella", "age": 26, "profile": "Sends outfits to friends. Friend often makes the purchase.", "tag": "LOW ATTRIBUTION" }
+  ],
+
+  "inbox": [
+    { "ref": "E-01.1", "handle": "@jessicam", "job": "EXACT ITEM REQUEST", "text": "WHERE is this blazer I'm begging you" },
+    { "ref": "E-01.2", "handle": "@amelie.paris", "job": "DECISION", "text": "Ok but if you were me, which one would you actually buy?" },
+    { "ref": "E-01.3", "handle": "@niamhh", "job": "ADAPTATION", "text": "I love the outfit but I live in trainers. How would you change it?" },
+    { "ref": "E-01.4", "handle": "@roisin", "job": "BUDGET", "text": "Anything like this but under £120? I'm not paying £400 lol" },
+    { "ref": "E-01.5", "handle": "@sarahk", "job": "SOCIAL SHARING", "text": "Sending this to my sister because she needs this exact vibe" },
+    { "ref": "E-01.6", "handle": "@hannah", "job": "FIT", "text": "What size are you in this? I'm usually an 8 but brands are all over the place." },
+    { "ref": "E-01.7", "handle": "@sophiaa", "job": "INTENT", "text": "Can you find me a version of this for a wedding? Same energy, less corporate." },
+    { "ref": "E-01.8", "handle": "@maya_m", "job": "POST-PURCHASE", "text": "I bought the shoes. What should I wear with them?" },
+    { "ref": "E-01.9", "handle": "@laura", "job": "CONSTRAINT", "text": "I'm trying not to buy more stuff. Can you help me use what I own?" },
+    { "ref": "E-01.10", "handle": "@rachel", "job": "TRUST", "text": "This is the first creator account where I actually save everything." },
+    { "ref": "E-01.11", "handle": "@georgia", "job": "SECOND-HAND DISCOVERY", "text": "My bf sent me your coat video because he thinks I need it" },
+    { "ref": "E-01.12", "handle": "@ameliax", "job": "CONSIDERATION", "text": "I've opened this three times. Still deciding." }
+  ],
+  "inbox_clue": "Twelve messages, seven different jobs. Underneath all of them: decide for me the way you would decide for yourself.",
+
+  "broadcast_log": [
+    { "ref": "E-03.1", "title": "3 outfits I'd wear to London Fashion Week", "views": 61000, "saves": 4800, "purchases": 218, "note": "Strong conversion" },
+    { "ref": "E-03.2", "title": "Everything I wore in Copenhagen", "views": 184000, "saves": 7100, "purchases": 92, "note": "High reach, low intent" },
+    { "ref": "E-03.3", "title": "£100 outfit challenge", "views": 42000, "saves": 6900, "purchases": 311, "note": "High intent" },
+    { "ref": "E-03.4", "title": "The blazer I keep wearing", "views": 28000, "saves": 3800, "purchases": 427, "note": "Quiet winner" },
+    { "ref": "E-03.5", "title": "Things I would never buy again", "views": 39000, "saves": 5300, "purchases": 0, "note": "High trust, low direct revenue" }
+  ],
+  "broadcast_clue": "184K views produced 92 purchases. 28K views produced 427. Read the behaviour, not the vanity metric.",
+
+  "field_notes_tuesday": [
+    { "t": "07:45", "what": "Coffee + checks DMs", "detail": "12 unread 'where is this?' messages" },
+    { "t": "09:00", "what": "Film content", "detail": "Outfit details saved as voice notes" },
+    { "t": "11:00", "what": "Edit + captions", "detail": "Adds links manually" },
+    { "t": "12:30", "what": "Brand call", "detail": "Negotiating a capsule campaign" },
+    { "t": "14:00", "what": "DM sprint", "detail": "Answers 38 useful questions" },
+    { "t": "15:30", "what": "Affiliate admin", "detail": "Copies links into replies" },
+    { "t": "17:00", "what": "Content planning", "detail": "Saves 11 outfit screenshots" },
+    { "t": "19:30", "what": "Dinner", "detail": "Friend sends her a look to recreate" },
+    { "t": "21:00", "what": "Second DM sprint", "detail": "Still 90+ unanswered" },
+    { "t": "23:10", "what": "One last check", "detail": "Tomorrow I need to fix this." }
+  ],
+  "field_notes_clue": "Two DM sprints a day and the queue still grows. The bottleneck is not effort. It is that her judgement only exists in real time.",
+
+  "intelligence_drop_1600": {
+    "_source": "E-09, sealed until 16:00",
+    "headline": "THE PURCHASE IS OFTEN NOT THE CLICK",
+    "detail": "People use Sofia to decide, then buy later, sometimes somewhere else. The value is being undercounted by the obvious metrics.",
+    "stats": {
+      "high_value_purchasers_who_did_not_click_affiliate": 0.62,
+      "saver_conversion_multiple": 2.2,
+      "purchases_following_a_share": 0.41,
+      "median_purchase_lag_days": 3.4
+    }
+  },
+
+  "hidden_audience": {
+    "_source": "E-10, released at 16:00",
+    "columns": ["user", "saves", "shares", "returns", "link_click", "purchase", "days_to_buy"],
+    "rows": [
+      ["U-014", 7, 2, 4, false, true, 5],
+      ["U-031", 2, 0, 1, true, true, 0.4],
+      ["U-067", 5, 3, 3, false, true, 4],
+      ["U-082", 1, 0, 1, true, false, null],
+      ["U-104", 8, 5, 6, false, true, 7],
+      ["U-121", 3, 1, 2, false, true, 2],
+      ["U-139", 6, 4, 3, false, true, 3],
+      ["U-166", 1, 0, 1, true, false, null],
+      ["U-204", 9, 6, 7, false, true, 6],
+      ["U-219", 4, 0, 2, true, true, 1],
+      ["U-241", 2, 2, 2, false, false, null],
+      ["U-288", 7, 4, 5, false, true, 4]
+    ],
+    "look_closer": "The YES/NO around link clicks is intentionally incomplete. You are supposed to decide what matters, then decide what to instrument. Signal can be behavioural, not transactional."
+  },
+
+  "build_must": [
+    "Help a real audience member make a better decision.",
+    "Preserve a meaningful piece of Sofia's judgement / taste.",
+    "Work with the evidence provided.",
+    "Be demonstrable in a few clicks.",
+    "Not require expensive AI inference to be impressive."
+  ],
+  "things_you_do_not_need": ["A giant model.", "A huge backend.", "A pitch deck pretending it is a product."]
+}

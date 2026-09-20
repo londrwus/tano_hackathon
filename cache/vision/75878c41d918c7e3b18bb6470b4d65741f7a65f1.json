@@ -1,0 +1,33 @@
+{
+ "url": "https://labmuffin.com/wp-content/uploads/2026/01/the-myth-of-hygral-fatigue.jpeg",
+ "model": "gpt-4o-mini",
+ "seen_at": "2026-09-20T14:12:55+00:00",
+ "ok": true,
+ "vision": {
+  "shows": "demo",
+  "readable_text": "",
+  "products_named": [],
+  "is_instructional": "yes",
+  "is_comparison": "no",
+  "shows_a_result": "no"
+ },
+ "error": null,
+ "usage": {
+  "prompt_tokens": 25949,
+  "completion_tokens": 31,
+  "total_tokens": 25980,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "audio_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "audio_tokens": 0,
+   "accepted_prediction_tokens": 0,
+   "rejected_prediction_tokens": 0
+  }
+ },
+ "bytes": 115794,
+ "seconds": 3.36,
+ "from_cache": false
+}

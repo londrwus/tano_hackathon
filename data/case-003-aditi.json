@@ -1,0 +1,164 @@
+{
+  "_comment": "Case pack for CASE 003 / OPERATION FRONT ROW. Same schema as case-001-maya.json. Note: this is the only case whose brief is explicitly two-sided — it asks for a creator-side decision AND an audience-side next step. Transcribed from docs/evidence/case-003-operation-front-row.txt.",
+  "case": {
+    "id": "003",
+    "ref": "FRW-003",
+    "operation": "OPERATION FRONT ROW",
+    "logline": "A 320K creator with a permanent seat at the centre of European tech. Thirteen million views. One person who cannot be in two rooms at once.",
+    "mission": "Help Aditi decide what to make next: content that builds real trust with her audience, not just reach, and gives them a clear next step to take.",
+    "ask": "Build one working product that helps Aditi decide what to make next, AND gives her audience a clear next step to take.",
+    "judged_on": ["Value to a real audience member", "Focus to her judgement", "Use of the evidence", "Does it work"],
+    "final_line_template": "Aditi no longer needs to ____ because ____.",
+    "explicitly_not": ["Not a course.", "Not a coaching funnel.", "Not a better link in bio."]
+  },
+
+  "creator": {
+    "name": "Aditi Mishra",
+    "city": "London, via Dehradun",
+    "niche": "Startups / AI / new media",
+    "role": "Creator, host and Head of New Media at a European tech title",
+    "followers": { "instagram": 248000, "linkedin": 31000, "newsletter": 42000, "total": 320000 },
+    "team": "Aditi + manager + part-time video editor",
+    "business": "Brand + hosting + advisory; keynotes, MC work, live founder interviews",
+    "superpower": "Access + judgement",
+    "reputation": "Aditi's audience treats her as the person already sitting in the room they are trying to get into. They believe she will tell them what it actually took, and what she would do in their position.",
+    "assessment": "Her access is the asset, but only if she can tell people what to do with it. The content problem and the trust problem are the same problem: one clear, repeatable answer, not a faster way to reply to everyone separately.",
+    "load": { "dms_and_emails_per_month": 2600, "views_per_90_days": 13000000 }
+  },
+
+  "voice": {
+    "_source": "E-05.7 thought process + E-05.5 margin note",
+    "voice_note": "I actually like answering people. It's why the community feels like a community. What I can't do is be awake in six countries at once. If something could capture how I decide, not just where I happened to be standing, that would be useful to a lot more people than the ones who catch me live.",
+    "notice_this": ["how I decide", "not just where I happened to be standing", "awake in six countries at once", "the ones who catch me live"],
+    "her_rule": "I would rather say one true thing about a room I was actually in than ten clever things about a room I was not.",
+    "creed": "People want my judgement, not my calendar.",
+    "style_rules": [
+      "If I would not say it to my sister on the phone, I do not post it.",
+      "STOP MAKING COURSES. CURATE 5.",
+      "She will publicly name the opportunities she said no to.",
+      "She values the honest arithmetic of what something cost over the glamour of having been there."
+    ]
+  },
+
+  "decision_rules": {
+    "_source": "E-05.1 KEEP / MAYBE / KILL",
+    "verdicts": [
+      { "item": "Founder interviews", "verdict": "KEEP", "why": "the best one" },
+      { "item": "Conference recaps", "verdict": "KILL", "why": "big numbers, small effect" },
+      { "item": "Backstage answers", "verdict": "KEEP", "why": "make once, keep forever" },
+      { "item": "Career posts", "verdict": "KILL", "why": "wrong room" }
+    ],
+    "questions_she_keeps_answering": ["which event was this?", "how do I get in?", "was it worth it?", "what would you have asked?"],
+    "unfinished_ideas": ["let people bring me their own decision", "maybe the answer is not a newsletter"],
+    "contradiction": "She keeps saying 'less content'. But her highest-converting posts are also the most heavily edited. The opportunity may be less about posting less and more about making each judgement carry more of her context."
+  },
+
+  "shelf": [
+    { "ref": "E-04.1", "product": "Founder stage interviews", "type": "Video", "volume": "6 sessions", "status": "In the can", "maya_note": "best material I have" },
+    { "ref": "E-04.2", "product": "Cannes Lions week", "type": "Video", "volume": "40 clips", "status": "Half cut", "maya_note": "everyone only saw the glamour" },
+    { "ref": "E-04.3", "product": "Keynote, 300 in the room", "type": "Talk", "volume": "32 min", "status": "Used once", "maya_note": "should have been ten things" },
+    { "ref": "E-04.4", "product": "Walk-home voice notes", "type": "Audio", "volume": "9 hrs", "status": "Unfiled", "maya_note": "where the real thinking is" },
+    { "ref": "E-04.5", "product": "Backstage Q&A", "type": "Live", "volume": "Unrecorded", "status": "Gone", "maya_note": "the best answer I ever gave", "is_contradiction": true },
+    { "ref": "E-04.6", "product": "Newsletter archive", "type": "Text", "volume": "42K list", "status": "Dormant", "maya_note": "I lost the thread" },
+    { "ref": "E-04.7", "product": "Six-country speaking run", "type": "Access", "volume": "4 months", "status": "In progress", "maya_note": "there is one of me" },
+    { "ref": "E-04.8", "product": "Reader replies", "type": "Text", "volume": "2.6K / mo", "status": "Unsorted", "maya_note": "the actual research" }
+  ],
+  "shelf_assessment": "Extract: 8 of 61 assets. Being in the room is not the same thing as an answer. Useful fields: Room, Format, Decision, Cost, Aditi rating, Personal note, 'Would I do it again?'",
+
+  "personas": [
+    { "id": "climber", "name": "The Climber", "tag": "HIGH INTENT", "says": "Would you take this job?", "needs": "Aditi to narrow the choice down to one." },
+    { "id": "builder", "name": "The Builder", "tag": "SAVES / SHARES", "says": "How do I get into that room?", "needs": "The route in, not the anecdote from inside." },
+    { "id": "switcher", "name": "The Switcher", "tag": "COMPARES", "says": "Was it worth what it cost you?", "needs": "The honest arithmetic before committing." },
+    { "id": "operator", "name": "The Operator", "tag": "HIGH REPEAT", "says": "What would you have asked them?", "needs": "Her framing applied to their own work." },
+    { "id": "forwarder", "name": "The Forwarder", "tag": "INVISIBLE", "says": "Sending this to you.", "needs": "Passes it to someone who acts on it. Invisible to every dashboard.", "is_the_quiet_one": true }
+  ],
+  "personas_note": "The audience does not behave like one audience. Large enough to be a real audience. Specific enough that one generic answer fails all of them.",
+
+  "tracked_individuals": [
+    { "ref": "E-07.1", "name": "Clara", "age": 24, "profile": "Wants the route in, not the story. Watches six times, saves, then researches alone.", "tag": "LOW CLICK / HIGH ACTION" },
+    { "ref": "E-07.2", "name": "Jamie", "age": 29, "profile": "Already in tech. Wants Aditi's framing applied to his own decision. Returns to old posts and asks follow-ups.", "tag": "HIGH REPEAT" },
+    { "ref": "E-07.3", "name": "Priya", "age": 33, "profile": "Wants the 'worth it' verdict before she commits budget or a weekend. Saves every cost breakdown.", "tag": "HIGH VALUE" },
+    { "ref": "E-07.4", "name": "Ella", "age": 26, "profile": "Forwards Aditi's clips into a team channel. The team acts on them. Aditi never sees it.", "tag": "LOW ATTRIBUTION" }
+  ],
+
+  "inbox": [
+    { "ref": "E-01.1", "handle": "@priyanka.builds", "job": "ACCESS REQUEST", "text": "WHICH event was this, I am begging you" },
+    { "ref": "E-01.2", "handle": "@noor.kh", "job": "DECISION", "text": "Ok but if you were me, would you take the seed-stage offer or stay put?" },
+    { "ref": "E-01.3", "handle": "@sanaya.writes", "job": "ADAPTATION", "text": "I love this but I am not in London. How would you do it from Bangalore?" },
+    { "ref": "E-01.4", "handle": "@tomhbailey", "job": "BUDGET", "text": "How much did that week actually cost you? I have about £600 and a lot of nerve." },
+    { "ref": "E-01.5", "handle": "@meeraa.k", "job": "SOCIAL SHARING", "text": "Sending this to my sister because she is doing exactly this right now" },
+    { "ref": "E-01.6", "handle": "@jules.ops", "job": "TRANSLATION", "text": "Can you do this one in Hindi? My mum still does not understand what I do." },
+    { "ref": "E-01.7", "handle": "@elena.vc", "job": "INTENT", "text": "Can you do a version of this for someone outside tech? Same energy, less startup." },
+    { "ref": "E-01.8", "handle": "@dev.m", "job": "POST-DECISION", "text": "I took the job. What do I actually do in the first 30 days?" },
+    { "ref": "E-01.9", "handle": "@rhiannon.b", "job": "CONSTRAINT", "text": "I want to build in public without annoying my employer. How do you decide what to post?" },
+    { "ref": "E-01.10", "handle": "@carlota.p", "job": "TRUST", "text": "This is the first creator account where I actually read the captions." },
+    { "ref": "E-01.11", "handle": "@yusuf.rk", "job": "SECOND-HAND DISCOVERY", "text": "My manager sent me your keynote clip because he thinks I need it" },
+    { "ref": "E-01.12", "handle": "@aisha.j", "job": "CONSIDERATION", "text": "I have opened this three times. Still deciding." }
+  ],
+  "inbox_clue": "Twelve messages, seven different jobs. Underneath all of them: decide for me the way you would decide for yourself.",
+
+  "broadcast_log": [
+    { "ref": "E-03.1", "title": "The three questions I ask before I post anything", "views": 1400000, "saves": 68000, "signups": 340, "note": "Strong conversion" },
+    { "ref": "E-03.2", "title": "Everything I saw at Cannes Lions", "views": 3900000, "saves": 41000, "signups": 62, "note": "High reach, low intent" },
+    { "ref": "E-03.3", "title": "What that week actually cost me", "views": 890000, "saves": 74000, "signups": 611, "note": "High intent" },
+    { "ref": "E-03.4", "title": "The answer I gave a founder backstage", "views": 320000, "saves": 29000, "signups": 806, "note": "Quiet winner" },
+    { "ref": "E-03.5", "title": "The opportunities I said no to this year", "views": 1100000, "saves": 52000, "signups": 0, "note": "High trust, low direct revenue" }
+  ],
+  "broadcast_clue": "3.9M views produced 62 sign-ups. 320K views produced 806. Read the behaviour, not the vanity metric.",
+
+  "field_notes_tuesday": [
+    { "t": "06:40", "what": "Coffee, inbox triage", "detail": "41 unread 'which event was this?' messages" },
+    { "t": "07:30", "what": "Films two segments", "detail": "Lighting, outfit and lines set from memory" },
+    { "t": "08:45", "what": "Day job begins", "detail": "Editorial and new media, full attention" },
+    { "t": "13:00", "what": "Interview prep", "detail": "Reads three founder decks between meetings" },
+    { "t": "17:10", "what": "Voice notes on the walk home", "detail": "Nine minutes of context, unfiled" },
+    { "t": "18:30", "what": "DM sprint", "detail": "Answers 44 useful questions" },
+    { "t": "19:45", "what": "Edit brief to video editor", "detail": "900 words so he can cut without her" },
+    { "t": "21:00", "what": "Newsletter draft opens", "detail": "Closes again. 42,000 people waiting." },
+    { "t": "22:15", "what": "Second DM sprint", "detail": "Still 130+ unanswered" },
+    { "t": "23:20", "what": "Flight check-in", "detail": "Country four of six, four months" },
+    { "t": "23:40", "what": "One last check", "detail": "Tomorrow I need to fix this." }
+  ],
+  "field_notes_clue": "Two DM sprints a day and the queue still grows. The bottleneck is not effort. Her judgement exists only in real time, and only in one place at a time.",
+
+  "intelligence_drop_1600": {
+    "_source": "E-09, sealed until 16:00",
+    "headline": "THE OPPORTUNITY IS ALMOST NEVER THE CLICK",
+    "detail": "People use Aditi to decide, then act weeks later, usually somewhere she cannot see. The value is being undercounted by every obvious metric.",
+    "stats": {
+      "acted_without_clicking": 0.71,
+      "median_days_save_to_action": 9.2,
+      "high_value_inbound_via_forward": 0.44,
+      "action_rate_multiple_at_3plus_saves": 3.1
+    }
+  },
+
+  "hidden_audience": {
+    "_source": "E-10, released at 16:00",
+    "columns": ["user", "saves", "shares", "returns", "link_click", "acted", "days_to_act"],
+    "rows": [
+      ["U-014", 7, 2, 4, false, true, 11],
+      ["U-031", 2, 0, 1, true, true, 0.6],
+      ["U-067", 5, 3, 3, false, true, 8],
+      ["U-082", 1, 0, 1, true, false, null],
+      ["U-104", 9, 5, 6, false, true, 14],
+      ["U-121", 3, 1, 2, false, true, 5],
+      ["U-139", 6, 4, 3, false, true, 7],
+      ["U-166", 1, 0, 1, true, false, null],
+      ["U-204", 11, 6, 7, false, true, 16],
+      ["U-219", 4, 0, 2, true, true, 2],
+      ["U-241", 2, 2, 2, false, false, null],
+      ["U-288", 7, 4, 5, false, true, 9]
+    ],
+    "look_closer": "The YES/NO around link clicks is intentionally incomplete. You are supposed to decide what matters, then decide what to instrument. Signal can be behavioural rather than transactional."
+  },
+
+  "build_must": [
+    "Help a real audience member make a better decision.",
+    "Preserve a meaningful piece of Aditi's judgement and taste.",
+    "Work with the evidence provided.",
+    "Be demonstrable in a few clicks.",
+    "Not require expensive AI inference to be impressive."
+  ],
+  "mission_framing": "Your mission is not to build a better link in bio, or a course. It is to turn Aditi's judgement into one answer her audience can trust, and know exactly what to do with."
+}

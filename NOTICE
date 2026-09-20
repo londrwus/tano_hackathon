@@ -1,0 +1,110 @@
+NOTICE
+======
+
+The MIT licence in LICENSE covers our source code. The material below is not
+ours. It is included because the project cannot be understood or reproduced
+without it, and each item is listed here with where it came from and what you
+may do with it.
+
+If you fork this repository and you are not sure, the safe assumption is that
+everything under `data/` is somebody else's and everything under `backend/`,
+`frontend/`, `scripts/` and `api.py` is ours.
+
+
+1. The Tano case pack
+---------------------
+    data/case-001-maya.json
+    data/case-002-sofia.json
+    data/case-003-aditi.json
+    docs/evidence/case-00*.txt
+    docs/evidence/case-00*.pdf
+
+Issued by Tano to entrants of the Tano x Corgi Creator Heist Hack, 2026, as the
+brief for the event. It is reproduced here because every measured number in this
+repository is measured against it and a reader cannot check our work without it.
+
+Copyright Tano. Not licensed by us and not relicensed by us. Ask Tano before
+reusing it.
+
+"Maya Rao", her shelf, her exhibits and her personas are fictional. They are
+characters in that brief. Nothing about her is a real person's data.
+
+
+2. Open Beauty Facts product data
+---------------------------------
+    data/real-catalogue-openbeautyfacts.json      359 products
+    data/real-catalogue-with-ingredients.json     198 products, with ingredients
+
+Source: Open Beauty Facts, https://world.openbeautyfacts.org
+
+Open Beauty Facts data is published by the Open Beauty Facts contributors under
+the Open Database Licence (ODbL) v1.0, with the individual contents of the
+database available under the Database Contents Licence (DbCL) v1.0. Product
+images on their servers are under Creative Commons Attribution ShareAlike.
+
+    ODbL:  https://opendatacommons.org/licenses/odbl/1-0/
+    DbCL:  https://opendatacommons.org/licenses/dbcl/1-0/
+
+What that means for you: attribute Open Beauty Facts, and if you redistribute a
+modified version of the database, share it alike. The two files here are subsets
+of their export, reduced to the fields this project reads. Product image URLs in
+those files point at openbeautyfacts.org. No image bytes are stored here.
+
+
+3. Michelle Wong / Lab Muffin Beauty Science
+--------------------------------------------
+    data/corpus-labmuffin.json
+    cache/extract-labmuffin.json    (see the warning at the end of this section)
+
+Michelle Wong is a real person, a cosmetic chemist with a PhD, and she writes
+Lab Muffin Beauty Science at https://labmuffin.com. Her ten most recent posts
+were fetched once, by hand, from her public RSS feed on 2026-09-20 and used as a
+real-world test that the extraction works on somebody we did not invent.
+
+Her words are hers. They are not licensed to us and we are not relicensing them.
+
+Because this repository is public, each article body in `data/corpus-labmuffin.json`
+has been cut to roughly its first 200 characters. What remains is the title, the
+link, the date, the image URLs and the typed attributes a vision model read off
+those images. Anyone who wants the real corpus should re-fetch it themselves:
+
+    python scripts/fetch_corpus.py rss https://labmuffin.com/feed/ --full
+    python scripts/enrich_images.py labmuffin
+
+Her photographs are referenced at their original labmuffin.com URLs and are
+loaded from her server by the browser at display time. No image bytes from her
+site are stored in this repository.
+
+    WARNING, still outstanding: cache/extract-labmuffin.json embeds the SAME
+    article bodies under its `corpus[].text` key, roughly 29,000 characters of
+    them, because it is a frozen record of exactly what was sent to the model.
+    Trimming data/corpus-labmuffin.json alone does not remove her prose from this
+    repository. The frontend only reads the first sentence of each of those
+    strings, so the same 200-character cut can be applied to the cache without
+    changing what the demo shows.
+
+If Michelle Wong would prefer not to appear here at all, that request wins over
+anything in this file. Contact via labmuffin.com.
+
+
+4. Jev and TypeSafe
+-------------------
+    docs/research/typesafe-http-api.md
+    docs/research/jev-engineering-playbook.md
+
+`typesafe-http-api.md` is a copy of TypeSafe's own published API reference,
+compiled from docs.typesafe.ai on 2026-09-20 so the build could work offline. It
+is TypeSafe's documentation, not ours. The canonical version is at
+https://docs.typesafe.ai and should be preferred over this snapshot.
+
+Jev is a TypeSafe System One model, used here over their public HTTP API under
+their terms. No model weights are in this repository.
+
+
+5. Fonts and third-party packages
+---------------------------------
+Inter is bundled into the frontend build through `@fontsource-variable/inter`
+and is licensed under the SIL Open Font Licence 1.1. DejaVu Sans is installed in
+the Modal image for the share-card renderer and is under the DejaVu Fonts
+Licence. Python and npm dependencies carry their own licences. See
+`frontend/package.json` and the pins in `api.py`.

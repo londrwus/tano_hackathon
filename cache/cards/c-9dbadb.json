@@ -1,0 +1,116 @@
+{
+ "card_id": "c-9dbadb",
+ "parent_card_id": null,
+ "re_decided_at": "2026-09-20T16:02:44Z",
+ "asker": {
+  "name": "you",
+  "said": "",
+  "skin": [
+   "oily"
+  ],
+  "budget": 60,
+  "owns": [],
+  "how_many": 2
+ },
+ "verdict": {
+  "headline": "Two things. The gel and the SPF.",
+  "in_her_voice": "Two things. The gel and the SPF. Fifty pounds.",
+  "is_refusal": false
+ },
+ "basket": [
+  {
+   "product": "Daily Gel",
+   "price": "£24",
+   "type": "Moisturiser",
+   "ref": "E-04.2",
+   "maya_note": "Easy. No drama.",
+   "affiliate": true,
+   "touched": true,
+   "why": "Her rule for OILY, extracted from her own captions."
+  },
+  {
+   "product": "SPF 50",
+   "price": "£26",
+   "type": "SPF",
+   "ref": "E-04.5",
+   "maya_note": "Non-negotiable.",
+   "affiliate": true,
+   "touched": true,
+   "why": "Her defended category."
+  }
+ ],
+ "total": "£50",
+ "unspent": {
+  "amount": "£10",
+  "line": "She left £10 of your £60 on the table."
+ },
+ "left_out": [
+  {
+   "product": "Clear Wash",
+   "price": "£20",
+   "ref": "E-04.9",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the gel runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": true
+  },
+  {
+   "product": "Soft Clean",
+   "price": "£22",
+   "ref": "E-04.7",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the gel runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": true
+  },
+  {
+   "product": "Tint Veil",
+   "price": "£34",
+   "ref": "E-04.10",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the gel runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": true
+  }
+ ],
+ "ceiling": {
+  "band": "about £60–65",
+  "provenance": "Estimated from Maya's own posts. She sets the line",
+  "evidence_ref": "E-04.5",
+  "product": "SPF 50",
+  "over_sticker": true
+ },
+ "money_line": {
+  "affiliate_count": 2,
+  "basket_value": "£50",
+  "note": "2 of 2 products are affiliate-linked.",
+  "rule": "Everything on her own shelf is affiliate-linked except the two she publicly refuses - Glass Drop (E-04.6) and Oil Balm (E-04.8)."
+ },
+ "indifference_band": "Between £50 and £100 her answer does not change.",
+ "og_image": "/api/card/c-9dbadb/og.png",
+ "share_url": "/c/c-9dbadb",
+ "baskets_considered": 10,
+ "basket_confidence": 0.85,
+ "defended_category": "spf",
+ "routing_fired": [
+  {
+   "condition": "OILY",
+   "product": "Daily Gel"
+  }
+ ],
+ "routing_enforced": [],
+ "seconds": 2.33,
+ "live": true,
+ "spec": {
+  "name": "you",
+  "said": "",
+  "skin": [
+   "oily"
+  ],
+  "budget": 60,
+  "owns": [],
+  "how_many": 2,
+  "parent_card_id": null,
+  "named_product": null
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "transcript": "Is the glass drop actually worth 62 pounds or am I being silly?",
+ "seconds": 4.63,
+ "transcribe_ms": 2098,
+ "model": "whisper-1",
+ "language": "english",
+ "usd": 0.000463,
+ "sha256": "2aa84056463d4998c31d8130feff65dd344e59d202f4c0d8b005a5080b868832",
+ "at": "2026-09-20T15:03:17+00:00"
+}

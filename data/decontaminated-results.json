@@ -1,0 +1,2391 @@
+{
+ "generated_by": "scripts/engine_decontaminated_v2.py",
+ "model": "jev-1.13.0",
+ "timing": {
+  "extraction_seconds": 0.65,
+  "basket_seconds": 4.76
+ },
+ "slot_count": 14,
+ "objective_shelf": true,
+ "slot_stability_over_5_extractions": {
+  "routine_size": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "budget_behaviour": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "price_refusal": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "subtraction": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "hype": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "defended_category": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "interchangeable_category": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "skippable_category": {
+   "maya": 0.6,
+   "derm": 1.0
+  },
+  "starting_from_zero": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "subtraction_scope": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "route_reacting": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "route_redness": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "route_dry": {
+   "maya": 1.0,
+   "derm": 1.0
+  },
+  "route_oily": {
+   "maya": 1.0,
+   "derm": 1.0
+  }
+ },
+ "extracted_standard": {
+  "maya": {
+   "routine_size": {
+    "level": "The fewest possible products",
+    "value": 0.23
+   },
+   "budget_behaviour": {
+    "answer": false,
+    "p": 0.23
+   },
+   "price_refusal": {
+    "level": "Price is central to their judgement",
+    "value": 2.75
+   },
+   "subtraction": {
+    "answer": true,
+    "p": 0.73
+   },
+   "hype": {
+    "level": "Actively sceptical of hype",
+    "value": 0.02
+   },
+   "defended_category": {
+    "choice": "spf",
+    "confidence": 1.0
+   },
+   "interchangeable_category": {
+    "choice": "cleanser",
+    "confidence": 0.99
+   },
+   "skippable_category": {
+    "choice": "makeup",
+    "confidence": 0.38
+   },
+   "starting_from_zero": {
+    "level": "Three - a short but complete routine",
+    "value": 1.72
+   },
+   "subtraction_scope": {
+    "choice": "crowded_routine_only",
+    "confidence": 1.0
+   },
+   "route_reacting": {
+    "choice": "Red Reset",
+    "confidence": 0.34
+   },
+   "route_redness": {
+    "choice": "Red Reset",
+    "confidence": 1.0
+   },
+   "route_dry": {
+    "choice": "Cloud Cream",
+    "confidence": 1.0
+   },
+   "route_oily": {
+    "choice": "Daily Gel",
+    "confidence": 0.83
+   }
+  },
+  "derm": {
+   "routine_size": {
+    "level": "A small routine",
+    "value": 1.33
+   },
+   "budget_behaviour": {
+    "answer": false,
+    "p": 0.42
+   },
+   "price_refusal": {
+    "level": "Mentions price occasionally",
+    "value": 1.05
+   },
+   "subtraction": {
+    "answer": true,
+    "p": 0.6
+   },
+   "hype": {
+    "level": "Actively sceptical of hype",
+    "value": 0.07
+   },
+   "defended_category": {
+    "choice": "spf",
+    "confidence": 0.6
+   },
+   "interchangeable_category": {
+    "choice": "cleanser",
+    "confidence": 0.26
+   },
+   "skippable_category": {
+    "choice": "serum",
+    "confidence": 0.85
+   },
+   "starting_from_zero": {
+    "level": "Three - a short but complete routine",
+    "value": 2.02
+   },
+   "subtraction_scope": {
+    "choice": "crowded_routine_only",
+    "confidence": 0.98
+   },
+   "route_reacting": {
+    "choice": "Soft Clean",
+    "confidence": 0.8
+   },
+   "route_redness": {
+    "choice": "Red Reset",
+    "confidence": 0.98
+   },
+   "route_dry": {
+    "choice": "Cloud Cream",
+    "confidence": 0.95
+   },
+   "route_oily": {
+    "choice": "Daily Gel",
+    "confidence": 0.57
+   }
+  }
+ },
+ "routing_rules": {
+  "maya": {
+   "by_situation": [
+    {
+     "when": "Someone writes 'every time I try something new my face freaks out'. They own no skincare yet and are starting from nothing, with money to spend.",
+     "reach_for": "Red Reset",
+     "confidence": 0.34
+    },
+    {
+     "when": "Someone writes 'my cheeks are red and angry today and nothing calms it down'.",
+     "reach_for": "Red Reset",
+     "confidence": 1.0
+    },
+    {
+     "when": "Someone writes 'my skin is dry and tight all winter and it flakes under makeup'.",
+     "reach_for": "Cloud Cream",
+     "confidence": 1.0
+    },
+    {
+     "when": "Someone writes 'I am shiny by 11am and my t-zone never stops'.",
+     "reach_for": "Daily Gel",
+     "confidence": 0.83
+    }
+   ],
+   "by_category": {
+    "never_leave_out": "spf",
+    "any_decent_one_will_do": "cleanser",
+    "first_to_drop_when_money_is_tight": "makeup"
+   },
+   "when_they_say_buy_less": "crowded_routine_only",
+   "how_many_from_a_standing_start": "Three - a short but complete routine",
+   "_provenance": "Every value in this object was produced by a typed extraction slot run against this judge's own source corpus. No value here was written by hand."
+  },
+  "derm": {
+   "by_situation": [
+    {
+     "when": "Someone writes 'every time I try something new my face freaks out'. They own no skincare yet and are starting from nothing, with money to spend.",
+     "reach_for": "Soft Clean",
+     "confidence": 0.8
+    },
+    {
+     "when": "Someone writes 'my cheeks are red and angry today and nothing calms it down'.",
+     "reach_for": "Red Reset",
+     "confidence": 0.98
+    },
+    {
+     "when": "Someone writes 'my skin is dry and tight all winter and it flakes under makeup'.",
+     "reach_for": "Cloud Cream",
+     "confidence": 0.95
+    },
+    {
+     "when": "Someone writes 'I am shiny by 11am and my t-zone never stops'.",
+     "reach_for": "Daily Gel",
+     "confidence": 0.57
+    }
+   ],
+   "by_category": {
+    "never_leave_out": "spf",
+    "any_decent_one_will_do": "cleanser",
+    "first_to_drop_when_money_is_tight": "serum"
+   },
+   "when_they_say_buy_less": "crowded_routine_only",
+   "how_many_from_a_standing_start": "Three - a short but complete routine",
+   "_provenance": "Every value in this object was produced by a typed extraction slot run against this judge's own source corpus. No value here was written by hand."
+  }
+ },
+ "shopper_conditions": {
+  "@gracelee": {
+   "dry": 0.98,
+   "oily": 0.02,
+   "combination": 0.02,
+   "sensitive": 0.22,
+   "redness": 0.98
+  },
+  "@joanna": {
+   "dry": 0.03,
+   "oily": 0.02,
+   "combination": 0.02,
+   "sensitive": 0.03,
+   "redness": 0.03
+  },
+  "@jessica": {
+   "dry": 0.04,
+   "oily": 0.02,
+   "combination": 0.02,
+   "sensitive": 0.04,
+   "redness": 0.03
+  },
+  "Priya": {
+   "dry": 0.07,
+   "oily": 0.02,
+   "combination": 0.02,
+   "sensitive": 0.98,
+   "redness": 0.13
+  },
+  "Emily": {
+   "dry": 0.05,
+   "oily": 0.03,
+   "combination": 0.78,
+   "sensitive": 0.05,
+   "redness": 0.03
+  },
+  "@kate": {
+   "dry": 0.03,
+   "oily": 0.03,
+   "combination": 0.03,
+   "sensitive": 0.03,
+   "redness": 0.03
+  },
+  "owns SPF": {
+   "dry": 0.04,
+   "oily": 0.03,
+   "combination": 0.77,
+   "sensitive": 0.04,
+   "redness": 0.03
+  },
+  "tiny": {
+   "dry": 0.03,
+   "oily": 0.89,
+   "combination": 0.02,
+   "sensitive": 0.04,
+   "redness": 0.03
+  }
+ },
+ "mode_a_soft_routing_in_state": {
+  "rows": [
+   {
+    "shopper": "@gracelee",
+    "says": "dry skin + redness, GBP60",
+    "budget_gbp": 60,
+    "owns": [],
+    "max_items": 4,
+    "conditions": {
+     "dry": 0.98,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.22,
+     "redness": 0.98
+    },
+    "maya_basket": [
+     "Red Reset",
+     "SPF 50"
+    ],
+    "maya_total_gbp": 58,
+    "derm_basket": [
+     "Red Reset",
+     "SPF 50"
+    ],
+    "derm_total_gbp": 58,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ]
+     ],
+     "derm": [
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "@joanna",
+    "says": "only 2 products, will not do 8 steps",
+    "budget_gbp": 120,
+    "owns": [],
+    "max_items": 2,
+    "conditions": {
+     "dry": 0.03,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.03,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 48,
+    "derm_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 48,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "@jessica",
+    "says": "already have the night serum, do i need more",
+    "budget_gbp": 80,
+    "owns": [
+     "Night Serum"
+    ],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.04,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.04,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 48,
+    "derm_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 48,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "Priya",
+    "says": "my face freaks out with everything",
+    "budget_gbp": 80,
+    "owns": [],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.07,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.98,
+     "redness": 0.13
+    },
+    "maya_basket": [
+     "Red Reset",
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 80,
+    "derm_basket": [
+     "Red Reset",
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 80,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "Emily",
+    "says": "not spending 100 on serum",
+    "budget_gbp": 40,
+    "owns": [],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.05,
+     "oily": 0.03,
+     "combination": 0.78,
+     "sensitive": 0.05,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50"
+    ],
+    "maya_total_gbp": 26,
+    "derm_basket": [
+     "SPF 50"
+    ],
+    "derm_total_gbp": 26,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "@kate",
+    "says": "first date Friday HELP",
+    "budget_gbp": 70,
+    "owns": [],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.03,
+     "oily": 0.03,
+     "combination": 0.03,
+     "sensitive": 0.03,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 48,
+    "derm_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 48,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "owns SPF",
+    "says": "i already use an spf",
+    "budget_gbp": 60,
+    "owns": [
+     "SPF 50"
+    ],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.04,
+     "oily": 0.03,
+     "combination": 0.77,
+     "sensitive": 0.04,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "Daily Gel",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 46,
+    "derm_basket": [
+     "Daily Gel",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 46,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "tiny",
+    "says": "i only have 20 quid",
+    "budget_gbp": 20,
+    "owns": [],
+    "max_items": 2,
+    "conditions": {
+     "dry": 0.03,
+     "oily": 0.89,
+     "combination": 0.02,
+     "sensitive": 0.04,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "Clear Wash"
+    ],
+    "maya_total_gbp": 20,
+    "derm_basket": [
+     "Clear Wash"
+    ],
+    "derm_total_gbp": 20,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ]
+     ],
+     "derm": [
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   }
+  ],
+  "aggregate": {
+   "shoppers": 8,
+   "repeats": 5,
+   "divergence": 0,
+   "divergence_per_run": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "maya_avg_products": 1.88,
+   "maya_avg_gbp": 46.75,
+   "derm_avg_products": 1.88,
+   "derm_avg_gbp": 46.75,
+   "fewer_products": 0.0,
+   "less_gbp": 0.0,
+   "mean_basket_stability": 1.0
+  }
+ },
+ "mode_b_routing_as_feasibility_filter": {
+  "rows": [
+   {
+    "shopper": "@gracelee",
+    "says": "dry skin + redness, GBP60",
+    "budget_gbp": 60,
+    "owns": [],
+    "max_items": 4,
+    "conditions": {
+     "dry": 0.98,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.22,
+     "redness": 0.98
+    },
+    "maya_basket": [
+     "Red Reset",
+     "SPF 50"
+    ],
+    "maya_total_gbp": 58,
+    "derm_basket": [
+     "Red Reset",
+     "SPF 50"
+    ],
+    "derm_total_gbp": 58,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ]
+     ],
+     "derm": [
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": true,
+     "derm": true
+    }
+   },
+   {
+    "shopper": "@joanna",
+    "says": "only 2 products, will not do 8 steps",
+    "budget_gbp": 120,
+    "owns": [],
+    "max_items": 2,
+    "conditions": {
+     "dry": 0.03,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.03,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 48,
+    "derm_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 48,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "@jessica",
+    "says": "already have the night serum, do i need more",
+    "budget_gbp": 80,
+    "owns": [
+     "Night Serum"
+    ],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.04,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.04,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 48,
+    "derm_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 48,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "Priya",
+    "says": "my face freaks out with everything",
+    "budget_gbp": 80,
+    "owns": [],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.07,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.98,
+     "redness": 0.13
+    },
+    "maya_basket": [
+     "Red Reset",
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 80,
+    "derm_basket": [
+     "Red Reset",
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 80,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "Emily",
+    "says": "not spending 100 on serum",
+    "budget_gbp": 40,
+    "owns": [],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.05,
+     "oily": 0.03,
+     "combination": 0.78,
+     "sensitive": 0.05,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50"
+    ],
+    "maya_total_gbp": 26,
+    "derm_basket": [
+     "SPF 50"
+    ],
+    "derm_total_gbp": 26,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "@kate",
+    "says": "first date Friday HELP",
+    "budget_gbp": 70,
+    "owns": [],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.03,
+     "oily": 0.03,
+     "combination": 0.03,
+     "sensitive": 0.03,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 48,
+    "derm_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 48,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "owns SPF",
+    "says": "i already use an spf",
+    "budget_gbp": 60,
+    "owns": [
+     "SPF 50"
+    ],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.04,
+     "oily": 0.03,
+     "combination": 0.77,
+     "sensitive": 0.04,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "Daily Gel",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 46,
+    "derm_basket": [
+     "Daily Gel",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 46,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "tiny",
+    "says": "i only have 20 quid",
+    "budget_gbp": 20,
+    "owns": [],
+    "max_items": 2,
+    "conditions": {
+     "dry": 0.03,
+     "oily": 0.89,
+     "combination": 0.02,
+     "sensitive": 0.04,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "Clear Wash"
+    ],
+    "maya_total_gbp": 20,
+    "derm_basket": [
+     "Clear Wash"
+    ],
+    "derm_total_gbp": 20,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ]
+     ],
+     "derm": [
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": true,
+     "derm": true
+    }
+   }
+  ],
+  "aggregate": {
+   "shoppers": 8,
+   "repeats": 5,
+   "divergence": 0,
+   "divergence_per_run": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "maya_avg_products": 1.88,
+   "maya_avg_gbp": 46.75,
+   "derm_avg_products": 1.88,
+   "derm_avg_gbp": 46.75,
+   "fewer_products": 0.0,
+   "less_gbp": 0.0,
+   "mean_basket_stability": 1.0
+  }
+ },
+ "fidelity_test_priya_red_reset": {
+  "mode_a": true,
+  "mode_b": true,
+  "mode_a_basket": [
+   "Red Reset",
+   "SPF 50",
+   "Soft Clean"
+  ],
+  "mode_b_basket": [
+   "Red Reset",
+   "SPF 50",
+   "Soft Clean"
+  ],
+  "mode_a_hit_rate_over_repeats": 1.0,
+  "mode_b_hit_rate_over_repeats": 1.0
+ },
+ "held_out_private_routing_check": {
+  "source": "E-02.2, never shown to the extractor",
+  "matched": 3,
+  "of": 3,
+  "detail": [
+   {
+    "condition": "DRY",
+    "her_private_sheet": [
+     "Cloud Cream",
+     "Barrier Oil"
+    ],
+    "discovered": "Cloud Cream",
+    "match": true
+   },
+   {
+    "condition": "OILY",
+    "her_private_sheet": [
+     "Daily Gel"
+    ],
+    "discovered": "Daily Gel",
+    "match": true
+   },
+   {
+    "condition": "REDNESS",
+    "her_private_sheet": [
+     "Red Reset"
+    ],
+    "discovered": "Red Reset",
+    "match": true
+   }
+  ]
+ },
+ "ablation_narrow_derm_corpus": {
+  "what": "The same 14 slots, but the dermatologist gets only the 6 guidance lines the v1 script used. Isolates our corpus expansion from the slot expansion.",
+  "derm_extracted_standard": {
+   "routine_size": {
+    "level": "A small routine",
+    "value": 1.39
+   },
+   "budget_behaviour": {
+    "answer": false,
+    "p": 0.33
+   },
+   "price_refusal": {
+    "level": "Mentions price occasionally",
+    "value": 0.61
+   },
+   "subtraction": {
+    "answer": false,
+    "p": 0.07
+   },
+   "hype": {
+    "level": "Actively sceptical of hype",
+    "value": 0.09
+   },
+   "defended_category": {
+    "choice": "spf",
+    "confidence": 0.9
+   },
+   "interchangeable_category": {
+    "choice": "cleanser",
+    "confidence": 0.49
+   },
+   "skippable_category": {
+    "choice": "serum",
+    "confidence": 0.71
+   },
+   "starting_from_zero": {
+    "level": "Three - a short but complete routine",
+    "value": 2.06
+   },
+   "subtraction_scope": {
+    "choice": "never",
+    "confidence": 0.49
+   },
+   "route_reacting": {
+    "choice": "Red Reset",
+    "confidence": 0.45
+   },
+   "route_redness": {
+    "choice": "Red Reset",
+    "confidence": 1.0
+   },
+   "route_dry": {
+    "choice": "Cloud Cream",
+    "confidence": 0.99
+   },
+   "route_oily": {
+    "choice": "Clear Wash",
+    "confidence": 0.51
+   }
+  },
+  "slot_disagreement": 6,
+  "of_slots": 14,
+  "rows": [
+   {
+    "shopper": "@gracelee",
+    "says": "dry skin + redness, GBP60",
+    "budget_gbp": 60,
+    "owns": [],
+    "max_items": 4,
+    "conditions": {
+     "dry": 0.98,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.22,
+     "redness": 0.98
+    },
+    "maya_basket": [
+     "Red Reset",
+     "SPF 50"
+    ],
+    "maya_total_gbp": 58,
+    "derm_basket": [
+     "Red Reset",
+     "SPF 50"
+    ],
+    "derm_total_gbp": 58,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ]
+     ],
+     "derm": [
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ],
+      [
+       "Red Reset",
+       "SPF 50"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "@joanna",
+    "says": "only 2 products, will not do 8 steps",
+    "budget_gbp": 120,
+    "owns": [],
+    "max_items": 2,
+    "conditions": {
+     "dry": 0.03,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.03,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 48,
+    "derm_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 48,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "@jessica",
+    "says": "already have the night serum, do i need more",
+    "budget_gbp": 80,
+    "owns": [
+     "Night Serum"
+    ],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.04,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.04,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 48,
+    "derm_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 48,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "Priya",
+    "says": "my face freaks out with everything",
+    "budget_gbp": 80,
+    "owns": [],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.07,
+     "oily": 0.02,
+     "combination": 0.02,
+     "sensitive": 0.98,
+     "redness": 0.13
+    },
+    "maya_basket": [
+     "Red Reset",
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 80,
+    "derm_basket": [
+     "Red Reset",
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 80,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "Red Reset",
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "Emily",
+    "says": "not spending 100 on serum",
+    "budget_gbp": 40,
+    "owns": [],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.05,
+     "oily": 0.03,
+     "combination": 0.78,
+     "sensitive": 0.05,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50"
+    ],
+    "maya_total_gbp": 26,
+    "derm_basket": [
+     "SPF 50"
+    ],
+    "derm_total_gbp": 26,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ],
+      [
+       "SPF 50"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "@kate",
+    "says": "first date Friday HELP",
+    "budget_gbp": 70,
+    "owns": [],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.03,
+     "oily": 0.03,
+     "combination": 0.03,
+     "sensitive": 0.03,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 48,
+    "derm_basket": [
+     "SPF 50",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 48,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 0.8,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean",
+       "Clear Wash"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ],
+      [
+       "SPF 50",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "owns SPF",
+    "says": "i already use an spf",
+    "budget_gbp": 60,
+    "owns": [
+     "SPF 50"
+    ],
+    "max_items": 3,
+    "conditions": {
+     "dry": 0.04,
+     "oily": 0.03,
+     "combination": 0.77,
+     "sensitive": 0.04,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "Daily Gel",
+     "Soft Clean"
+    ],
+    "maya_total_gbp": 46,
+    "derm_basket": [
+     "Daily Gel",
+     "Soft Clean"
+    ],
+    "derm_total_gbp": 46,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ]
+     ],
+     "derm": [
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ],
+      [
+       "Daily Gel",
+       "Soft Clean"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   },
+   {
+    "shopper": "tiny",
+    "says": "i only have 20 quid",
+    "budget_gbp": 20,
+    "owns": [],
+    "max_items": 2,
+    "conditions": {
+     "dry": 0.03,
+     "oily": 0.89,
+     "combination": 0.02,
+     "sensitive": 0.04,
+     "redness": 0.03
+    },
+    "maya_basket": [
+     "Clear Wash"
+    ],
+    "maya_total_gbp": 20,
+    "derm_basket": [
+     "Clear Wash"
+    ],
+    "derm_total_gbp": 20,
+    "diverged": false,
+    "stability": {
+     "maya": 1.0,
+     "derm": 1.0,
+     "repeats": 5
+    },
+    "all_runs": {
+     "maya": [
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ]
+     ],
+     "derm": [
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ],
+      [
+       "Clear Wash"
+      ]
+     ]
+    },
+    "constraint_relaxed": {
+     "maya": false,
+     "derm": false
+    }
+   }
+  ],
+  "aggregate": {
+   "shoppers": 8,
+   "repeats": 5,
+   "divergence": 0,
+   "divergence_per_run": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "maya_avg_products": 1.88,
+   "maya_avg_gbp": 46.75,
+   "derm_avg_products": 1.88,
+   "derm_avg_gbp": 46.75,
+   "fewer_products": 0.0,
+   "less_gbp": 0.0,
+   "mean_basket_stability": 0.99
+  }
+ },
+ "baseline_six_slot_run": {
+  "divergence": "3/8",
+  "fewer_products": 0.2,
+  "less_gbp": 7,
+  "source": "scripts/engine_decontaminated.py"
+ }
+}

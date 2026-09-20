@@ -1,0 +1,336 @@
+/* /c/:id — the verdict card. 560px, phone-first, the thing people
+   forward. Light only, same pastel furniture as /maya. */
+
+/* --page-top matches the gap under the sticky topbar on every other
+   route. The card itself stays 560px — it is a thing people forward from
+   a phone — but the PAGE around it opens up at desk width, see below. */
+.cardpage {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: var(--page-top) var(--s4) var(--s7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+
+/* ------------------------------------------------------ entrance order
+   The verdict is the emotional centre, so it lands on its own beat and
+   with a little scale behind it rather than sliding up like the rest.
+   Specificity (0,3,0) so it beats `.stagger > *:nth-child(2)`. */
+.vcard.stagger > .v-verdict {
+  animation-name: enter-pop;
+  animation-duration: .5s;
+  animation-delay: .175s;
+}
+/* Blocks five and after are below the fold on every viewport — let them
+   share a beat rather than trailing the entrance past a second. */
+.vcard.stagger > *:nth-child(n+5) { animation-delay: .30s }
+
+.cardpage .loading-note { padding: var(--s8) 0; }
+
+/* ------------------------------------------------------------ the card */
+.vcard {
+  background: var(--bg-card);
+  border-radius: var(--r-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--s5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s5);
+}
+
+/* ------------------------------------------------------------ who asked */
+.v-who { display: flex; flex-direction: column; gap: var(--s2); }
+
+.v-who-name { font-size: 15px; font-weight: 600; color: var(--ink-tertiary); }
+
+.v-who-said {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.v-who-meta { margin: 0; font-size: 14px; color: var(--ink-tertiary); }
+
+/* ------------------------------------------------------------- the verdict */
+.v-verdict { padding: var(--s5); display: flex; flex-direction: column; gap: var(--s2); }
+
+.v-verdict-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.v-verdict-h {
+  margin: var(--s1) 0 0;
+  font-size: clamp(28px, 7vw, 38px);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.v-verdict-voice {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+/* ---------------------------------------------------------------- blocks */
+.v-block { display: flex; flex-direction: column; gap: var(--s3); }
+
+.v-h {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--ink-tertiary);
+}
+
+/* ---------------------------------------------------------------- basket */
+.v-basket { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--s3); }
+
+.v-buy {
+  background: var(--bg-sunken);
+  border-radius: var(--r-md);
+  padding: var(--s4);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.v-buy-top,
+.v-out-top,
+.v-no-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s3);
+}
+
+.v-buy-name { font-size: 20px; font-weight: 700; letter-spacing: -0.012em; color: var(--ink); }
+.v-buy-price { font-size: 20px; font-weight: 600; color: var(--ink); white-space: nowrap; }
+
+.v-buy-why { margin: 0; font-size: 16px; line-height: 1.4; color: var(--ink-secondary); }
+.v-buy-note { margin: 0; font-size: 16px; line-height: 1.4; color: var(--ink); font-weight: 500; }
+.v-buy-ref { margin: 2px 0 0; font-size: 12px; color: var(--ink-tertiary); }
+
+.v-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s3);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--hairline-soft);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.v-total-value { font-size: 24px; font-weight: 700; letter-spacing: -0.015em; }
+
+/* --------------------------------------------------------------- unspent */
+.v-unspent {
+  padding: var(--s4) var(--s5);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--s1) var(--s3);
+}
+.v-unspent-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.v-unspent-amount {
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.v-unspent-line { margin: 0; grid-column: 1 / 2; font-size: 16px; line-height: 1.35; color: var(--ink); }
+
+/* -------------------------------------------- the refusal: the centre */
+.v-no {
+  padding: var(--s5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+.v-no-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.v-no-name { font-size: 22px; font-weight: 700; letter-spacing: -0.015em; color: var(--ink); }
+.v-no-price { font-size: 20px; font-weight: 600; color: var(--ink); white-space: nowrap; }
+
+.v-no-why {
+  margin: var(--s1) 0 0;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+}
+
+.v-no-instead,
+.v-out-instead {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.v-no-instead { font-weight: 600; }
+.v-no-arrow { display: inline-flex; padding-top: 3px; flex: 0 0 auto; color: var(--ink-tertiary); }
+
+/* ----------------------------------------------- the other things left out */
+.v-outs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--s3); }
+
+.v-out {
+  background: var(--bg-sunken);
+  border-radius: var(--r-md);
+  padding: var(--s4);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.v-out-name { font-size: 18px; font-weight: 600; color: var(--ink); }
+.v-out-price { font-size: 17px; font-weight: 500; color: var(--ink-secondary); white-space: nowrap; }
+.v-out-why { margin: 0; font-size: 16px; line-height: 1.4; color: var(--ink-secondary); }
+.v-out-instead { color: var(--ink); }
+
+/* --------------------------------------------------------------- ceiling */
+.v-band { padding: var(--s4) var(--s5); text-align: center; }
+.v-band-value { font-size: 28px; font-weight: 700; letter-spacing: -0.015em; }
+
+.v-prov { margin: 0; font-size: 14px; line-height: 1.45; color: var(--ink-secondary); }
+.v-prov .ref { font-size: 13px; }
+
+/* ------------------------------------------------------------- money line */
+.v-money {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  padding-top: var(--s4);
+  border-top: 1px solid var(--hairline-soft);
+}
+.v-money-note { margin: 0; font-size: 16px; line-height: 1.4; color: var(--ink); }
+.v-money-strip {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s3);
+  font-size: 14px;
+  color: var(--ink-tertiary);
+}
+
+.v-indiff {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink-secondary);
+}
+
+/* ------------------------------------------------- do it for me instead */
+.vredo { padding: var(--s5); display: flex; flex-direction: column; gap: var(--s4); }
+.vredo-h { margin: 0; color: var(--ink); }
+.vredo-sub { margin: calc(var(--s4) * -1 + var(--s2)) 0 0; font-size: 16px; color: var(--ink-secondary); }
+
+.vredo-group { display: flex; flex-direction: column; gap: var(--s3); }
+
+.vredo-label {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.vredo-hint { font-size: 14px; font-weight: 400; color: var(--ink-tertiary); }
+
+.vredo-chips { display: flex; flex-wrap: wrap; gap: var(--s2); }
+
+.vredo-chip {
+  font-size: 16px;
+  padding: 11px 18px;
+  min-height: 48px;
+  background: var(--bg-sunken);
+  color: var(--ink);
+  gap: 0;
+}
+.vredo-chip:hover { background: var(--bg-hover); }
+.vredo-tick {
+  display: inline-flex;
+  align-items: center;
+  width: 0;
+  overflow: hidden;
+  transition: width .18s var(--ease), margin-right .18s var(--ease);
+}
+.vredo-chip[aria-pressed='true'] .vredo-tick { width: 15px; margin-right: 7px; }
+
+.vredo-chips .vredo-chip[aria-pressed='true'] { background: var(--lilac); color: var(--lilac-ink); font-weight: 600; }
+.vredo-chips .vredo-chip-mint[aria-pressed='true'] { background: var(--mint); color: var(--mint-ink); }
+.vredo-chips .vredo-chip-sky[aria-pressed='true'] { background: var(--sky); color: var(--sky-ink); }
+
+.vredo-go { width: 100%; min-height: 54px; font-size: 18px; }
+
+/* ----------------------------------------------------------- responsive */
+/* On a projector the 560px card was marooned in ~440px of empty lilac on
+   each side. Put "Do it for me instead" beside it instead of a screen
+   below it, and let it follow the read down the card. */
+@media (min-width: 1080px) {
+  .cardpage {
+    max-width: 1064px;
+    display: grid;
+    grid-template-columns: 560px minmax(0, 1fr);
+    gap: var(--s5);
+    align-items: start;
+    padding-left: var(--s5);
+    padding-right: var(--s5);
+  }
+  .vredo.card {
+    position: sticky;
+    /* clears the 52px sticky topbar with room to breathe */
+    top: var(--s8);
+    padding: var(--s6);
+  }
+  .vredo-h { font-size: 26px; }
+
+  /* The cold-open card has no "Do it for me instead" panel beside it, so
+     there is no second column to lay out. Go back to one centred 560px
+     card rather than leave it stranded in the left half of a grid. */
+  .cardpage-solo {
+    grid-template-columns: 560px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .cardpage { padding: var(--page-top) var(--s3) var(--s7); gap: var(--s3); }
+  .vcard { padding: var(--s4); gap: var(--s5); border-radius: var(--r-lg); }
+  .v-verdict { padding: var(--s4); }
+  .v-no { padding: var(--s4); }
+  .v-unspent {
+    padding: var(--s4);
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .v-unspent-amount { grid-row: 2 / 3; grid-column: 1 / 2; }
+  .v-unspent-line { grid-row: 3 / 4; }
+  .vredo { padding: var(--s4); }
+  .v-buy-name { font-size: 19px; }
+}

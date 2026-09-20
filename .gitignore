@@ -1,0 +1,42 @@
+# Secrets. .env holds the real keys and has never been committed.
+# .env.example IS committed and is unignored below, so keep the negation.
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.pyc
+node_modules/
+.venv/
+venv/
+
+# Build output. frontend/dist is NOT ignored, because api.py bakes it into the
+# Modal image with add_local_dir and the venue wifi is not something we are
+# willing to bet the demo on. It is currently untracked: run
+# `cd frontend && npm run build` before `modal deploy`, and commit dist/ only if
+# you want the image to build from a checkout alone.
+frontend/node_modules/
+
+# The cache is the wifi safety net, so the FROZEN DEMO SET IS COMMITTED ON PURPOSE:
+#   cache/standard.json  cache/queue.json  cache/extract.json
+#   cache/extract-labmuffin.json  cache/corrections.json  cache/queue-judgments.json
+#   cache/cards/*.json  cache/og/*.png  cache/vision/*.json  cache/voice/*.json
+# Regenerating them costs real money (`python -m backend.warm`), and every route
+# replays from them with the network off. Only the volatile per-request spill is
+# ignored. A card id that is not one of the four frozen demo cards is spill:
+# `python scripts/check_contract.py` will name it, and it should be deleted
+# rather than committed.
+cache/tmp/
+cache/live/
+cache/*-raw.json
+cache/matrix-*.json
+cache/override-*.json
+
+# Pen export scratch. design/screens*/ IS committed - it is the design reference.
+design/pen-export/
+design/pen-export2/
+design/shot-*/
+
+# Private research. Names real people (the event hosts and judges) with handles,
+# unverified claims and notes on how to appeal to each. Kept locally, never published.
+docs/research/tano-and-judges-intel.md

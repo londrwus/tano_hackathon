@@ -1,0 +1,274 @@
+{
+ "autonomy_answer": "Straight answer: nothing is autonomous today, and \"fully autonomous\" is a claim the team must stop making — all four critical personas (Maya, Tano, the judge, the adoption critic) hit this independently, and the judge said explicitly that if you say \"autonomous\" he will ask which DM stopped arriving and you will have no answer.\n\nWhat is honestly autonomous NOW (build these, claim these):\n1. Applying her standard to a product she has never seen. This is real, it is measured at ~16 products/sec, and it is a decision she currently makes one at a time in her head. The correct word is LEVERAGE, not autonomy — E-06.3 says it for you: \"She is not asking for less relationship. She is asking for leverage.\"\n2. Answering the people who never get answered. E-05.3: 6,219 people asked \"what should I buy?\"; E-05.4: she personally answered 1,847. ~4,372 got silence, and E-09.2 says 61% of repeat buyers never DM at all. The honest autonomy story is ADDITIVE, not substitutive: the silent majority now gets her answer without her doing anything. This dodges the \"handed to a machine\" failure entirely and is compatible with E-06.1 (\"I genuinely do not want to stop talking to my audience\").\n3. Re-ranking on a correction or a price change. Zero inference, pure arithmetic on the cached array. This is the only thing in the build that can run without her and without cost.\n\nWhat must NOT be autonomous (Maya, Priya, Tano and the adoption critic converge here):\n- A first-person endorsement of a product she has never touched. Two visually distinct states, non-negotiable: SHE USES THIS (her words, quoted) vs THIS FITS HER STANDARD (derived, third person). Priya says the day she catches a fabricated quote in Maya's voice, she stops believing all of it, including the true parts.\n- Anything where a brand deal or affiliate link is in play, without a disclosure string. UK/ASA, and it is Caplan's walking-billboard thesis pointed straight at you.\n- Medical-adjacent and diagnosis: pregnancy, actives interactions, \"I don't even know my skin type\" (E-01.6), \"first date Friday\" (E-01.8). Routing these to Maya is a FEATURE. Name what you do not take; it reads as more credible than implied omniscience.\n- Publishing a negative about a named third-party brand. Private-by-default, shown to the person who asked. Advice, not broadcast.\n\nThe right division of labour, stated as one sentence for the 17:00 conversation and the 20:00 pitch: \"The machine handles the 4,372 questions you never got to. You handle the thirty that are worth your voice — and every time you correct one, the machine gets your standard, not your opinion.\"\n\nThe path to genuine autonomy (post-hackathon, ~2 weeks, do not promise it tomorrow): the morning approval queue Maya specified herself — overnight, it drafts answers for everything inside her standard, holds everything outside it, and at 9am she swipes thirty cards; each edit moves the line. 4,800 DMs becomes fifteen minutes of thumb. That is the only design in any of the five reactions that touches her seventy hours. It is 6+ hours of build and it needs an inbox surface you do not have, so it is a roadmap slide, not a tomorrow feature. Say it in one sentence on stage and move on.",
+ "verdict": "THE FENCE has the only real idea in the room — pricing a human being's endorsement as a curve — and the mechanism is verified, not asserted. But it is currently a proof of the mechanism wearing a product's clothes, and four of five personas reached that conclusion independently from different seats. The specific failure is structural: the hero surface (a 359-tile wall) is a credibility artifact for judges, while the thing every persona said is the actual product (a single, shareable, phone-shaped verdict card) is beat 3 of one screen. Worse, the judge proved from your own files that the wall contains no price at all — `data/real-catalogue-openbeautyfacts.json` has five fields and none of them is price, and `catalogue_wall.py` asks Jev two taste questions, no ladder, no crossing — so the mechanism the product is NAMED after applies to 10 of 359 products. Will it WOW? Yes, at second 38, when Glass Drop reads £62 sticker / £40 line / \"Good. Not £62 good.\" — not at second 0 with a grid that a tired judge reads as a screensaver and that Priya read as a crypto site. Will Maya use it daily? No, not as designed: it has no phone surface, no persistence, no place in her week, and it removes zero DMs. The genuinely weak points are the audience layer (Layer 3 is the least-specified layer and it asks the audience member to supply the price she came to be told), the absence of any personalisation for Priya — the named user — whose problem is her face, not her money, and a held-out \"proof\" that is n=1 with the answer written into the state field.",
+ "consensus_strengths": [
+  "The price-conditioned REFUSAL is the strongest object in the build, and four personas said so independently. Maya: the Glass Drop landing £22 under sticker unprompted is 'the only thing in here that made me sit up'. Priya: 'a thing that tells me not to spend £62 is a thing I will come back to — the single most trust-generating thing in the build'. The judge: it is the only moment tonight that woke him up, seconds 38-44. Tano: 'refusal is the trust proof'. Lead with it.",
+  "The emergent correctness of the two reservations. The only two products falling below sticker are exactly Oil Balm ('Beautiful, but too much for me') and Glass Drop ('Good. Not £62 good.'), and SPF 50 tops headroom because of 'Non-negotiable.' The judge scored fidelity 8/10 on this alone and Maya conceded the key point: 'You didn't invent my logic, you found it.'",
+  "The draggable MAYA LINE. Praised by four: Maya ('the right instinct — keep it'), the judge ('the answer to would-I-use-it, and the second-best moment in the demo'), Tano (reframe it from a fidelity mitigation into the OWNERSHIP AND CONSENT gesture), the adoption critic (correction latency is the real trust metric and this is the primitive). It is the single interaction that answers would-I-use / would-I-trust / would-my-audience-use at once.",
+  "`no_signal` from the voice pipeline. All FIVE personas named it, unprompted, as the best trust artefact in the system — and it is the one thing currently sitting outside the product. Maya: that is the onboarding. Priya: 'the most human thing in the whole system'. The judge: 'a system that declines to guess about seven products she didn't mention is a system that will not put words in her mouth — criterion would-I-trust, answered in one word'. Tano: it makes capture incremental and honest. Put absence on screen.",
+  "Evidence discipline, from both scoring seats. The judge gave 9/10 ('best in the room, comfortably') specifically because you read E-08.1 and did NOT build the DM bot, and refused to weaponise the retinol line because it sits on an unrelated to-do list. Tano said the kept-in-repo `price_curve_sweep_v1_FAILED.py` plus the self-caught n=2 trap is 'rarer than the idea and it's what I hire for'. Do not clean this up before the demo — it is a scored asset.",
+  "The zero-inference re-rank architecture. Tano and the adoption critic both independently noticed that because judgments are cached, personalisation, constraint queries and price-change recompute are arithmetic, not API calls. It is the thing that makes three of the highest-value missing features nearly free to build."
+ ],
+ "consensus_gaps": [
+  {
+   "gap": "There is no shareable, persistent verdict object. The unit of value is a card; the unit you built is a screen.",
+   "raised_by": "All five. Priya (#1 on her list), Tano ('the card is the attribution primitive, the share primitive, the reply primitive and the consent surface at once — it should be the product'), the judge (scored 'would I share it' 3/10, his lowest), Maya ('the shareable unit is the verdict card; you've made the ad the hero'), the adoption critic (distribution section).",
+   "why_it_matters": "E-09.4: 41% of high-value buyers first met Maya through a private share from a friend. E-10.2: Megan sent a post, friend asked Maya, bought same day. A link to a 359-cell black grid is a dead share — the receiver has no idea why it was sent. A permalink + OG share image per verdict is small work and it is the entire 41%. Your own market brief identified this as the unoccupied ground and then you built the thing that does not do it.",
+   "severity": "blocker"
+  },
+  {
+   "gap": "The wall is the hero and it is the wrong hero — illegible to the room, presumptuous to Maya, and a catalogue by your own kill-list definition.",
+   "raised_by": "Maya, Priya, the judge, Tano (four, from four different motives).",
+   "why_it_matters": "The judge sampled the catalogue: a Turkish acne kit, a French soy candle, mixed languages, 400px thumbnails — 'projected at Shoreditch at 19:50 that grid reads as noise, not inventory', and the recognition argument that makes 'not a mockup' land dies if nobody recognises the brands. Maya: her hero screen shows Hannah ('there are 500 versions of this, just tell me') 359 versions. Priya: 'a wall of 359 products I was never going to buy going dim helps me zero'. Tano: it is the lowest-commercial-value object in the build. Note 02-the-pick.md §9 already bans a catalogue — a 359-cell grid with the lights off is a catalogue.",
+   "severity": "blocker"
+  },
+  {
+   "gap": "There is no price anywhere on the wall or in the catalogue, so the mechanism the product is named after does not apply to 349 of its 359 products.",
+   "raised_by": "The judge (proved it from the files, called it the worst overclaim), Tano ('catalogue reality — Open Beauty Facts is not commerce inventory; you need a price-change recompute trigger that no architecture doc contains'), Maya and Priya implicitly (the consumer gesture asks them to supply the price).",
+   "why_it_matters": "Verified: `data/real-catalogue-openbeautyfacts.json` has exactly brands / categories_tags_en / code / image_url / product_name across all 359 rows. `catalogue_wall.py` asks `|fit` and `|why` — a 5-level taste score and a 5-way reservation. Neither is a price question. No ladder, no crossing, no line. If a judge clicks a survivor expecting 'its price curve', you have to synthesise a price you do not have. It also collapses the 'nothing fabricated' claim, and it is why 'would I use it' scored 5/10: the audience member does the data entry for your headline mechanic.",
+   "severity": "blocker"
+  },
+  {
+   "gap": "The onboarding that works is verified and sitting in a drawer; the onboarding that is in the product is 20-40 minutes of typing.",
+   "raised_by": "Maya, Tano, the judge, the adoption critic (four).",
+   "why_it_matters": "E-04 is a table a case-writer typed — no real creator has that file, and `docs/03-build-plan.md` and `05-backend-architecture.md` contain zero occurrences of the word 'onboarding'. Meanwhile the voice path is measured: 12s of speech, 1.4s to whole-shelf verdicts, `endorse_with_caveat` on Glass Drop unprompted, `no_signal` on the seven she did not mention. The judge: 'nobody else in this room has an onboarding under five minutes; most have a form' — and you are not saying so. Maya: 'put the voice capture in front or the whole thing is a data-entry app with a nice theme.'",
+   "severity": "blocker"
+  },
+  {
+   "gap": "Zero personalisation. Priya — the named user — receives the identical verdict Emily receives, and her constraint is her face, not her money.",
+   "raised_by": "Priya (her whole section 6), Maya ('Priya breaks hardest — highest risk of actual harm with my name on it'), Tano (invert the query), the adoption critic ('the audience has a cold start too and it is currently empty').",
+   "why_it_matters": "The noul asks 'would Maya tell HER AUDIENCE to buy it at £X' — one number cannot be both Emily's answer and Priya's. Maya already solved this in her own handwriting: E-02.2 routing (SENSITIVE -> avoid fragrance, DRY -> Cloud Cream + Barrier Oil, REDNESS -> Red Reset) and E-02.1 intake. Two controls — one skin-type tap and a budget number — turn the FRAGRANCE RISK stamp from wall decoration into Priya's filter, and cost zero inference because the judgments are cached. Without it, honest answer from the named user: 'no, it does not reduce my risk of a bad reaction.'",
+   "severity": "blocker"
+  },
+  {
+   "gap": "No provenance layer: unlabelled verdicts on untouched products, float scores, decimal pounds, no commission disclosure.",
+   "raised_by": "Maya, Priya, the adoption critic, Tano (ASA/CAP) — four.",
+   "why_it_matters": "Maya: '£60.4 — I do not have decimal opinions. That single character is the whole generic-automation smell in one glyph.' Priya: a first-person quote about a product Maya never touched is a fabricated quote and 'the moment I work that out I stop believing all of it'. Also Priya: if a card has a buy button and she later learns Maya earns on it, everything is void — and the line worth more than the entire wall is 'she doesn't earn anything on this one'. Maya's inverse: her name on a verdict for something she has never touched, labelled honestly, is 'the strongest trust move you have'. This is the cheapest blocker on the list — it is copy and a badge, not engineering.",
+   "severity": "blocker"
+  },
+  {
+   "gap": "The held-out proof is n=1, on the single product where the prior and the truth agree, with the answer written into the state field.",
+   "raised_by": "The judge (the question he says you would struggle to answer), the adoption critic (generalise it to LOO at n=3/5/7/9), Maya ('might just mean the model has a generic expensive-dewy-serum-is-suss prior — the exact failure you already hit in Attempt 1').",
+   "why_it_matters": "`price_curve_sweep.py` deletes `maya_note` but leaves `maya_rating: 8.1`, the other nine notes, and `price_context_note` saying verbatim 'She routinely endorses GBP 32-42 items.' Held-out Glass Drop lands at £41.7; the top of the band your own prompt supplied is £42. Under the sceptic's hypothesis the test passes by coincidence. This is the ONE place a TypeSafe judge can take the idea away from you, it costs ~45 minutes to close, and closing it produces a BETTER claim (rank correlation) than the one you currently make.",
+   "severity": "serious"
+  },
+  {
+   "gap": "Named real brands are stamped negative, at scale, under Maya's name, on a public URL.",
+   "raised_by": "Maya ('a number next to a brand's name in public — I have a legal email and no deal'), Tano ('check the demo wall against our client list tonight'), the judge ('that is her legal exposure, not yours — a brand lawyer raises it Monday').",
+   "why_it_matters": "Brand deals are a third of Maya's income, and Tano's customers include Skin+Me and Bloom & Wild — a red stamp on a client's product on stage at 20:00 is the worst possible outcome of a winning demo. Structural fix is cheap and also correct product design: negatives are private-by-default and shown to the person who asked (advice), positives are publishable, plus a six-name contracted-brand blocklist that costs Maya thirty seconds. Note this collides with the hero beat — decide tonight which version is the demo and which is the product.",
+   "severity": "serious"
+  },
+  {
+   "gap": "No memory, no return path. The product exists only at the moment of asking, and the buyer does not buy at the moment of asking.",
+   "raised_by": "Priya, the judge (scored 'would my audience use it' 4/10), the adoption critic (section 9: 'the single most likely reason she never opens it again'), Tano (freshness).",
+   "why_it_matters": "E-09.5: median purchase lag 4.6 days. E-10: Rina 0 DMs / 8 saves / bought; Tara 0 DMs / 11 saves / £122; Zoe 0 / 9 / £86. Savers buy; askers do not. Maya said the same thing about her own side: 'nothing in your plan says any of this survives a refresh — if I teach it on Tuesday and it's blank on Wednesday, it's a screensaver.' A saved verdict costs almost nothing; the price-crosses-the-line alert on top of it is the strongest commercial feature anyone proposed and needs a price feed you do not have.",
+   "severity": "serious"
+  },
+  {
+   "gap": "It answers roughly 2 of the 12 documented intercepts, and the entry gesture requires the user to have already narrowed to one candidate.",
+   "raised_by": "Maya (counted it: 2 of 12), Tano (counted it: 1-2 of 12), the judge (counted it: 2 clean of 12).",
+   "why_it_matters": "Three independent counts landed on the same number — that is as strong a convergence as this exercise produced. E-01.2 ('dry skin + redness and £60, tell me what to buy pls') is the canonical DM and the Fence cannot answer it despite being the one tool with the right primitive: Cloud Cream 38 + Red Reset 32 = £70 against her £60, and 'the entire job is the tradeoff'. Hannah and Grace cannot even start. The fix is Tano's inversion — a constraint query is a filter-and-sort over 359 cached scores with zero inference at query time — and it converts E-01.2, E-01.5, E-01.9 and E-01.12 from unserved to served in about a morning.",
+   "severity": "serious"
+  },
+  {
+   "gap": "A refusal with no alternative is a dead end.",
+   "raised_by": "Maya ('my no is my most valuable output BECAUSE it comes with what to buy instead — E-03.6, 3.1K saves on 26K views'), Priya ('you have saved me £62 and given me nothing to do with it; I go back to TikTok').",
+   "why_it_matters": "Your single best asset is the refusal, and right now the refusal terminates the session. Attaching 'not this — this, from her shelf, at your budget' costs one sort over data you already have, and it is what makes the refusal shareable rather than merely admirable. It also half-answers E-01.5 (@jessica: 'I already have the night serum, do I need the barrier cream too').",
+   "severity": "serious"
+  },
+  {
+   "gap": "Desktop-shaped in a phone-shaped life, on both sides.",
+   "raised_by": "Priya (share-sheet and camera, 'nobody standing in Boots has a desktop'), the adoption critic ('opening it requires a laptop — Maya's surface is a phone with three controls'), Maya ('phone-shaped, loads on 4G in under two seconds, kill switch I can hit from my phone').",
+   "why_it_matters": "Every correction mechanism you are proud of lives on a Canvas2D wall. If corrections require a laptop, Maya never corrects anything, and an uncorrected standard drifts into being publicly wrong. On the audience side, the drag-a-file gesture is five steps at 11pm against an alternative that costs zero steps. You cannot ship a share-sheet target tomorrow; you can make the card a phone-width page and swap file-drop for camera capture in under an hour.",
+   "severity": "serious"
+  },
+  {
+   "gap": "No attribution or affiliate link on any verdict.",
+   "raised_by": "Maya ('if this sends people to buy and my tag isn't on the link, I have built a free conversion service for brands and paid for it with my own credibility'), Tano ('the most expensive omission in the build — attribution is what we sell ROAS on').",
+   "why_it_matters": "It is her income line and it is simultaneously the number Tano's business runs on. Tano's version is sharper: give each card an id, carry a parent_card_id, and the private share becomes observable for the first time — the 61-71% dark channel becomes a measurable chain, and you become the first creator-side artifact whose unit of sharing is also the unit of measurement. That is a link schema, not model work. Tomorrow you can ship the id and the field; the measurement story is a sentence.",
+   "severity": "worth-fixing"
+  },
+  {
+   "gap": "The consumer-facing counter advertises how cheap it is to manufacture her opinion, and it is not honest anyway.",
+   "raised_by": "Priya ('her judgement is being printed by the yard — that counter is the visual signature of generic automation, her printed pet peeve'), the judge (two separate objections: $0.009 is Jev-only when vision is ~10x it, and '~90% dim' is a regex plus a gpt-4o-mini boolean, not Maya's standard).",
+   "why_it_matters": "Verified in `catalogue_wall.py`: a hardcoded BAD keyword list then `is_face_skincare` filtering before Jev is consulted — so the on-stage counter and the verified pipeline are not the same pipeline. Quoting the Jev-only cost to a room containing TypeSafe people is the one thing that reads as a hackathon hack to the exact person you want to impress. Both fixes make you look better: split the counter into filtered / judged / survived (K/M is a discrimination rate), quote the honest end-to-end number (still under thirty cents), and in the consumer view replace the whole thing with 'Maya's standard says no to 9 out of 10 of these.'",
+   "severity": "worth-fixing"
+  },
+  {
+   "gap": "Live OpenAI and TypeSafe keys are hardcoded in the repo.",
+   "raised_by": "The judge (verified — `scripts/vision_to_jev.py`; I confirmed the same pattern in `scripts/eval_coldstart.py`).",
+   "why_it_matters": "Not scored, but you are about to push this repo and hand the URL to judges. Rotate, move to env, ten minutes.",
+   "severity": "worth-fixing"
+  }
+ ],
+ "build_list": [
+  {
+   "feature": "THE VERDICT CARD as the product (phone-first, permalink, share image, provenance badge)",
+   "solves": "Gaps 1, 6, 12 — no shareable object, no provenance, desktop-shaped. This is the single highest-convergence item: all five personas named it.",
+   "how": "One route, /v/<id>, phone-width, warm/light theme (NOT the dossier black — Priya: 'that screen makes me feel processed'). Contents in order: product photo; one THIRD-PERSON sentence ('Maya's standard puts her line around £40. It's £62.'); the provenance badge in one of three states — SHE USES THIS (her verbatim note, quoted) / SHE HASN'T TRIED THIS — THIS IS HER STANDARD APPLIED / SHE HASN'T RULED ON THIS (no_signal); a banded price, rounded ('about £40-45', never £40.0); the receipt line ('her standard, applied to 359 products on sale'); commission status in plain words including 'she doesn't earn anything on this one'. No float scores anywhere. Generate an OG image server-side (Pillow or a headless canvas) with the product photo + her handle + the one sentence, so a friend who has never heard of Maya can read it cold. Every card gets a stable id; carry parent_card_id on shares.",
+   "build_hours": "3h (2h card + 1h OG image)",
+   "demo_value": "hero",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "PRICE LADDER ON THE WALL SURVIVORS — put an actual fence in The Fence",
+   "solves": "Gap 3 — the catalogue has no price field (verified: 5 keys, none of them price) so 349 of 359 products currently have no line, and the hero visual contains zero of the named mechanism.",
+   "how": "Critical insight the team seems to have missed: you do not need a sticker price to compute a line. Run the same counterfactual ladder over the wall survivors: 'If this cost £X, would Maya tell her audience to buy it at that price?' with her ten shelf rows in state as the price universe. Coarse ladder of 13 rungs (£10-£70 in £5 steps) over ~36 survivors = 468 nouls, ~1s at your measured 2,535/sec. Now every card carries a line whether or not anyone knows the sticker, and the consumer gesture stops demanding that the user supply the one fact she came to be told — if she types a price you compare, if she doesn't you say 'her line on this is about £X'. Cache it; the drag handle re-ranks it for free.",
+   "build_hours": "1h",
+   "demo_value": "hero",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "LEAVE-ONE-NOTE-OUT ACROSS ALL TEN, with the anchor sentence deleted",
+   "solves": "Gap 7 — the only attack that can take the idea away from you. `scripts/eval_coldstart.py` already exists uncommitted; this is adjacent work someone has started.",
+   "how": "Loop the existing sweep ten times, holding out each product's `maya_note` in turn. Report two numbers: mean absolute error in £, and SPEARMAN RANK CORRELATION between held-out lines and with-note lines. Then delete 'She routinely endorses GBP 32-42 items' from `price_context_note` and re-run. Put whatever you actually get on screen, including if it is worse. If SPF still ranks first and Glass Drop still ranks last with no notes at all, you have a stronger claim than the one you make now. If it does not survive, cut the word 'proves' and say 'her sentence sharpens a signal that is already there' — still true, still good, and unbreakable. Do this FIRST thing in the morning, one person, in parallel with everything else.",
+   "build_hours": "45m",
+   "demo_value": "hero",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "VOICE ONBOARDING, placed in the product and in the demo — with the machine speaking first",
+   "solves": "Gap 4 — verified capability sitting outside the product, and the 20-40 minute typing cold start.",
+   "how": "Not a blank mic (the adoption critic is right: blank-page problem with social anxiety). Machine speaks first, she reacts. Screen 1 asks ONE question, which is the E-04.6 shape stated as a prompt: 'Name something you genuinely like that you wouldn't tell people to buy at that price.' 15 seconds of speech -> gpt-4o-mini-transcribe -> Jev -> typed judgements across her shelf, WITH `no_signal` rendered on screen as a first-class state for everything she did not mention. That absence is the trust artefact all five personas named. On stage this is 18 seconds of your 90: 'Maya's onboarding is her talking. Here it is — and notice the seven products it refuses to guess about.'",
+   "build_hours": "2h (pipeline is verified; this is placement, UI and the no_signal state)",
+   "demo_value": "hero",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "THE BUDGET BASKET — invert the query",
+   "solves": "Gap 10 (refusal with no alternative) and Gap 11 (2 of 12 intercepts). Maya's named #1 audience feature; Tano's named near-zero-cost fix; the judge's E-01.2.",
+   "how": "Zero inference at query time — it is a filter-and-sort over the cached scores plus the cached lines. Input: a budget number and (from the next item) a skin-type tap. Output: the actual basket, the change left over, and WHAT SHE'D CUT FIRST. Worked example straight from the evidence: £60 + dry + redness -> her own routing says Cloud Cream (£38) + Red Reset (£32) = £70 -> the product must make the tradeoff, because 'the entire job is the tradeoff'. This is also her highest-reach commerce format already ('3 things I would repurchase with £50', E-03.1, 1.9K saves). Reuse the same card component for each basket item.",
+   "build_hours": "2h",
+   "demo_value": "strong",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "ONE-TAP SKIN TYPE + a hard refusal gate",
+   "solves": "Gap 5 — no personalisation for the named user, plus Maya's stated harm risk.",
+   "how": "Two controls, not a quiz (Hannah: 'just tell me'; Grace: 'I have 5 mins'). Tap: sensitive / dry / oily / combo. It does two things. (a) It enters the noul — 'would Maya tell someone with sensitive skin to buy this at £Y' — so the FRAGRANCE RISK stamp stops being wall decoration and becomes Priya's filter. (b) It triggers a HARD REFUSAL, not a lower score: sensitive + fragranced returns 'No — and here's why', with a named alternative from her shelf. Check the ingredients field on your Open Beauty Facts records before building anything clever. Where the vision model is guessing ingredients off a 400px packshot, show the uncertainty or withhold the verdict — Maya: 'that's my reputation riding on an OCR guess'.",
+   "build_hours": "1.5h",
+   "demo_value": "strong",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "SHRINK THE WALL to ~24 recognisable products, with an honest split counter",
+   "solves": "Gap 2 (wrong hero, illegible) and Gap 13 (dishonest counter) in one move, and buys back demo time.",
+   "how": "Curate 24 products a London beauty room recognises on sight — CeraVe, Cetaphil, La Roche-Posay, The Ordinary, Drunk Elephant, Charlotte Tilbury, and one expensive thing refused on camera. Scan resolves in ~1.2s, not 30s. '359' becomes a LINE OF TEXT underneath, not the visual. Counter splits into three honest numbers: N filtered (not face skincare) / M judged by Maya's standard / K survive — K/M is a discrimination rate and it is more impressive than K/359, which is a data-cleaning rate. End-to-end cost including the vision pass, not the Jev-only figure. Remove the cost counter entirely from the consumer view and replace it with 'Maya's standard says no to 9 out of 10 of these.'",
+   "build_hours": "1h",
+   "demo_value": "strong",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "PERSIST THE LINE — drag writes back and survives a refresh",
+   "solves": "Maya's explicit quit condition ('if it doesn't persist, it's a screensaver') and the adoption critic's correction-latency metric.",
+   "how": "Drag handle writes to a server-side JSON file; reload restores it; touch events work so it functions on a phone. Everything downstream re-ranks with zero inference, which you already have. Reframe the label per Tano: this is not a fidelity mitigation, it is the OWNERSHIP AND CONSENT gesture — 'ESTIMATED FROM MAYA'S OWN NOTES — SHE SETS THE LINE.' Target correction latency under 30 seconds from a phone, and say that number on stage.",
+   "build_hours": "1h",
+   "demo_value": "strong",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "LEGAL / DISCLOSURE PASS",
+   "solves": "Gap 8 — public negatives on named third-party brands under Maya's name.",
+   "how": "Four small things: (1) a contracted-brand blocklist (six names, thirty seconds of Maya's time) that suppresses any public verdict; (2) negatives private-by-default — shown to the person who asked, never broadcast; public cards carry words not numbers for brands she has no relationship with ('she'd buy it in a sale, not at full price'); (3) an ASA/CAP disclosure string on any card touching a paid or affiliate product; (4) grep the demo wall against Tano's client list tonight — Bloom & Wild, Skin+Me, Wild, IM8 — so you do not red-stamp a client on stage.",
+   "build_hours": "40m",
+   "demo_value": "supporting",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "COPY-AS-REPLY button on every card",
+   "solves": "Gap 12 and the 'gets her out of the loop' claim, which is currently false.",
+   "how": "One button: copies the verdict as a DM-length reply in third person plus the card link. This is the only honest bridge between 'value to a real audience member' and sheet 02's mission, and it is not a DM bot (E-08.1 stays dead). Pair it on stage with the free sentence the judge handed you: 'this is one webhook from living in her DMs, and it never types as her.'",
+   "build_hours": "20m",
+   "demo_value": "supporting",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "CAMERA CAPTURE instead of file drop",
+   "solves": "Priya in the Boots aisle; the 11pm moment.",
+   "how": "`<input type=file accept=image/* capture=environment>` on the phone card route. Keep drag-drop on the desktop wall for the stage. Does not solve the share-sheet problem — say honestly that a share-sheet target is the real answer and it is a platform integration, not a tomorrow feature.",
+   "build_hours": "20m",
+   "demo_value": "supporting",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "ROTATE AND ENV-IFY THE API KEYS",
+   "solves": "Live keys hardcoded in `scripts/vision_to_jev.py` and `scripts/eval_coldstart.py` in a repo you are about to push.",
+   "how": "Rotate both, move to environment variables, add to .gitignore, rewrite history if already pushed.",
+   "build_hours": "15m",
+   "demo_value": "supporting",
+   "verdict": "build-tomorrow"
+  },
+  {
+   "feature": "THE A/B DIFF — Maya vs a generic 'good-taste dermatologist'",
+   "solves": "The generic cliff. Your measured output (CeraVe 2.85, Cetaphil 2.75, St Ives 0.98) is almost exactly the r/SkincareAddiction consensus, and Sagar Shah makes content himself.",
+   "how": "Run the same wall twice, once with Maya's standard, once with a generic persona. Diff the top 20. If overlap is >70%, Maya is decoration and you need to fix the questions before you pitch. If it is low, you have the best available answer to 'how do I know this isn't ChatGPT?' and a demo beat nobody else has. Cheap, and it is diagnostic either way — run it early so you know which it is.",
+   "build_hours": "30m",
+   "demo_value": "strong",
+   "verdict": "build-if-time"
+  },
+  {
+   "feature": "SAVE A VERDICT + a returning-visitor state",
+   "solves": "Gap 9 partially — savers are the buyers (E-10) and there is currently no second visit.",
+   "how": "localStorage list of saved card ids plus a 'saved' tab on the card route. Honest scope: this makes saving possible, it does not create the return trigger. The trigger is the price-drop alert, which needs a price feed you do not have.",
+   "build_hours": "30m",
+   "demo_value": "supporting",
+   "verdict": "build-if-time"
+  },
+  {
+   "feature": "READINESS METER from the LOO run",
+   "solves": "The creator has no way to know when the model is good enough to publish, so she publishes too early or never.",
+   "how": "Free once the LOO sweep exists: '±£6 average error across your shelf — ready.' Also answers 'how many products do I need' with a measured number instead of a guess. Doubles as a demo beat: 'you gave me seven products; watch me predict the eighth before you tell me.'",
+   "build_hours": "30m (only after the LOO run exists)",
+   "demo_value": "supporting",
+   "verdict": "build-if-time"
+  },
+  {
+   "feature": "PRICE-DROP TRIGGER — 'she said not at £62; it's £39 today, that's now a yes'",
+   "solves": "Gap 9 fully — the 4.6-day lag, the return loop, and the strongest commercial feature anyone proposed.",
+   "how": "Arithmetic on a line you already have, but it needs live retail prices, which Open Beauty Facts does not carry, plus a notification channel. Both are real integrations. Name it on stage as the next thing; do not fake it with hardcoded prices — a fake price alert is exactly the kind of demo-fitting 02-the-pick.md §9 already bans.",
+   "build_hours": "6h+ (needs a price feed and a notification surface)",
+   "demo_value": "post-hackathon",
+   "verdict": "after-hackathon"
+  },
+  {
+   "feature": "MORNING APPROVAL QUEUE",
+   "solves": "The only thing that touches Maya's seventy hours. Her own specification.",
+   "how": "Overnight: read the night's DMs and comments, draft answers for everything inside her standard, hold everything outside it; at 9am she swipes thirty cards and each edit moves the line. Needs an inbox surface (platform API, consent, privacy) and real approval UX. This is the product roadmap, not a hackathon feature. One sentence on stage, after the demo.",
+   "build_hours": "1-2 weeks",
+   "demo_value": "post-hackathon",
+   "verdict": "after-hackathon"
+  },
+  {
+   "feature": "STOREFRONT / CAPTION IMPORTER -> draft shelf",
+   "solves": "Cold start when there is no case file — no real creator has E-04.",
+   "how": "Paste a ShopMy/LTK URL for the product identities plus three captions or one voice note for the judgement. Critical warning from the adoption critic: an affiliate export is poison on its own — every row is a yes, zero refusals, and your entire measured signal comes from the two products that fall below sticker. Get the products for free, buy the judgement with one minute of her voice. Platform access (TikTok captions, IG Graph) is a real blocker — do not promise 'connect your account' on stage.",
+   "build_hours": "1-2 days",
+   "demo_value": "post-hackathon",
+   "verdict": "after-hackathon"
+  },
+  {
+   "feature": "A BRAND-SIDE / CHARLIE ROSTER-SCREEN SCREEN",
+   "solves": "Nothing that is judged tomorrow.",
+   "how": "Do not build a pixel of it. Criterion #1 is value to a real audience member, and the judge explicitly warned 'don't let the commercial pitch eat the demo'. Ship it as ONE SENTENCE delivered after the product, computed from your own measured 2,535/sec: '4,000 creators x 51 rungs is 204,000 judgments — your whole roster screens against one brief in about 80 seconds for under a dollar. Charlie knows which creators exist; it does not know what any of them will say yes to. We built the missing input.' That sentence wins Best Commercial Potential. A screen does not.",
+   "build_hours": "0",
+   "demo_value": "supporting",
+   "verdict": "do-not-build"
+  }
+ ],
+ "onboarding_flow": "RECOMMENDED FIRST-RUN FLOW — two flows, because there are two users and the team keeps conflating them.\n\n=== MAYA'S FLOW (creator) — time to first value ~90 seconds, time to publishable ~4 minutes ===\n\nScreen 0 (0:00-0:15) — NO SIGNUP. One field: paste your storefront link or handle, or tap 'skip, I'll just talk'. No account, no email. Account creation happens after the wow, never before it. (Tomorrow, with no importer built: this screen holds a pre-seeded demo shelf and a record button. Say honestly on stage that the importer is next.)\n\nScreen 1 (0:15-0:45) — THE MACHINE SPEAKS FIRST. Not a blank mic. One question on screen, spoken and written: \"Name something you genuinely like that you wouldn't tell people to buy at that price.\" She talks for 15 seconds. This is the E-04.6 shape stated as a prompt; it is the single highest-information sentence a beauty creator can produce, it is the one signal no import can ever recover, and your pipeline already proved it catches exactly this (endorse_with_caveat on Glass Drop, unprompted).\n\nScreen 2 (0:45-1:30) — \"HERE IS WHAT I THINK I HEARD.\" Her draft shelf appears: each product with a guessed line, and NEXT TO EACH ONE THE SENTENCE OF HERS IT CAME FROM, quoted. The seven she did not mention appear in a visually distinct NO SIGNAL state, not with a guessed number. She is correcting, not authoring — reacting is roughly 10x cheaper than authoring. The quote is load-bearing: it is the anti-generic guardrail and the reason she believes it.\n\nTHE WOW MUST LAND BY 1:30, AND IT MUST BE A VERDICT ON A PRODUCT SHE NEVER ENTERED. One real catalogue product she has no relationship with, its line, and the SHE HASN'T TRIED THIS badge. If first value arrives after configuration is finished, you have lost most creators.\n\nScreen 3 (1:30-3:00) — THE DISAGREEMENT TEST. Eight already-judged real products, one tap each: right / wrong / not my lane. Every tap is a label; the readiness meter moves visibly as she taps. This is where the personality actually forms, and it is where the two refusals that matter more than product count get captured.\n\nScreen 4 (3:00-3:30) — HER WALL LIGHTS UP WITH HER NAME ON IT, AND A LINK. Plus two one-tap settings she will not do later: the contracted-brand blocklist (six names) and public/private mode. Then a phone view with exactly three controls — confirm, override, record 15 seconds — because if corrections require a laptop she will never correct anything.\n\nHonest time-to-first-value: 90 seconds to the first verdict on a product she never entered; 4 minutes to publishable. Honest caveat you must state rather than let a judge compute: 15 seconds of voice covers 2-3 products, so ten-row density is 4-6 minutes cumulative, spread across days — and that is FINE, because no_signal means coverage accretes honestly instead of being hallucinated. What is NOT solved, and do not claim it is: getting from ten products to the several hundred she has actually endorsed, with prices.\n\n=== PRIYA'S FLOW (audience) — time to first value ~15 seconds, no account, ever ===\n\nStep 1 (0:00-0:05) — she arrives on a CARD, not on the wall. Shared by a friend 41% of the time (E-09.4), so the card must be readable cold by someone who has never heard of Maya: product photo, one third-person sentence, who Maya is in six words, the receipt line.\n\nStep 2 (0:05-0:10) — TWO controls, not a quiz: one skin-type tap and a budget number. Both optional; both re-rank with zero inference. Two of six personas lead with a budget and the whole product is price-conditioned, so this is the one number that makes the conditioning personal.\n\nStep 3 (0:10-0:15) — the verdict, including the refusal, WITH an alternative from Maya's shelf at her budget. Never a float. Never a decimal pound. Always a provenance badge. Always the commission line, including 'she doesn't earn anything on this one'.\n\nStep 4 — camera button for a product in her hand, and a save. That is the whole product for her. No login, ever.\n\n=== DEMO RUNNING ORDER (90s) — the judge's re-cut, adopted, with one correction ===\n0-12s: the Glass Drop card, phone-shaped, seen as PRIYA sees it: \"is this £62 serum worth it?\" -> \"Good. Not £62 good.\" / line about £40 / sticker £62. Lead with the audience frame, not the rate-card frame — criterion #1 is the audience member and Maya is in the room.\n12-25s: \"She never told us that. We deleted her note and it still landed £20 under sticker\" -> then the LOO rank-correlation number across all ten, with the anchor sentence removed.\n25-45s: 24 recognisable products, scan resolves in 1.2s, one expensive thing refused on camera. \"359 of them, 718 judgments, 3.9 seconds, twenty-eight cents end to end\" as a LINE OF TEXT.\n45-63s: voice onboarding — Maya talks for 15 seconds, the shelf appears, seven products come back NO SIGNAL. \"It refuses to guess about the seven she didn't mention.\"\n63-78s: budget basket — £60, dry, redness. The tradeoff, on screen.\n78-90s: hand Maya the handle. \"Is £44 right? Move it.\" Everything re-ranks, zero inference.\nThen, after the demo, ONE sentence about Tano. Rehearse the cached-fallback keypress twice.",
+ "what_to_cut": [
+  "THE 359-TILE WALL AS THE HERO. Cut to ~24 recognisable products with '359' as a line of text. Four personas independently called it illegible, presumptuous, or a catalogue — and 02-the-pick.md §9 already bans catalogues. Keep the wall as a 20-second credibility beat; it is the ad, not the product. Adjudication note: this is the one place the judge (wants spectacle) and Maya/Priya (want less presumption) actually AGREE — shrinking the wall serves both, because the judge's complaint is that 340 cells dimming at once gives his eye nowhere to land.",
+  "THE COST-PER-JUDGEMENT COUNTER IN THE CONSUMER VIEW. Priya reads '$0.009' as 'her judgement is being printed by the yard' — the visual signature of the generic automation listed as Maya's printed pet peeve. Replace with 'Maya's standard says no to 9 out of 10 of these.' Keep an honest end-to-end cost number for the stage only.",
+  "FLOAT SCORES SHOWN TO ANY CONSUMER. '2.85' loses Sophie, who asked 'forget the brand, what would YOU buy?' Floats are for the team and for brands, never for the card.",
+  "DECIMAL POUNDS. '£60.4' and 'confidence 1.00'. Maya: 'I do not have decimal opinions — that single character is the whole generic-automation smell in one glyph.' Round, and show a band ('about £45-55'). Precision you do not possess reads as a machine wearing her face.",
+  "'NOTHING FABRICATED' AS CURRENTLY PHRASED. True of the photos and the names, false of the prices, which do not exist in the catalogue (verified: 5 fields, no price). Say 'real products, real photography, prices supplied by the user or estimated by her standard' BEFORE a judge says it for you.",
+  "'THIS IS CHARLIE, POINTED THE OTHER WAY.' Cut it. The Tano operator — the actual seat in the room — says it dies on the first follow-up because Charlie runs an operational chain (outreach, negotiation, logistics, contracting, reporting) and The Fence runs none of it. This overrules the judge's guess that it will land with Sagar. Replace with: 'Charlie knows which creators exist. It does not know what any of them will actually say yes to. We built the missing input — per-creator, per-SKU, per-price probability of endorsement, whole roster in 80 seconds for under a dollar.' Test every commercial line against 'what does Charlie do differently on Monday?'",
+  "THE WORD 'AUTONOMOUS'. Four personas, same conclusion. It removes zero DMs. Use 'leverage' — E-06.3 hands you the word — and use the additive frame: the 4,372 who currently get silence now get an answer.",
+  "FIRST-PERSON MAYA VOICE ON ANY PRODUCT SHE HAS NOT TOUCHED. 'I wouldn't pay £62 for this' about an unseen product is a fabricated quote. Third person, always. This also removes the ASA exposure and the biggest single trust cliff Priya identified.",
+  "THE ANCHOR SENTENCE 'She routinely endorses GBP 32-42 items' IN price_context_note — or at minimum, re-run without it and report both. Held-out Glass Drop lands at £41.7 and the top of the band your own prompt supplied is £42. The elegance claim is contaminated by a hand-written thumb on the scale wearing a state field's clothing.",
+  "THE BRAND-GIFTING FRAME IN LAYER 2's STATE. `catalogue_wall.py` says verbatim 'A brand has sent Maya these products hoping she will feature them', and asks what happens to HER CREDIBILITY if she endorses. That is a gifting-triage queue and it is how the judge proved the product is brand-side in a consumer costume. Rewrite the context for the audience path: someone with £X and Y skin is deciding whether to buy this.",
+  "THE 30-SECOND SCAN ANIMATION. Grace has five minutes and will not watch it; the judge has seen four grids today. 1.2 seconds, then get to the card.",
+  "PUBLIC NEGATIVE STAMPS ON NAMED THIRD-PARTY BRANDS. Keep them for the stage if you must, but the shipped product shows negatives privately to the person who asked. Maya's brand-deal income and Tano's client list both sit on this."
+ ],
+ "biggest_unresolved_risk": "Nobody has ever observed Maya declining at £X — so every number in the system is internally consistent and externally unvalidated, and the one person who can falsify it walks into the room at 17:00, three hours before judging.\n\nThis is the risk that swallows the others. The held-out test proves the model is self-consistent with her nine other rows, not that it is right about her; the judge showed that the one case you ran is the one where a generic price prior and the truth happen to agree, with the answer half-written into the state field. Layer 2 compounds it: you are about to extend an unvalidated line to 349 products nobody has priced, under her name, in public. If Maya says at 17:00 \"that's not how I think about it — it's case by case, not a curve,\" you do not just lose fidelity points; you have been presumptuous about the exact thing her brand is built on, in front of the people scoring you.\n\nThe mitigations are all cheap and all in the build list, and they work whether or not she agrees: run leave-one-note-out across all ten with the anchor removed and report rank correlation rather than a point estimate (a number that survives an attack beats a number that dodged one); show bands, never hairlines; label every line ESTIMATED FROM MAYA'S OWN NOTES — SHE SETS THE LINE; and end the demo by handing her the handle rather than by asserting the number. Maya herself supplied the sharpest test and the team should run it before she arrives — she says she will defend SPF at £60 and refuse a £34 cleanser, so test the ASYMMETRY, not the average. If the model reproduces that asymmetry without being told, the 17:00 conversation becomes the best moment of the day instead of the worst.\n\nSecond-order, and genuinely unresolved rather than merely unbuilt: the standard is a leverage document. Tano's operator made the point nobody else did — a system that quantifies where a creator will not vouch also quantifies where she will, and a brand holding \"her line is £40, you sell at £62\" has a negotiating weapon against the creator. Maya independently arrived at the same place from her own side (\"a number next to a brand's name, in public — I have a legal email and no deal\"). The public/private split and the blocklist are a tomorrow-morning patch on what is actually a governance question, and the team should be honest on stage that it is a patch: creator-owned, creator-visible, share-gated per brand, and she can pull it from her phone in one tap."
+}

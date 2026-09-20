@@ -1,0 +1,349 @@
+/* /onboard — the approved v7f screen (design/v7f/P5zMC.png).
+   Same house style as /maya: soft lilac-grey page, white cards floating
+   on it, pastel tiles with no border and no shadow. Light only. */
+
+/* Vertical padding comes from `.page` (--page-top above) so the gap under
+   the sticky topbar is identical on every route. Never set it again here. */
+.onboard.page {
+  padding-bottom: var(--s7);
+}
+
+/* The doctor comparison is the argument this page exists to make, and at
+   1440x900 it has to be reachable without a scroll. Everything above it is
+   kept as tight as it can be read at. */
+.ob-two.stagger > *:nth-child(1) { animation-delay: .26s }
+.ob-two.stagger > *:nth-child(2) { animation-delay: .32s }
+
+.ob-loading {
+  margin: var(--s4) 0 0;
+  color: var(--ink-tertiary);
+  font-size: 17px;
+}
+
+/* ----------------------------------------------- paste a handle: small */
+.ob-paste {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin-bottom: var(--s4);
+}
+
+.ob-paste-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-secondary);
+  margin-right: var(--s1);
+}
+
+.ob-input {
+  font-family: var(--font);
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--bg-card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-pill);
+  padding: 0 18px;
+  min-height: 44px;
+  width: 190px;
+  max-width: 100%;
+}
+.ob-input::placeholder { color: var(--ink-tertiary); }
+
+/* btn-secondary fills with --bg-sunken (#f5f5f7) which is all but identical
+   to the page's own --bg (#f3f2f8) — on this screen the button read as a
+   line of plain text. Give it the same white-and-hairline treatment as the
+   input it sits next to, so the pair reads as one control. No new colours. */
+.ob-paste-go {
+  font-size: 15px;
+  padding: 11px 22px;
+  background: var(--bg-card);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-weight: 500;
+}
+.ob-paste-go:hover:not(:disabled) { background: var(--bg-hover); }
+
+.ob-paste-note {
+  font-size: 14px;
+  color: var(--ink-tertiary);
+}
+
+/* ------------------------------------------------------------- headline */
+.ob-head { margin-bottom: var(--s4); }
+
+.ob-h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(30px, 4.2vw, 58px);
+  line-height: 1.04;
+  font-weight: 700;
+  letter-spacing: -0.024em;
+}
+
+.ob-sub {
+  margin: var(--s3) 0 0;
+  font-size: clamp(16px, 1.6vw, 23px);
+  line-height: 1.4;
+  color: var(--ink-secondary);
+  max-width: 76ch;
+}
+
+/* ------------------------------ what she wrote → what it worked out */
+.ob-heard { padding: var(--s5) var(--s6); }
+
+/* Her words are long and the conclusion is one short bold line, so an even
+   split left ~600px of nothing to the right of every conclusion once the
+   page went to 1320px. Give the quote the room it actually needs and pull
+   the right column in behind it. */
+.ob-cols,
+.ob-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1.42fr) minmax(0, 1fr);
+  gap: var(--s5);
+  align-items: center;
+}
+
+.ob-col-head {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-tertiary);
+  padding-bottom: var(--s2);
+}
+
+.ob-pairs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+/* .tile carries padding: var(--s5) and lands after this file in the
+   bundle, so a bare `.ob-quote` rule never won. The pair of class names
+   is what makes this stick — and 24px of air around a two-line caption
+   was pushing the doctor comparison a screen and a half down the page. */
+.ob-quote.tile {
+  margin: 0;
+  padding: var(--s3) var(--s4);
+  border-radius: var(--r-md);
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.ob-worked {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+}
+.ob-arrow {
+  display: inline-flex;
+  color: var(--ink-tertiary);
+  flex: 0 0 auto;
+  padding-top: 3px;
+}
+.ob-worked-text {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+/* --------------------------------------- the doctor, and the marking */
+.ob-two {
+  display: grid;
+  grid-template-columns: minmax(0, 1.38fr) minmax(0, 1fr);
+  gap: var(--s4);
+  margin-top: var(--s3);
+  align-items: start;
+}
+
+.ob-derm { padding: var(--s5) var(--s6); }
+
+.ob-card-h { margin: 0; color: var(--ink); }
+
+.ob-card-sub {
+  margin: var(--s3) 0 0;
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--ink-secondary);
+}
+.ob-card-sub-mint { color: var(--ink); }
+
+.ob-diffs {
+  list-style: none;
+  margin: var(--s3) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+.ob-diff {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: var(--s3);
+  align-items: baseline;
+  background: var(--lilac);
+  border-radius: var(--r-md);
+  padding: var(--s3) var(--s4);
+}
+.ob-diff-q { font-size: 16px; font-weight: 600; color: var(--ink); }
+.ob-diff-maya { font-size: 16px; font-weight: 600; color: var(--lilac-ink); }
+.ob-diff-derm { font-size: 16px; color: var(--ink-secondary); }
+
+.ob-marked { padding: var(--s5) var(--s5) var(--s6); }
+
+.ob-marked-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s3);
+}
+
+.ob-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  color: var(--mint-ink);
+  border-radius: var(--r-pill);
+  padding: 6px 13px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ob-marks {
+  list-style: none;
+  margin: var(--s3) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+.ob-mark {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  gap: var(--s3);
+  align-items: center;
+  background: var(--bg-card);
+  border-radius: var(--r-md);
+  padding: var(--s3) var(--s4);
+  min-height: 48px;
+}
+.ob-mark-word { font-size: 16px; font-weight: 700; color: var(--ink); }
+.ob-mark-product { font-size: 16px; color: var(--ink); }
+.ob-mark-tick { display: inline-flex; color: var(--mint-ink); }
+.ob-mark-tick.is-miss { color: var(--ink-tertiary); }
+
+/* ------------------------------------- below the fold: she corrects it */
+.ob-fix { margin-top: var(--s4); padding: var(--s5) var(--s6) var(--s6); }
+.ob-fix-h { margin: 0; color: var(--ink); }
+
+.ob-rules {
+  list-style: none;
+  margin: var(--s4) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s2) var(--s4);
+}
+
+.ob-rule {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  background: var(--bg-sunken);
+  border-radius: var(--r-md);
+  padding: var(--s2) var(--s2) var(--s2) var(--s4);
+  min-height: 52px;
+}
+.ob-rule.is-off { opacity: 0.55; }
+
+.ob-rule-text {
+  font-size: 16px;
+  line-height: 1.35;
+  color: var(--ink);
+  min-width: 0;
+}
+
+.ob-switch {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  font-family: var(--font);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: 0 var(--s2);
+  min-height: 44px;
+  flex: 0 0 auto;
+}
+.ob-switch-word {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--ink-tertiary);
+}
+.ob-switch[aria-checked='true'] .ob-switch-word { color: var(--mint-ink); }
+
+.ob-switch-track {
+  width: 44px;
+  height: 26px;
+  border-radius: var(--r-pill);
+  background: var(--hairline);
+  position: relative;
+  display: block;
+  transition: background-color .2s var(--ease);
+}
+.ob-switch-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: transform .2s var(--ease);
+}
+.ob-switch[aria-checked='true'] .ob-switch-track { background: var(--mint-ink); }
+.ob-switch[aria-checked='true'] .ob-switch-knob { transform: translateX(18px); }
+.ob-switch:disabled { cursor: default; opacity: .6; }
+
+.ob-rerank { margin-top: var(--s4); }
+.ob-rerank-h { margin: 0; }
+.ob-rerank-sub { margin: var(--s2) 0 var(--s4); font-size: 17px; color: var(--ink); }
+.ob-rerank-go { text-decoration: none; display: inline-flex; align-items: center; }
+
+/* ----------------------------------------------------------- responsive */
+@media (max-width: 1040px) {
+  .ob-two { grid-template-columns: minmax(0, 1fr); }
+  .ob-rules { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .ob-paste { margin-bottom: var(--s5); }
+  .ob-input { flex: 1 1 160px; width: auto; }
+  .ob-paste-note { flex: 1 1 100%; }
+  .ob-heard,
+  .ob-derm,
+  .ob-fix { padding: var(--s4); }
+  .ob-quote { padding: var(--s3) var(--s4); }
+  .ob-cols { display: none; }
+  .ob-pair { grid-template-columns: minmax(0, 1fr); gap: var(--s2); }
+  .ob-pairs { gap: var(--s4); }
+  .ob-worked-text { font-size: 17px; }
+  .ob-diff { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .ob-mark { grid-template-columns: minmax(0, 1fr) auto; }
+  .ob-mark-product { grid-column: 1 / 2; }
+  .ob-mark-tick { grid-row: 1 / 3; grid-column: 2 / 3; }
+}

@@ -1,0 +1,81 @@
+PART 1 · 0.0 – 5.0s
+First, it reads what she has already posted.
+Michelle Wong — Cosmetic chemist, PhD. Writes Lab Muffin Beauty Science.
+her own posts, word for word, from labmuffin.com/feed · fetched 20 September 2026
+Jev answers 28 questions at the same moment.
+28 of 28 answered
+Why are skin cancer rates rising with more sunscreen?
+How to Reapply Sunscreen Over Makeup
+How Much of a Sunscreen Stick Should You Apply?
+Hair porosity tests are a lie
+Does water damage hair? The myth of “hygral fatigue”
+Hair, hydration and water: the real science
+“Plastic-free” is the new clean beauty: a treatise
+What is hyaluronic acid and how does it work in skincare and makeup?
+Ulike red light mask overview and experience
+Investigating the viral heat protectant test
+10 posts, straight off her site
+2 of her 15 pictures, and what was read off them
+READ OFF THIS PICTURE
+"Low porosity" floats
+"High porosity" sinks
+BUSTED!
+by gpt-4o-mini
+AND OFF THIS ONE
+1975-2021, r=0.985, r²=0.971, p<0.01 · tylervigen.com/spurious/custom_correlation/508
+by gpt-4o-mini
+sceptical of hype
+0.92
+SPF always
+0.71
+never talks about price
+0.55
+never says to throw things out
+0.76
+leaves money unspent
+0.63
+Maya, asked the same question about price: “Price is central to their judgement.”
+0.9 seconds
+10 posts · 15 pictures · 28 questions · 2 requests · 13,212 tokens in · 0.9 seconds
+gpt-4o-mini read the pictures; Jev answered the questions; Jev never sees a pixel.
+Her posts and her pictures were fetched beforehand; the fourteen questions were run and timed for real, and this replays that run. The pictures did not change her answers — this is what was read off them, not what it moved.
+PART 2 · 5.0 – 11.0s
+Then, at 3am, someone messages her.
+That was Michelle Wong. The rest is Maya — her shelf, her inbox, her night.
+“i have dry skin + redness and £60. tell me what to buy pls”
+20 questions, all in one go.
+dry + redness
+£60
+wants a pick
+not medical · in her scope
+8 options priced up. One chosen.
+It writes it her way
+
+“Two things. The Red Reset and the SPF. Fifty-eight pounds.”
+
+0.81 seconds
+PART 3 · 11.0 – 15.0s
+It did that for everyone who messaged, all night.
+25
+wrote her reply
+14
+asked a question
+6
+saved for Maya
+9
+refused
+
+Every one of them is a draft. Maya presses send.
+
+It never messages anybody by itself.
+
+Back
+Next
+Play this part again
+← → or space
+slowed down so you can see it
+
+---- notes ----
+mount act dot: 1 on
+after +9s with no input, the stage still reads: "PART 1 · 0.0"
+after ArrowLeft: "PART 1 · 0.0"

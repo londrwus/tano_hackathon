@@ -1,0 +1,124 @@
+{
+ "card_id": "c-priya",
+ "parent_card_id": null,
+ "re_decided_at": "2026-09-20T15:15:20Z",
+ "asker": {
+  "name": "Priya",
+  "said": "Every time I try something new my face freaks out. It is red most days.",
+  "skin": [
+   "sensitive",
+   "redness"
+  ],
+  "budget": 80,
+  "owns": [],
+  "how_many": 3
+ },
+ "verdict": {
+  "headline": "Two things. The Red Reset and the SPF.",
+  "in_her_voice": "Two things. The Red Reset and the SPF. Fifty-eight pounds.",
+  "is_refusal": false
+ },
+ "basket": [
+  {
+   "product": "Red Reset",
+   "price": "£32",
+   "type": "Serum",
+   "ref": "E-04.3",
+   "maya_note": "For angry skin days.",
+   "affiliate": true,
+   "touched": true,
+   "why": "Her rule for SENSITIVE, extracted from her own captions."
+  },
+  {
+   "product": "SPF 50",
+   "price": "£26",
+   "type": "SPF",
+   "ref": "E-04.5",
+   "maya_note": "Non-negotiable.",
+   "affiliate": true,
+   "touched": true,
+   "why": "Her defended category."
+  }
+ ],
+ "total": "£58",
+ "unspent": {
+  "amount": "£22",
+  "line": "She left £22 of your £80 on the table."
+ },
+ "left_out": [
+  {
+   "product": "Glass Drop",
+   "price": "£62",
+   "ref": "E-04.6",
+   "why": "Good. Not £62 good.",
+   "instead": "Red Reset at £32 does the same job.",
+   "reason_code": "over_her_price_line",
+   "affiliate": false
+  },
+  {
+   "product": "Soft Clean",
+   "price": "£22",
+   "ref": "E-04.7",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the Red Reset runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": true
+  },
+  {
+   "product": "Cloud Cream",
+   "price": "£38",
+   "ref": "E-04.1",
+   "why": "A fourth step you do not need yet.",
+   "instead": "Nothing yet. Come back when the Red Reset runs out.",
+   "reason_code": "not_needed_yet",
+   "affiliate": true
+  }
+ ],
+ "ceiling": {
+  "band": "about £50–55",
+  "provenance": "Estimated from Maya's own posts. She sets the line",
+  "evidence_ref": "E-04.3",
+  "product": "Red Reset",
+  "over_sticker": true
+ },
+ "money_line": {
+  "affiliate_count": 2,
+  "basket_value": "£58",
+  "note": "2 of 2 products are affiliate-linked.",
+  "rule": "Everything on her own shelf is affiliate-linked except the two she publicly refuses - Glass Drop (E-04.6) and Oil Balm (E-04.8)."
+ },
+ "indifference_band": "Between £80 and £100 her answer does not change.",
+ "og_image": "/api/card/c-priya/og.png",
+ "share_url": "/c/c-priya",
+ "baskets_considered": 8,
+ "basket_confidence": 0.36,
+ "defended_category": "spf",
+ "routing_fired": [
+  {
+   "condition": "SENSITIVE",
+   "product": "Red Reset"
+  },
+  {
+   "condition": "REDNESS",
+   "product": "Red Reset"
+  }
+ ],
+ "routing_enforced": [
+  "Red Reset"
+ ],
+ "seconds": 0.78,
+ "live": true,
+ "spec": {
+  "name": "Priya",
+  "said": "Every time I try something new my face freaks out. It is red most days.",
+  "skin": [
+   "sensitive",
+   "redness"
+  ],
+  "budget": 80,
+  "owns": [],
+  "how_many": 3,
+  "parent_card_id": null,
+  "named_product": null
+ }
+}

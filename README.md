@@ -8,10 +8,10 @@ sends. It drafts.**
 Built for the **Tano x Corgi Creator Heist Hack**, answering **Case 001, Operation Shade** (Maya
 Rao, a skincare creator with 4,800 direct messages a month and no time to answer them).
 
-<img src="design/screens-v8/maya-1440x900.png" width="100%"
-     alt="The morning queue at /maya. Fifty overnight messages, sorted into the ones she must read and the ones already written for her.">
+<img src="design/screens-v9/maya-inbox-1440x900.png" width="100%"
+     alt="The inbox at /maya. Fifty-four overnight messages in one list, the six that need her sorted to the top and tinted, the rest already written. Each row shows how sure it was; the medical ones show passed on instead, with who to ask.">
 
-*`/maya`, the morning queue. Nothing on this screen has been sent.*
+*`/maya`, the morning inbox. Six of fifty-four need her. Nothing on this screen has been sent.*
 
 ---
 
